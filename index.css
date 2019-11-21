@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:400,600,800,900&display=swap');
+
+:root {
+  --unicon-pink: #e8317c;
+  --unicon-lightblue: #b3e2ed;
+  --unicon-font-color: #000000;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Muli', sans-serif;
+}
+
+.grid {
+	display: grid;
+}
+
+/*    GRID 
+	  \  /  
+	   \/      */
+
+/* START of: grid-area definition */
+header {
+	grid-area: navbar;
+} 
+.start__container {
+	grid-area: start;
+}
+.video__container {
+	grid-area: video;
+}
+.signup__container {
+	grid-area: signup;
+}
+.speech__container {
+	grid-area: speech;
+}
+.student__container {
+	grid-area: student;
+}
+.challenge__container {
+	grid-area: challenge;
+}
+.workshop__container {
+	grid-area: workshp;
+}
+.speaker__container {
+	grid-area: speaker;
+}
+.agenda__container {
+	grid-area: agenda;
+}
+.university__container {
+	grid-area: univers;
+}
+.partner__container {
+	grid-area: partner;
+}
+.faq__container {
+	grid-area: faq;
+}
+footer {
+	grid-area: footer;
+}
+/*  END of: grid-area definition */
+
+/* START of: grid definition MOBILE*/
+.grid {
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: /*1*/60px /*2*/665px /*3*/470px /*4*/190px /*5-8*/repeat(4, 190px) /*9*/550px /*10*/auto /*11*/340px /*12*/420px /*13*/590px /*14*/150px;
+	grid-template-areas: 
+		/*1*/ "navbar navbar navbar navbar"
+		/*2*/ "start start start start"
+		/*3*/ "video video video video"
+		/*4*/ "signup signup signup signup"
+		/*5*/ "speech speech speech speech"
+		/*6*/ "student student student student"
+		/*7*/ "challenge challenge challenge challenge"
+		/*8*/ "workshp workshp workshp workshp"
+		/*9*/ "speaker speaker speaker speaker"
+		/*10*/ "agenda agenda agenda agenda"
+		/*11*/ "univers univers univers univers"
+		/*12*/ "partner partner partner partner"
+		/*13*/ "faq faq faq faq"
+		/*14*/ "footer footer footer footer";
+}
+/* END of: grid definiton MOBILE*/
+
+
+
+
