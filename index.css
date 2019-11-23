@@ -6,7 +6,7 @@
   --unicon-font-color: #000000;
 }
 
-body {
+* {
 	margin: 0;
 	padding: 0;
 	font-family: 'Muli', sans-serif;
@@ -15,10 +15,6 @@ body {
 .grid {
 	display: grid;
 }
-
-/*    GRID 
-	  \  /  
-	   \/      */
 
 /* START of: grid-area definition */
 header {
@@ -87,6 +83,110 @@ footer {
 }
 /* END of: grid definiton MOBILE*/
 
+.text-center {
+	text-align: center;
+}
+.m_title {
+	font-size: 38px;
+	font-weight: 900;
+	color: var(--unicon-pink);
+	margin-top: 65px;
+}
 
+.m_titlesubTitle {
+	font-size: 14px;
+	font-weight: 900;
+	color: var(--unicon-pink);
+}
+
+.m_dateLocation {
+	font-size: 14px;
+	font-weight: 600;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.m_signUp {
+	font-size: 20px;
+	font-weight: 800;
+	background-color: var(--unicon-pink);
+	color: white;
+	border-radius: 5px;
+	border: none;
+	padding: 9px 25px;
+}
+
+
+.m_videoHeader {
+	font-size: 16px;
+	font-weight: 900;
+	margin-bottom: 10px;
+}
+
+.m_videoSubTitles {
+	font-size: 12px;
+	font-weight: 600;
+	margin-bottom: 55px;
+}
+
+
+
+.m_textSignUp {
+	font-size: 14px;
+	font-weight: 600;
+	margin-bottom: 25px;
+}
+
+.m_textInfoP {
+	margin: 10px 18px;
+	font-size: 12px;	
+}
+
+.m_font12px {
+	font-size: 12px;
+}
+
+
+ .accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+
+footer {
+	background-color: var(--unicon-lightblue);
+}
 
 
