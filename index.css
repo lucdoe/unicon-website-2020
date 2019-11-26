@@ -256,6 +256,35 @@ footer {
 		visibility: hidden;
 	}
 
+	.d_imageDivRight {
+		visibility: hidden;
+		overflow: hidden;
+	}
+
+	.d_imageDivLeft {
+		visibility: hidden;
+	}
+	.d_imageDivRight img {
+		width: 0;
+		height: 0;
+	}
+	.d_imageDivLeft img {
+		width: 0;
+		height: 0;
+	}
+	.d_speakerWrapper {
+		visibility: hidden;
+	}
+	.d_speakerImg {
+		width: 0;
+	}
+	#speaker_illustration {
+		width: 0;
+	}
+
+	
+
+
 }
 
 /* START of Desktop classes */
@@ -337,7 +366,7 @@ footer {
 			/*5-8*/
 			repeat(4, 450px)
 			/*9*/
-			550px
+			1000px
 			/*10*/
 			auto
 			/*11*/
@@ -513,6 +542,10 @@ footer {
 		overflow: hidden;
 		float: right;
 	}
+	.d_imageDivRight img {
+		width: 500px;
+		height: 400px;
+	}
 
 	.d_imageDivLeft {
 		margin-left: 180px;
@@ -521,12 +554,80 @@ footer {
 		overflow: hidden;
 		float: left;
 	}
+	.d_imageDivLeft img {
+		width: 500px;
+		height: 400px;
+	}
 
 	.d_textInfoQuote {
 		margin-top: 50px;
 	}
+
+	.d_speakerImg {
+		border-radius: 50%;
+		width: 200px;
+		height: 200px;
+		overflow: hidden;
+	}
+
+	#speaker_div {
+		float:left;
+	}
+	.d_speakerName {
+		font-size: 24px;;
+	}
+
+	.d_speakerPosition {
+		font-size: 16px;
+	}
+	.d_speaker {
+		margin: 20px;
+		margin-top: 50px;
+		float:left;
+	}
+	/* Position speakers on page */
+	#speaker1 {
+		margin-left: 180px;
+	}
+
+	#speaker4 {
+		margin-left: 180px;
+		clear: both;
+	}
+	#speaker_illustration_div {
+		overflow: hidden;
+		float: right;
+		margin-right: 100px;
+	}
+	#speaker_illustration {
+		width: 400px;
+		height: 450px;
+	}
 	.d_font12px {
 		font-size: 12px;
 	}
+	.d_agendaHeader {
+		margin-left: 180px;
+		margin-bottom: 50px;
+	}
+	.d_agendaDay {
+		float: left;
+		margin-left: 180px;
+	}
 
+	.d_agendaTable {
+		margin-top: 30px;
+	}
+	.d_agendaTable tr {
+		height: 40px;
+	}
+	.d_agendaTable td {
+		width: 150px;
+	}
+
+	.d_studentsHeader {
+		text-align: left;
+		margin-left: 180px;
+		margin-top: 50px;
+	}
 }
