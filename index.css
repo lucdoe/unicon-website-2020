@@ -171,8 +171,6 @@ footer {
 		"faq faq faq faq"
 		/*17*/
 		"footer footer footer footer";
-
-		justify-items: stretch;
 }
 
 /* END of: grid definiton MOBILE*/
@@ -180,7 +178,15 @@ header {
 	display: flex;
 }
 
-/*.m_title {
+.agenda__container {
+	display: none;
+}
+
+#speech_img {
+	display: none;
+}
+
+.m_title {
 	font-size: 38px;
 	font-weight: 900;
 	color: var(--unicon-pink);
@@ -239,6 +245,9 @@ header {
 	margin: 10px 18px;
 	font-size: 12px;
 }
+.d_textInfoQuote {
+	display: none;
+}
 
 .m_font12px {
 	font-size: 12px;
@@ -286,7 +295,7 @@ header {
 
 footer {
 	background-color: var(--unicon-lightblue);
-}*/
+}
 
 /* Hide desktop elements with different content on mobile */
 @media screen and (max-width: 900px) {
