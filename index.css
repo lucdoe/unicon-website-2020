@@ -454,7 +454,7 @@ footer {
 			/* 15. partnerText*/
 			160px
 			/* 16. partnerImg*/
-			385px
+			auto
 			/* Divider 4 */
 			41px
 			/* 17. faq*/
@@ -500,9 +500,9 @@ footer {
 			/* Divider */
 			"path4 path4 path4 path4 path4 path4 path4 path4 path4 path4 path4 path4"
 			/*15*/
-			"partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText"
+			"partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerIllu partnerIllu partnerIllu partnerIllu"
 			/*16*/
-			"partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg"
+			"partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerIllu partnerIllu partnerIllu partnerIllu"
 			/* Divider */
 			"path5 path5 path5 path5 path5 path5 path5 path5 path5 path5 path5 path5"
 			/*17*/
@@ -524,9 +524,78 @@ footer {
 		"speaker4 speaker5 speaker6 speakerIllu"		
 		;
 	}
+	#partner1{
+		grid-area: partner1;
+	}
+	#partner2{
+		grid-area: partner2;
+	}
+	#partner3{
+		grid-area: partner3;
+	}
+	#partner4{
+		grid-area: partner4;
+	}
+	#partner5{
+		grid-area: partner5;
+	}
+	#partner6{
+		grid-area: partner6;
+	}
+	#partner7{
+		grid-area: partner7;
+	}
+	#partner8{
+		grid-area: partner8;
+	}
+	#partner9{
+		grid-area: partner9;
+	}
+	#partner10{
+		grid-area: partner10;
+	}
+	#partner11{
+		grid-area: partner11;
+	}
+	#partner12{
+		grid-area: partner12;
+	}
+	#partner-container {
+		display: grid;
+		grid-template-columns: repeat(4, 25%);
+		grid-template-rows: 
+		150px
+		150px
+		150px;
+		grid-template-areas: 
+		"partner1 partner2 partner3 partner4"
+		"partner5 partner6 partner7 partner8"
+		"partner9 partner10 partner11 partner12"		
+		;
+	}
+	#partner-illu {
+		grid-area: partnerIllu;
+	}
+	.d_partner-image{
+		width: 15vw;
+	}
 	/* Disable mobile classes */
 	/* display: none; */
-
+	.d_learn-more-btn {
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background-color: var(--unicon-pink);
+		float: right;
+		color: white;
+		font-size: 30px;
+		font-weight: 900;
+	}
+	.d_learn-more-btn-text{
+		margin-top: 12.5px;
+		margin-right: 15px;
+		float:right;
+	}
 	.m_titlesubTitle {
 		display: none;
 	}
@@ -779,7 +848,7 @@ footer {
 		width: 100vw;
 		margin-left: -10vw;
 		margin-right: -10vw;
-		background-image: url(./assets/agenda-section-background.svg);
+		background-image: url(./assets/desktop/agenda-section-background.svg);
 		background-repeat: no-repeat;
 	}
 	.d_agendaHeader {
