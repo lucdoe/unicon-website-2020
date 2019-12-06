@@ -36,6 +36,7 @@ header {
 .signup_text__container {
 	grid-area: signupText;
 }
+
 .signup_img__container {
 	grid-area: signupImg;
 }
@@ -43,6 +44,7 @@ header {
 .speech_text__container {
 	grid-area: speechText;
 }
+
 .speech_img__container {
 	grid-area: speechImg;
 }
@@ -50,6 +52,7 @@ header {
 .student_text__container {
 	grid-area: studentText;
 }
+
 .student_img__container {
 	grid-area: studentImg;
 }
@@ -57,6 +60,7 @@ header {
 .challenge_text__container {
 	grid-area: challengeText;
 }
+
 .challenge_img__container {
 	grid-area: challengeImg;
 }
@@ -64,6 +68,7 @@ header {
 .workshop_text__container {
 	grid-area: workshpText;
 }
+
 .workshop_img__container {
 	grid-area: workshpImg;
 }
@@ -71,6 +76,7 @@ header {
 .speaker_text__container {
 	grid-area: speakerText;
 }
+
 .speaker_img__container {
 	grid-area: speakerImg;
 }
@@ -82,6 +88,7 @@ header {
 .university_text__container {
 	grid-area: universText;
 }
+
 .university_img__container {
 	grid-area: universImg;
 }
@@ -89,6 +96,7 @@ header {
 .partner_text__container {
 	grid-area: partnerText;
 }
+
 .partner_img__container {
 	grid-area: partnerImg;
 }
@@ -312,42 +320,72 @@ footer {
 	.d_imageDivLeft {
 		visibility: hidden;
 	}
+
 	.d_imageDivRight img {
 		width: 0;
 		height: 0;
 	}
+
 	.d_imageDivLeft img {
 		width: 0;
 		height: 0;
 	}
+
 	.d_speakerWrapper {
-		visibility: hidden;
+		display: none;
 	}
+
 	.d_speakerImg {
 		width: 0;
 	}
+
 	#speaker_illustration {
 		width: 0;
 	}
 
-	
+
 
 
 }
 
 /* START of Desktop classes */
 @media screen and (min-width: 900px) {
+	#speaker1 {
+		grid-area: speaker1;
+	}
+	#speaker2 {
+		grid-area: speaker2;
+	}
+	#speaker3 {
+		grid-area: speaker3;
+	}
+	#speaker4 {
+		grid-area: speaker4;
+	}
+	#speaker5 {
+		grid-area: speaker5;
+	}
+	#speaker6 {
+		grid-area: speaker6;
+	}
+
+	#speaker_illustration_div {
+		grid-area: speakerIllu;
+
+	}
 
 	.grid {
+		display: grid;
+		grid-template-columns: repeat(12, 8.33vw);
 		grid-template-rows:
 			/* 1. navbar*/
 			72px
 			/* 2. startText*/
 			367px
 			/* 3. startImg*/
-			416px
+			auto
 			/* 4. video*/
-			730px
+			auto
 			/* 5. signup*/
 			240px
 			/* 6. - 9. sppech, students, challenge, workshp, */
@@ -372,56 +410,125 @@ footer {
 			342px;
 
 		grid-template-areas:
-		/*1*/
-		"navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar"
-		/*2*/
-		"startText startText startText startText startText startText startText startText startText startText startText startText"
-		/*3*/
-		"startImg startImg startImg startImg startImg startImg startImg startImg startImg startImg startImg startImg"
-		/*4*/
-		"video video video video video video video video video video video video"
-		/*5*/
-		"signupImg signupImg signupImg signupImg signupImg signupImg signupText signupText signupText signupText signupText signupText"
-		/*6*/
-		"speechImg speechImg speechImg speechImg speechImg speechImg speechText speechText speechText speechText speechText speechText"
-		/*7*/
-		"studentText studentText studentText studentText studentText studentText studentImg studentImg studentImg studentImg studentImg studentImg"
-		/*8*/
-		"challengeImg challengeImg challengeImg challengeImg challengeImg challengeImg challengeText challengeText challengeText challengeText challengeText challengeText"
-		/*9*/
-		"workshpText workshpText workshpText workshpText workshpText workshpText workshpImg workshpImg workshpImg workshpImg workshpImg workshpImg"
-		/*10*/
-		"speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText"
-		/*11*/
-		"speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg"
-		/*12*/
-		"agenda agenda agenda agneda agenda agenda agenda agneda agenda agenda agenda agneda"
-		/*13*/
-		"universText universText universText universText universText universText universText universText universText universText universText universText"
-		/*14*/
-		"universImg universImg universImg universImg universImg universImg universImg universImg universImg universImg universImg universImg"
-		/*15*/
-		"partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText"
-		/*16*/
-		"partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg"
-		/*17*/
-		"faq faq faq faq faq faq faq faq faq faq faq faq"
-		/*18*/
-		"footer footer footer footer footer footer footer footer footer footer footer footer";
+			/* 1 */
+			'navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar'
+			/* 2 */
+			"startText startText startText startText startText startText startText startText startText startText startText startText"
+			/*3 */
+			"startImg startImg startImg startImg startImg startImg startImg startImg startImg startImg startImg startImg"
+			/*4 */
+			"video video video video video video video video video video video video"
+			/*5*/
+			"signupImg signupImg signupImg signupImg signupImg signupImg signupText signupText signupText signupText signupText signupText"
+			/*6*/
+			"speechImg speechImg speechImg speechImg speechImg speechImg speechText speechText speechText speechText speechText speechText"
+			/*7*/
+			"studentText studentText studentText studentText studentText studentText studentImg studentImg studentImg studentImg studentImg studentImg"
+			/*8*/
+			"challengeImg challengeImg challengeImg challengeImg challengeImg challengeImg challengeText challengeText challengeText challengeText challengeText challengeText"
+			/*9*/
+			"workshpText workshpText workshpText workshpText workshpText workshpText workshpImg workshpImg workshpImg workshpImg workshpImg workshpImg"
+			/*10*/
+			"speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText"
+			/*11*/
+			"speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg "
+			/*12*/
+			"agenda agenda agenda agenda agenda agenda agenda agenda agenda agenda agenda agenda"
+			/*13
+			"universText universText universText universText universText universText universText universText universText universText universText universText"
+			/*14
+			"universImg universImg universImg universImg universImg universImg universImg universImg universImg universImg universImg universImg"
+			/*15
+			"partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText"
+			/*16
+			"partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg"
+			/*17
+			"faq faq faq faq faq faq faq faq faq faq faq faq"
+			/*18
+			"footer footer footer footer footer footer footer footer footer footer footer footer"*/
+		;
+	}
+	.speaker-grid {
+		display: grid;
+		grid-template-columns: repeat(4, 25%);
+		grid-template-rows: 
+		280px
+		280px;
+		grid-template-areas: 
+		"speaker1 speaker2 speaker3 speakerIllu"
+		"speaker4 speaker5 speaker6 speakerIllu"		
+		;
+	}
+	/* Disable mobile classes */
+	/* display: none; */
+	.m_title {
+		display: none;
+	}
+
+	.m_titlesubTitle {
+		display: none;
+	}
+
+	.m_dateLocation {
+		display: none;
+
+	}
+
+	#m_start_img {
+		display: none;
+	}
+
+	.m_signUp {
+		display: none;
+	}
+
+
+	.m_videoHeader {
+		display: none;
+	}
+
+	.m_videoSubTitles {
+		display: none;
+	}
+
+
+
+	.m_textSignUp {
+		display: none;
+		font-size: 14px;
+		font-weight: 600;
+		margin-bottom: 25px;
+	}
+
+	.m_textInfoP {
+		display: none;
+		margin: 10px 18px;
+		font-size: 12px;
+	}
+
+	.m_font12px {
+		display: none;
+		font-size: 12px;
+	}
+
+
+	/* Define desktop classes */
+	#d_start_img {
+		width: 100vw;
 	}
 
 	.d_title {
-		text-align: left;
+		grid-column-start: 1;
+		grid-column-end: 6;
 		font-size: 100px;
 		font-weight: 900;
 		color: var(--unicon-pink);
 		margin-top: 65px;
+		text-align: left;
+
 		margin-left: 75px;
 	}
 
-	.m_titlesubTitle {
-		visibility: hidden;
-	}
 
 	.d_titlesubTitle {
 		text-align: left;
@@ -458,9 +565,7 @@ footer {
 		padding: 9px 25px;
 	}
 
-	#signup-btn-section {
-		margin-left: 40vw;
-	}
+
 
 	.d_videoHeader {
 		text-align: left;
@@ -499,11 +604,15 @@ footer {
 		text-align: left;
 		font-weight: 500;
 		margin-bottom: 25px;
-		margin-top: 100px;
-		margin-left: 50vw;
+
 		margin-right: 10vw;
 	}
 
+	.d_sectionImg {
+		max-width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
 	h2 {
 		font-size: 35px;
 	}
@@ -516,6 +625,7 @@ footer {
 		margin-left: 10%;
 		text-align: right;
 	}
+
 	.d_textInfoWrapperRight {
 		overflow: hidden;
 		margin-top: 50px;
@@ -539,6 +649,7 @@ footer {
 		overflow: hidden;
 		float: right;
 	}
+
 	.d_imageDivRight img {
 		width: 500px;
 		height: 400px;
@@ -551,6 +662,7 @@ footer {
 		overflow: hidden;
 		float: left;
 	}
+
 	.d_imageDivLeft img {
 		width: 500px;
 		height: 400px;
@@ -567,46 +679,38 @@ footer {
 		overflow: hidden;
 	}
 
-	#speaker_div {
-		float:left;
-	}
+
+
 	.d_speakerName {
-		font-size: 24px;;
+		font-size: 24px;
+		;
 	}
 
 	.d_speakerPosition {
 		font-size: 16px;
 	}
+
 	.d_speaker {
 		margin: 20px;
-		margin-top: 50px;
-		float:left;
-	}
-	/* Position speakers on page */
-	#speaker1 {
-		margin-left: 180px;
+
+
 	}
 
-	#speaker4 {
-		margin-left: 180px;
-		clear: both;
-	}
-	#speaker_illustration_div {
-		overflow: hidden;
-		float: right;
-		margin-right: 100px;
-	}
+
 	#speaker_illustration {
-		width: 400px;
+		width: 200px;
 		height: 450px;
 	}
+
 	.d_font12px {
 		font-size: 12px;
 	}
+
 	.d_agendaHeader {
 		margin-left: 180px;
 		margin-bottom: 50px;
 	}
+
 	.d_agendaDay {
 		float: left;
 		margin-left: 180px;
@@ -615,9 +719,11 @@ footer {
 	.d_agendaTable {
 		margin-top: 30px;
 	}
+
 	.d_agendaTable tr {
 		height: 40px;
 	}
+
 	.d_agendaTable td {
 		width: 150px;
 	}
