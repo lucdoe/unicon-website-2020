@@ -189,6 +189,12 @@ header {
 	display: flex;
 }
 
+.logo {
+	width: 96px;
+	height: 38px;
+	float: left;
+}
+
 #m_start_img {
 	width: 380px;
 }
@@ -354,6 +360,9 @@ footer {
 
 	#speaker_illustration {
 		width: 0;
+	}
+	.d_sectionImg {
+		display: none;
 	}
 }
 
