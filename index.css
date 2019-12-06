@@ -21,48 +21,76 @@ header {
 	grid-area: navbar;
 }
 
-.start__container {
-	grid-area: start;
+.start_text__container {
+	grid-area: startText;
+}
+
+.start_img__container {
+	grid-area: startImg;
 }
 
 .video__container {
 	grid-area: video;
 }
 
-.signup__container {
-	grid-area: signup;
+.signup_text__container {
+	grid-area: signupText;
+}
+.signup_img__container {
+	grid-area: signupImg;
 }
 
-.speech__container {
-	grid-area: speech;
+.speech_text__container {
+	grid-area: speechText;
+}
+.speech_img__container {
+	grid-area: speechImg;
 }
 
-.student__container {
-	grid-area: student;
+.student_text__container {
+	grid-area: studentText;
+}
+.student_img__container {
+	grid-area: studentImg;
 }
 
-.challenge__container {
-	grid-area: challenge;
+.challenge_text__container {
+	grid-area: challengeText;
+}
+.challenge_img__container {
+	grid-area: challengeImg;
 }
 
-.workshop__container {
-	grid-area: workshp;
+.workshop_text__container {
+	grid-area: workshpText;
+}
+.workshop_img__container {
+	grid-area: workshpImg;
 }
 
-.speaker__container {
-	grid-area: speaker;
+.speaker_text__container {
+	grid-area: speakerText;
+}
+.speaker_img__container {
+	grid-area: speakerImg;
 }
 
 .agenda__container {
 	grid-area: agenda;
 }
 
-.university__container {
-	grid-area: univers;
+.university_text__container {
+	grid-area: universText;
+}
+.university_img__container {
+	grid-area: universImg;
 }
 
-.partner__container {
-	grid-area: partner;
+.partner_text__container {
+	grid-area: partnerText;
+}
+.partner_img__container {
+	grid-area: partnerImg;
 }
 
 .faq__container {
@@ -79,60 +107,76 @@ footer {
 .grid {
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows:
-		/*1*/
-		60px
-		/*2*/
-		665px
-		/*3*/
-		470px
-		/*4*/
+		/* 1. nav*/
+		50px
+		/*2. startText*/
+		335px
+		/* 3. startImg*/
+		277px
+		/* 4. video*/
+		300px
+		/* 5. signupText*/
+		135px
+		/* 6.- 9. sppech, students, challenge, workshop*/
+		repeat(4, 120px)
+		/* 10. spaekerText*/
+		140px
+		/* 11. speakerImg*/
+		326px
+		/* 12. universText*/
+		100px
+		/* 13. universImg*/
+		116px
+		/* 14. partnerText*/
 		190px
-		/*5-8*/
-		repeat(4, 190px)
-		/*9*/
-		550px
-		/*10*/
-		auto
-		/*11*/
-		340px
-		/*12*/
-		420px
-		/*13*/
-		590px
-		/*14*/
-		150px;
+		/* 15. partnerImg*/
+		100px
+		/* 16. FAQ*/
+		444px
+		/* 17. footer*/
+		144px;
+
 	grid-template-areas:
 		/*1*/
 		"navbar navbar navbar navbar"
 		/*2*/
-		"start start start start"
+		"startText startText startText startText"
 		/*3*/
-		"video video video video"
+		"startImg startImg startImg startImg"
 		/*4*/
-		"signup signup signup signup"
+		"video video video video"
 		/*5*/
-		"speech speech speech speech"
+		"signupText signupText signupText signupText"
 		/*6*/
-		"student student student student"
+		"speechText speechText speechText speechText"
 		/*7*/
-		"challenge challenge challenge challenge"
+		"studentText studentText studentText studentText"
 		/*8*/
-		"workshp workshp workshp workshp"
+		"challengeText challengeText challengeText challengeText"
 		/*9*/
-		"speaker speaker speaker speaker"
+		"workshpText workshpText workshpText workshpText"
 		/*10*/
-		"agenda agenda agenda agenda"
+		"speakerText speakerText speakerText speakerText"
 		/*11*/
-		"univers univers univers univers"
+		"speakerImg speakerImg speakerImg speakerImg"
 		/*12*/
-		"partner partner partner partner"
+		"universText universText universText universText"
 		/*13*/
-		"faq faq faq faq"
+		"universImg universImg universImg universImg"
 		/*14*/
+		"partnerText partnerText partnerText partnerText"
+		/*15*/
+		"partnerImg partnerImg partnerImg partnerImg"
+		/*16*/
+		"faq faq faq faq"
+		/*17*/
 		"footer footer footer footer";
 }
 
 /* END of: grid definiton MOBILE*/
+header {
+	display: flex;
+}
 
 .text-center {
 	text-align: center;
@@ -156,6 +200,10 @@ footer {
 	font-weight: 600;
 	margin-top: 40px;
 	margin-bottom: 40px;
+}
+
+#m_start_img {
+	height: 277px;
 }
 
 .m_signUp {
@@ -290,123 +338,76 @@ footer {
 /* START of Desktop classes */
 @media screen and (min-width: 900px) {
 
-	/* Optimise grid for desktop */
-	/* START of: grid-area definition */
-	header {
-		grid-area: navbar;
-	}
-
-	.start__container {
-		grid-area: start;
-	}
-
-	.video__container {
-		grid-area: video;
-	}
-
-	.signup__container {
-		grid-area: signup;
-	}
-	.speech__container {
-		grid-area: speech;
-	}
-	.speech_text__container {
-		grid-area: speech_text;
-	}
-
-	.speech_img__container {
-		grid-area: speech_img;
-	}
-	.student__container {
-		grid-area: student;
-	}
-
-	.challenge__container {
-		grid-area: challenge;
-	}
-
-	.workshop__container {
-		grid-area: workshp;
-	}
-
-	.speaker__container {
-		grid-area: speaker;
-	}
-
-	.agenda__container {
-		grid-area: agenda;
-	}
-
-	.university__container {
-		grid-area: univers;
-	}
-
-	.partner__container {
-		grid-area: partner;
-	}
-
-	.faq__container {
-		grid-area: faq;
-	}
-
-	footer {
-		grid-area: footer;
-	}
-
 	.grid {
 		grid-template-rows:
-			/*1*/
-			60px
-			/*2*/
-			930px
-			/*3*/
-			1000px
-			/*4*/
-			400px
-			/*5-8*/
-			repeat(4, 450px)
-			/*9*/
-			1000px
-			/*10*/
-			auto
-			/*11*/
-			340px
-			/*12*/
-			420px
-			/*13*/
-			590px
-			/*14*/
-			150px;
+			/* 1. navbar*/
+			72px
+			/* 2. startText*/
+			367px
+			/* 3. startImg*/
+			416px
+			/* 4. video*/
+			730px
+			/* 5. signup*/
+			240px
+			/* 6. - 9. sppech, students, challenge, workshp, */
+			repeat(4, 380px)
+			/* 10. speakerText*/
+			120px
+			/* 11. speakerImg*/
+			575px
+			/* 12. agenda*/
+			684px
+			/* 13. universText*/
+			90px
+			/* 14. universImg*/
+			329px
+			/* 15. partnerText*/
+			160px
+			/* 16. partnerImg*/
+			385px
+			/* 17. faq*/
+			739px
+			/* 18. footer*/
+			342px;
+
 		grid-template-areas:
-			/*1*/
-			"navbar navbar navbar navbar"
-			/*2*/
-			"start start start start"
-			/*3*/
-			"video video video video"
-			/*4*/
-			"signup signup signup signup"
-			/*5*/
-			"speech speech speech speech"
-			/*"speech_img speech_img speech_text speech_text"*/
-			/*6*/
-			"student student student student"
-			/*7*/
-			"challenge challenge challenge challenge"
-			/*8*/
-			"workshp workshp workshp workshp"
-			/*9*/
-			"speaker speaker speaker speaker"
-			/*10*/
-			"agenda agenda agenda agenda"
-			/*11*/
-			"univers univers univers univers"
-			/*12*/
-			"partner partner partner partner"
-			/*13*/
-			"faq faq faq faq"
-			/*14*/
-			"footer footer footer footer";
+		/*1*/
+		"navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar"
+		/*2*/
+		"startText startText startText startText startText startText startText startText startText startText startText startText"
+		/*3*/
+		"startImg startImg startImg startImg startImg startImg startImg startImg startImg startImg startImg startImg"
+		/*4*/
+		"video video video video video video video video video video video video"
+		/*5*/
+		"signupImg signupImg signupImg signupImg signupImg signupImg signupText signupText signupText signupText signupText signupText"
+		/*6*/
+		"speechImg speechImg speechImg speechImg speechImg speechImg speechText speechText speechText speechText speechText speechText"
+		/*7*/
+		"studentText studentText studentText studentText studentText studentText studentImg studentImg studentImg studentImg studentImg studentImg"
+		/*8*/
+		"challengeImg challengeImg challengeImg challengeImg challengeImg challengeImg challengeText challengeText challengeText challengeText challengeText challengeText"
+		/*9*/
+		"workshpText workshpText workshpText workshpText workshpText workshpText workshpImg workshpImg workshpImg workshpImg workshpImg workshpImg"
+		/*10*/
+		"speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText"
+		/*11*/
+		"speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg"
+		/*12*/
+		"agenda agenda agenda agneda agenda agenda agenda agneda agenda agenda agenda agneda"
+		/*13*/
+		"universText universText universText universText universText universText universText universText universText universText universText universText"
+		/*14*/
+		"universImg universImg universImg universImg universImg universImg universImg universImg universImg universImg universImg universImg"
+		/*15*/
+		"partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText"
+		/*16*/
+		"partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg"
+		/*17*/
+		"faq faq faq faq faq faq faq faq faq faq faq faq"
+		/*18*/
+		"footer footer footer footer footer footer footer footer footer footer footer footer";
 	}
 
 	.d_title {
@@ -477,8 +478,6 @@ footer {
 		margin-bottom: 55px;
 	}
 
-
-
 	.d_iframeContainer {
 		margin-left: 10%;
 		margin-right: 10%;
@@ -516,7 +515,6 @@ footer {
 		margin-top: 50px;
 		margin-left: 10%;
 		text-align: right;
-		
 	}
 	.d_textInfoWrapperRight {
 		overflow: hidden;
@@ -525,7 +523,6 @@ footer {
 		max-width: 30%;
 		margin-right: 10%;
 		float: right;
-
 	}
 
 	.d_textInfoP {
