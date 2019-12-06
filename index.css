@@ -714,6 +714,7 @@ footer {
 		font-size: 12px;
 	}
 	.agenda__container {
+		text-align: left;
 		display: grid;
 		grid-template-columns: repeat(3, 33%);
 		grid-template-rows: 
@@ -739,8 +740,7 @@ footer {
 	}
 	.d_agendaHeader {
 		grid-area: agenda_header;
-		margin-left: 180px;
-		margin-bottom: 50px;
+		text-align: left;
 	}
 	.agenda-none {
 		grid-area: agenda_none;
@@ -786,5 +786,12 @@ footer {
 		text-align: left;
 		margin-left: 180px;
 		margin-top: 50px;
+	}
+	.university_img__container{
+		display: grid;
+		grid-template-columns: 16,66% 16,66% 16,66% 16,66% 16,66% 16,66%;
+		grid-template-rows: 
+		200px
+		200px;
 	}
 }
