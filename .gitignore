@@ -1,1 +1,5 @@
 unicon-website.code-workspace
+.DS_Store
+.vscode/
+assets/.DS_Store
+test-grid.html
