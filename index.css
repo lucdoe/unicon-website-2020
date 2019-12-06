@@ -17,9 +17,6 @@
 }
 
 /* START of: grid-area definition */
-/*header {
-	grid-area: navbar;
-}*/
 
 .start_text__container {
 	grid-area: startText;
@@ -33,6 +30,7 @@
 .video_text__container {
 	grid-area: videoT;
 }
+
 .video__container {
 	grid-area: video;
 }
@@ -119,8 +117,6 @@ footer {
 .grid {
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows:
-/*		 1. nav
-		50px*/
 		/*2. startText*/
 		400px
 		/* 3. startImg*/
@@ -151,8 +147,6 @@ footer {
 		144px;
 
 	grid-template-areas:
-		/*1*/
-		/*"navbar navbar navbar navbar"*/
 		/*2*/
 		"startText startText startText startText"
 		/*3*/
@@ -188,9 +182,9 @@ footer {
 		/*17*/
 		"footer footer footer footer";
 
-		text-align: center;
-		justify-items: center;
-	}
+	text-align: center;
+	justify-items: center;
+}
 
 
 /* END of: grid definiton MOBILE*/
@@ -202,13 +196,15 @@ header {
 	align-self: center;
 	padding-top: 50px;
 }
+
 .video_text__container {
 	text-align: center;
 	justify-self: center;
 	padding-top: 50px;
 }
 
-.m_videoHeader, .m_videoSubTitles {
+.m_videoHeader,
+.m_videoSubTitles {
 	width: 195px;
 }
 
@@ -260,6 +256,12 @@ header {
 	padding: 9px 25px;
 }
 
+.university-img,
+.divider,
+.university-name {
+	display: none;
+}
+
 
 .m_videoHeader {
 	font-size: 16px;
@@ -274,7 +276,6 @@ header {
 }
 
 
-
 .m_textSignUp {
 	font-size: 14px;
 	font-weight: 600;
@@ -287,51 +288,13 @@ header {
 	font-size: 12px;
 	width: 280px;
 }
+
 .d_textInfoQuote {
 	display: none;
 }
 
 .m_font12px {
 	font-size: 12px;
-}
-
-
-.accordion {
-	background-color: #eee;
-	color: #444;
-	cursor: pointer;
-	padding: 18px;
-	width: 100%;
-	border: none;
-	text-align: left;
-	outline: none;
-	font-size: 15px;
-	transition: 0.4s;
-}
-
-.active,
-.accordion:hover {
-	background-color: #ccc;
-}
-
-.accordion:after {
-	content: '\002B';
-	color: #777;
-	font-weight: bold;
-	float: right;
-	margin-left: 5px;
-}
-
-.active:after {
-	content: "\2212";
-}
-
-.panel {
-	padding: 0 18px;
-	background-color: white;
-	max-height: 0;
-	overflow: hidden;
-	transition: max-height 0.2s ease-out;
 }
 
 
@@ -344,6 +307,7 @@ footer {
 	.agenda__container {
 		display: none;
 	}
+
 	.d_titlesubTitle {
 		display: none;
 	}
@@ -386,6 +350,7 @@ footer {
 	#speaker_illustration {
 		width: 0;
 	}
+
 	.d_sectionImg {
 		display: none;
 	}
@@ -393,46 +358,57 @@ footer {
 
 /* START of Desktop classes */
 @media screen and (min-width: 900px) {
-	#page-wrapper{
+	#page-wrapper {
 		margin-left: 10%;
 		margin-right: 10%;
 	}
 
-	#path1-container{
+	#path1-container {
 		grid-area: path1;
 	}
-	#path2-container{
+
+	#path2-container {
 		grid-area: path2;
 	}
-	#path3-container{
+
+	#path3-container {
 		grid-area: path3;
 	}
-	#path4-container{
+
+	#path4-container {
 		grid-area: path4;
 	}
-	#path5-container{
+
+	#path5-container {
 		grid-area: path5;
 	}
+
 	.divider {
-		width:100vw;
+		width: 100vw;
 		margin-left: -10%;
 		margin-right: -10%;
 	}
+
 	#speaker1 {
 		grid-area: speaker1;
 	}
+
 	#speaker2 {
 		grid-area: speaker2;
 	}
+
 	#speaker3 {
 		grid-area: speaker3;
 	}
+
 	#speaker4 {
 		grid-area: speaker4;
 	}
+
 	#speaker5 {
 		grid-area: speaker5;
 	}
+
 	#speaker6 {
 		grid-area: speaker6;
 	}
@@ -446,8 +422,6 @@ footer {
 		display: grid;
 		grid-template-columns: repeat(12, 6.66vw);
 		grid-template-rows:
-			/* 1. navbar*/
-			72px
 			/* 2. startText*/
 			367px
 			/* 3. startImg*/
@@ -488,8 +462,6 @@ footer {
 			342px;
 
 		grid-template-areas:
-			/* 1 */
-			/*'navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar'*/
 			/* 2 */
 			"startText startText startText startText startText startText startText startText startText startText startText startText"
 			/*3 */
@@ -522,43 +494,37 @@ footer {
 			"universText universText universText universText universText universText universText universText universText universText universText universText"
 			/*14*/
 			"universImg universImg universImg universImg universImg universImg universImg universImg universImg universImg universImg universImg"
-<<<<<<< HEAD
-=======
 			/* Divider */
 			"path4 path4 path4 path4 path4 path4 path4 path4 path4 path4 path4 path4"
->>>>>>> e1820c7b084072558a8758d11ca9a68e1dbf9855
 			/*15*/
 			"partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText"
 			/*16*/
 			"partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg"
-<<<<<<< HEAD
 			/*17*/
 			"faq faq faq faq faq faq faq faq faq faq faq faq"
 			/*18*/
-			"footer footer footer footer footer footer footer footer footer footer footer footer";
-=======
+			"footer footer footer footer footer footer footer footer footer footer footer footer"
 			/* Divider */
 			"path5 path5 path5 path5 path5 path5 path5 path5 path5 path5 path5 path5"
 			/*17*/
 			"faq faq faq faq faq faq faq faq faq faq faq faq"
 			/*18*/
-			"footer footer footer footer footer footer footer footer footer footer footer footer"
-		;
+			"footer footer footer footer footer footer footer footer footer footer footer footer";
 		justify-items: left;
 		text-align: left;
->>>>>>> e1820c7b084072558a8758d11ca9a68e1dbf9855
 	}
+
 	.speaker-grid {
 		display: grid;
 		grid-template-columns: repeat(4, 25%);
-		grid-template-rows: 
-		280px
-		280px;
-		grid-template-areas: 
-		"speaker1 speaker2 speaker3 speakerIllu"
-		"speaker4 speaker5 speaker6 speakerIllu"		
+		grid-template-rows:
+			280px 280px;
+		grid-template-areas:
+			"speaker1 speaker2 speaker3 speakerIllu"
+			"speaker4 speaker5 speaker6 speakerIllu"
 		;
 	}
+
 	/* Disable mobile classes */
 	/* display: none; */
 
@@ -568,17 +534,12 @@ footer {
 
 	.m_dateLocation {
 		display: none;
-
 	}
 
 	#m_start_img {
 		display: none;
 	}
 
-
-
-
-	
 
 	.m_textInfoP {
 		margin: 10px 18px;
@@ -690,6 +651,7 @@ footer {
 		margin-left: 10%;
 		margin-right: 10%;
 	}
+
 	h2 {
 		font-size: 35px;
 	}
@@ -756,11 +718,8 @@ footer {
 		overflow: hidden;
 	}
 
-
-
 	.d_speakerName {
 		font-size: 24px;
-		;
 	}
 
 	.d_speakerPosition {
@@ -769,8 +728,6 @@ footer {
 
 	.d_speaker {
 		margin: 20px;
-
-
 	}
 
 
@@ -783,33 +740,28 @@ footer {
 	.d_font12px {
 		font-size: 12px;
 	}
-	#agenda_background{
-		margin-left:10vw;
+
+	#agenda_background {
+		margin-left: 10vw;
 		margin-right: 10vw;
 		text-align: left;
 		display: grid;
 		grid-template-columns: repeat(3, 33%);
-		grid-template-rows: 
-		auto
-		auto
-		auto
-		auto
-		auto
-		auto
-		auto;
-		grid-template-areas: 
-		"agenda_header agenda_header agenda_header"
-		
-		"agenda_none1 agenda_none2 agenda_d3"
-		
-		"agenda_none1 agenda_d2 agenda_d3"
-		
-		"agenda_d1 agenda_d2 agenda_d3"
-		
-		"agenda_none3 agenda_d2 agenda_d3"
-		"agenda_none3 agenda_none4 agenda_d3"
-		;
+		grid-template-rows:
+			auto auto auto auto auto auto auto;
+		grid-template-areas:
+			"agenda_header agenda_header agenda_header"
+
+			"agenda_none1 agenda_none2 agenda_d3"
+
+			"agenda_none1 agenda_d2 agenda_d3"
+
+			"agenda_d1 agenda_d2 agenda_d3"
+
+			"agenda_none3 agenda_d2 agenda_d3"
+			"agenda_none3 agenda_none4 agenda_d3";
 	}
+
 	.agenda__container {
 		width: 100vw;
 		margin-left: -10vw;
@@ -817,39 +769,50 @@ footer {
 		background-image: url(./assets/agenda-section-background.svg);
 		background-repeat: no-repeat;
 	}
+
 	.d_agendaHeader {
 		margin-top: 100px;
 		grid-area: agenda_header;
 		text-align: left;
 	}
+
 	.agenda-none {
 		grid-area: agenda_none;
 	}
+
 	#agenda-none1 {
 		grid-area: agenda_none1;
 	}
+
 	#agenda-none2 {
 		grid-area: agenda_none2;
 	}
+
 	#agenda-none3 {
 		grid-area: agenda_none3;
 	}
+
 	#agenda-none4 {
 		grid-area: agenda_none4;
 	}
+
 	.d_agendaDay {
 		float: left;
 		margin-left: 10%;
 	}
+
 	#agenda-day1 {
 		grid-area: agenda_d1;
 	}
+
 	#agenda-day2 {
 		grid-area: agenda_d2;
 	}
+
 	#agenda-day3 {
 		grid-area: agenda_d3;
 	}
+
 	.d_agendaTable {
 		margin-top: 30px;
 	}
@@ -866,7 +829,60 @@ footer {
 		text-align: left;
 		margin-top: 50px;
 	}
-<<<<<<< HEAD
+
+	#uni_tum {
+	grid-area: tum;
+	}
+
+	#uni_whu {
+		grid-area: whu;
+	}
+
+	#uni_hpi {
+		grid-area: hpi;
+	}
+
+	#uni_warwick {
+		grid-area: warwick;
+	}
+
+	#uni_friedrichshafen {
+		grid-area: friedrichshafen;
+	}
+
+	#uni_tub {
+		grid-area: tub;
+	}
+
+	#uni_mannheim {
+		grid-area: mannheim;
+	}
+
+	#uni_maastricht {
+		grid-area: maastricht;
+	}
+
+	#globe_illustration {
+		grid-area: globe;
+	}
+
+	#university_grid_container {
+		display: grid;
+		grid-template-columns: repeat(6, 16.66%);
+		grid-template-rows:
+			200px 200px;
+		grid-template-areas:
+			"tum whu hpi warwick globe globe"
+			"friedrichshafen tub mannheim maastricht globe globe";
+	}
+
+	.university-img {
+		width: 100%;
+	}
+
+	.university-name {
+		text-align: center;
+	}
 }
 
 
@@ -876,22 +892,22 @@ footer {
 
 /* Add a black background color to the top navigation */
 .topnav {
-  overflow: hidden;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%;
-  background-color: white;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: white;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  float: right;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 18px;
-  text-decoration: none;
-  font-size: 17px;
+	float: right;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 18px;
+	text-decoration: none;
+	font-size: 17px;
 }
 
 .topnav a:first-child {
@@ -900,135 +916,102 @@ footer {
 }
 
 .topnav a:first-child {
-  float: left;
-  display: block;
+	float: left;
+	display: block;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+	background-color: #ddd;
+	color: black;
 }
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: #4CAF50;
-  color: white;
+	background-color: #4CAF50;
+	color: white;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
-  display: none;
-} 
+	display: none;
+}
 
 
- /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
+	.topnav a:not(:first-child) {
+		display: none;
+	}
+
+	.topnav a.icon {
+		float: right;
+		display: block;
+	}
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
-  .topnav.responsive {
-  	position: relative;
-  }
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: center;
-  }
-  nav a:nth-child(2) {
-  	margin-top: 25px;
-  }
-} 
+	.topnav.responsive {
+		position: relative;
+	}
 
-.accordion {
-  background-color: white;
-  color: black;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: 1px solid var(--unicon-lightblue);
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
+	.topnav.responsive a.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: center;
+	}
+
+	nav a:nth-child(2) {
+		margin-top: 25px;
+	}
 }
 
-.active, .accordion:hover {
-  background-color: #ccc;
+
+
+
+
+.accordion {
+	background-color: white;
+	color: black;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: 1px solid var(--unicon-lightblue);
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+	background-color: #ccc;
 }
 
 .accordion:after {
-  content: '\203A';
-  color: black;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
+	content: '\203A';
+	color: black;
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
 }
 
 .active:after {
-  content: "\2212";
+	content: "\2212";
 }
 
 .panel {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-=======
-	#uni_tum {
-		grid-area: tum;
-	}
-	#uni_whu {
-		grid-area: whu;
-	}
-	#uni_hpi{
-		grid-area: hpi;
-	}
-	#uni_warwick {
-		grid-area: warwick;
-	}
-	#uni_friedrichshafen {
-		grid-area: friedrichshafen;
-	}
-	#uni_tub {
-		grid-area: tub;
-	}
-	#uni_mannheim{
-		grid-area: mannheim;
-	}
-	#uni_maastricht{
-		grid-area: maastricht;
-	}
-	#globe_illustration{
-		grid-area: globe;
-	}
-	#university_grid_container{
-		display: grid;
-		grid-template-columns: repeat(6, 16.66%);
-		grid-template-rows: 
-		200px
-		200px;
-		grid-template-areas: 
-		"tum whu hpi warwick globe globe"
-		"friedrichshafen tub mannheim maastricht globe globe";
-	}
-	.university-img{
-		width: 100%;
-	}
-	.university-name {
-		text-align: center;
-	}
->>>>>>> e1820c7b084072558a8758d11ca9a68e1dbf9855
+	padding: 0 18px;
+	background-color: white;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
 }
+
