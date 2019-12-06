@@ -126,7 +126,7 @@ footer {
 		/* 5. signupText*/
 		135px
 		/* 6.- 9. sppech, students, challenge, workshop*/
-		repeat(4, 120px)
+		repeat(4, 130px)
 		/* 10. spaekerText*/
 		140px
 		/* 11. speakerImg*/
@@ -179,6 +179,9 @@ footer {
 		"faq faq faq faq"
 		/*17*/
 		"footer footer footer footer";
+
+		justify-items: center;
+		text-align: center;
 }
 
 /* END of: grid definiton MOBILE*/
@@ -186,7 +189,9 @@ header {
 	display: flex;
 }
 
-
+#m_start_img {
+	width: 380px;
+}
 
 #speech_img {
 	display: none;
