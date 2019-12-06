@@ -186,9 +186,7 @@ header {
 	display: flex;
 }
 
-.agenda__container {
-	display: none;
-}
+
 
 #speech_img {
 	display: none;
@@ -307,6 +305,9 @@ footer {
 
 /* Hide desktop elements with different content on mobile */
 @media screen and (max-width: 900px) {
+	.agenda__container {
+		display: none;
+	}
 	.d_titlesubTitle {
 		display: none;
 	}
@@ -437,18 +438,18 @@ footer {
 			"speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg "
 			/*12*/
 			"agenda agenda agenda agenda agenda agenda agenda agenda agenda agenda agenda agenda"
-			/*13
+			/*13*/
 			"universText universText universText universText universText universText universText universText universText universText universText universText"
-			/*14
+			/*14*/
 			"universImg universImg universImg universImg universImg universImg universImg universImg universImg universImg universImg universImg"
-			/*15
+			/*15*/
 			"partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText"
-			/*16
+			/*16*/
 			"partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg"
-			/*17
+			/*17*/
 			"faq faq faq faq faq faq faq faq faq faq faq faq"
-			/*18
-			"footer footer footer footer footer footer footer footer footer footer footer footer"*/
+			/*18*/
+			"footer footer footer footer footer footer footer footer footer footer footer footer"
 		;
 	}
 	.speaker-grid {
@@ -707,17 +708,63 @@ footer {
 	.d_font12px {
 		font-size: 12px;
 	}
-
+	.agenda__container {
+		display: grid;
+		grid-template-columns: repeat(3, 33%);
+		grid-template-rows: 
+		auto
+		auto
+		auto
+		auto
+		auto
+		auto
+		auto;
+		grid-template-areas: 
+		"agenda_header agenda_header agenda_header"
+		
+		"agenda_none1 agenda_none2 agenda_d3"
+		
+		"agenda_none1 agenda_d2 agenda_d3"
+		
+		"agenda_d1 agenda_d2 agenda_d3"
+		
+		"agenda_none3 agenda_d2 agenda_d3"
+		"agenda_none3 agenda_none4 agenda_d3"
+		;
+	}
 	.d_agendaHeader {
+		grid-area: agenda_header;
 		margin-left: 180px;
 		margin-bottom: 50px;
 	}
-
+	.agenda-none {
+		grid-area: agenda_none;
+	}
+	#agenda-none1 {
+		grid-area: agenda_none1;
+	}
+	#agenda-none2 {
+		grid-area: agenda_none2;
+	}
+	#agenda-none3 {
+		grid-area: agenda_none3;
+	}
+	#agenda-none4 {
+		grid-area: agenda_none4;
+	}
 	.d_agendaDay {
 		float: left;
-		margin-left: 180px;
+		margin-left: 10%;
 	}
-
+	#agenda-day1 {
+		grid-area: agenda_d1;
+	}
+	#agenda-day2 {
+		grid-area: agenda_d2;
+	}
+	#agenda-day3 {
+		grid-area: agenda_d3;
+	}
 	.d_agendaTable {
 		margin-top: 30px;
 	}
