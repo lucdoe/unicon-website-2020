@@ -222,10 +222,6 @@ header {
 	width: 380px;
 }
 
-.agenda__container {
-	display: none;
-}
-
 #speech_img {
 	display: none;
 }
@@ -345,6 +341,9 @@ footer {
 
 /* Hide desktop elements with different content on mobile */
 @media screen and (max-width: 900px) {
+	.agenda__container {
+		display: none;
+	}
 	.d_titlesubTitle {
 		display: none;
 	}
@@ -394,6 +393,31 @@ footer {
 
 /* START of Desktop classes */
 @media screen and (min-width: 900px) {
+	#page-wrapper{
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	#path1-container{
+		grid-area: path1;
+	}
+	#path2-container{
+		grid-area: path2;
+	}
+	#path3-container{
+		grid-area: path3;
+	}
+	#path4-container{
+		grid-area: path4;
+	}
+	#path5-container{
+		grid-area: path5;
+	}
+	.divider {
+		width:100vw;
+		margin-left: -10%;
+		margin-right: -10%;
+	}
 	#speaker1 {
 		grid-area: speaker1;
 	}
@@ -420,7 +444,7 @@ footer {
 
 	.grid {
 		display: grid;
-		grid-template-columns: repeat(12, 8.33vw);
+		grid-template-columns: repeat(12, 6.66vw);
 		grid-template-rows:
 			/* 1. navbar*/
 			72px
@@ -430,24 +454,34 @@ footer {
 			auto
 			/* 4. video*/
 			auto
+			/* Divider 1 */
+			41px
 			/* 5. signup*/
 			240px
+			/* Divider 2 */
+			41px
 			/* 6. - 9. sppech, students, challenge, workshp, */
 			repeat(4, 380px)
+			/* Divider 3 */
+			41px
 			/* 10. speakerText*/
 			120px
 			/* 11. speakerImg*/
-			575px
+			650px
 			/* 12. agenda*/
 			684px
 			/* 13. universText*/
-			90px
+			auto
 			/* 14. universImg*/
-			329px
+			auto
+			/* Divider 4 */
+			41px
 			/* 15. partnerText*/
 			160px
 			/* 16. partnerImg*/
 			385px
+			/* Divider 4 */
+			41px
 			/* 17. faq*/
 			739px
 			/* 18. footer*/
@@ -462,8 +496,12 @@ footer {
 			"startImg startImg startImg startImg startImg startImg startImg startImg startImg startImg startImg startImg"
 			/*4 */
 			"video video video video video video video video video video video video"
+			/* Divider */
+			"path1 path1 path1 path1 path1 path1 path1 path1 path1 path1 path1 path1"
 			/*5*/
 			"signupImg signupImg signupImg signupImg signupImg signupImg signupText signupText signupText signupText signupText signupText"
+			/* Divider */
+			"path2 path2 path2 path2 path2 path2 path2 path2 path2 path2 path2 path2"
 			/*6*/
 			"speechImg speechImg speechImg speechImg speechImg speechImg speechText speechText speechText speechText speechText speechText"
 			/*7*/
@@ -472,6 +510,8 @@ footer {
 			"challengeImg challengeImg challengeImg challengeImg challengeImg challengeImg challengeText challengeText challengeText challengeText challengeText challengeText"
 			/*9*/
 			"workshpText workshpText workshpText workshpText workshpText workshpText workshpImg workshpImg workshpImg workshpImg workshpImg workshpImg"
+			/* Divider */
+			"path3 path3 path3 path3 path3 path3 path3 path3 path3 path3 path3 path3"
 			/*10*/
 			"speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText"
 			/*11*/
@@ -482,14 +522,31 @@ footer {
 			"universText universText universText universText universText universText universText universText universText universText universText universText"
 			/*14*/
 			"universImg universImg universImg universImg universImg universImg universImg universImg universImg universImg universImg universImg"
+<<<<<<< HEAD
+=======
+			/* Divider */
+			"path4 path4 path4 path4 path4 path4 path4 path4 path4 path4 path4 path4"
+>>>>>>> e1820c7b084072558a8758d11ca9a68e1dbf9855
 			/*15*/
 			"partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText"
 			/*16*/
 			"partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg"
+<<<<<<< HEAD
 			/*17*/
 			"faq faq faq faq faq faq faq faq faq faq faq faq"
 			/*18*/
 			"footer footer footer footer footer footer footer footer footer footer footer footer";
+=======
+			/* Divider */
+			"path5 path5 path5 path5 path5 path5 path5 path5 path5 path5 path5 path5"
+			/*17*/
+			"faq faq faq faq faq faq faq faq faq faq faq faq"
+			/*18*/
+			"footer footer footer footer footer footer footer footer footer footer footer footer"
+		;
+		justify-items: left;
+		text-align: left;
+>>>>>>> e1820c7b084072558a8758d11ca9a68e1dbf9855
 	}
 	.speaker-grid {
 		display: grid;
@@ -504,9 +561,6 @@ footer {
 	}
 	/* Disable mobile classes */
 	/* display: none; */
-	.m_title {
-		display: none;
-	}
 
 	.m_titlesubTitle {
 		display: none;
@@ -521,27 +575,10 @@ footer {
 		display: none;
 	}
 
-	.m_signUp {
-		display: none;
-	}
-
-
-	.m_videoHeader {
-		display: none;
-	}
-
-	.m_videoSubTitles {
-		display: none;
-	}
 
 
 
-	.m_textSignUp {
-		display: none;
-		font-size: 14px;
-		font-weight: 600;
-		margin-bottom: 25px;
-	}
+	
 
 	.m_textInfoP {
 		margin: 10px 18px;
@@ -556,6 +593,8 @@ footer {
 
 	/* Define desktop classes */
 	#d_start_img {
+		margin-left: -10%;
+		margin-right: -10%;
 		width: 100vw;
 	}
 
@@ -567,14 +606,11 @@ footer {
 		color: var(--unicon-pink);
 		margin-top: 65px;
 		text-align: left;
-
-		margin-left: 75px;
 	}
 
 
 	.d_titlesubTitle {
 		text-align: left;
-		margin-left: 75px;
 		font-size: 25px;
 		font-weight: 500;
 		color: var(--unicon-font-color);
@@ -586,11 +622,10 @@ footer {
 
 	.d_dateLocation {
 		text-align: left;
-		font-size: 25px;
+		font-size: 22px;
 		font-weight: 500;
-		margin-top: 380px;
+		margin-top: 260px;
 		margin-bottom: 40px;
-		margin-left: 75px;
 	}
 
 	#signup-btn-start {
@@ -740,24 +775,81 @@ footer {
 
 
 	#speaker_illustration {
-		width: 200px;
-		height: 450px;
+		margin-top: 50%;
+		width: 100%;
+		height: auto;
 	}
 
 	.d_font12px {
 		font-size: 12px;
 	}
-
-	.d_agendaHeader {
-		margin-left: 180px;
-		margin-bottom: 50px;
+	#agenda_background{
+		margin-left:10vw;
+		margin-right: 10vw;
+		text-align: left;
+		display: grid;
+		grid-template-columns: repeat(3, 33%);
+		grid-template-rows: 
+		auto
+		auto
+		auto
+		auto
+		auto
+		auto
+		auto;
+		grid-template-areas: 
+		"agenda_header agenda_header agenda_header"
+		
+		"agenda_none1 agenda_none2 agenda_d3"
+		
+		"agenda_none1 agenda_d2 agenda_d3"
+		
+		"agenda_d1 agenda_d2 agenda_d3"
+		
+		"agenda_none3 agenda_d2 agenda_d3"
+		"agenda_none3 agenda_none4 agenda_d3"
+		;
 	}
-
+	.agenda__container {
+		width: 100vw;
+		margin-left: -10vw;
+		margin-right: -10vw;
+		background-image: url(./assets/agenda-section-background.svg);
+		background-repeat: no-repeat;
+	}
+	.d_agendaHeader {
+		margin-top: 100px;
+		grid-area: agenda_header;
+		text-align: left;
+	}
+	.agenda-none {
+		grid-area: agenda_none;
+	}
+	#agenda-none1 {
+		grid-area: agenda_none1;
+	}
+	#agenda-none2 {
+		grid-area: agenda_none2;
+	}
+	#agenda-none3 {
+		grid-area: agenda_none3;
+	}
+	#agenda-none4 {
+		grid-area: agenda_none4;
+	}
 	.d_agendaDay {
 		float: left;
-		margin-left: 180px;
+		margin-left: 10%;
 	}
-
+	#agenda-day1 {
+		grid-area: agenda_d1;
+	}
+	#agenda-day2 {
+		grid-area: agenda_d2;
+	}
+	#agenda-day3 {
+		grid-area: agenda_d3;
+	}
 	.d_agendaTable {
 		margin-top: 30px;
 	}
@@ -772,9 +864,9 @@ footer {
 
 	.d_studentsHeader {
 		text-align: left;
-		margin-left: 180px;
 		margin-top: 50px;
 	}
+<<<<<<< HEAD
 }
 
 
@@ -894,4 +986,49 @@ footer {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+=======
+	#uni_tum {
+		grid-area: tum;
+	}
+	#uni_whu {
+		grid-area: whu;
+	}
+	#uni_hpi{
+		grid-area: hpi;
+	}
+	#uni_warwick {
+		grid-area: warwick;
+	}
+	#uni_friedrichshafen {
+		grid-area: friedrichshafen;
+	}
+	#uni_tub {
+		grid-area: tub;
+	}
+	#uni_mannheim{
+		grid-area: mannheim;
+	}
+	#uni_maastricht{
+		grid-area: maastricht;
+	}
+	#globe_illustration{
+		grid-area: globe;
+	}
+	#university_grid_container{
+		display: grid;
+		grid-template-columns: repeat(6, 16.66%);
+		grid-template-rows: 
+		200px
+		200px;
+		grid-template-areas: 
+		"tum whu hpi warwick globe globe"
+		"friedrichshafen tub mannheim maastricht globe globe";
+	}
+	.university-img{
+		width: 100%;
+	}
+	.university-name {
+		text-align: center;
+	}
+>>>>>>> e1820c7b084072558a8758d11ca9a68e1dbf9855
 }
