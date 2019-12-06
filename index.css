@@ -385,6 +385,9 @@ footer {
 	#path4-container{
 		grid-area: path4;
 	}
+	#path5-container{
+		grid-area: path5;
+	}
 	.divider {
 		width:100vw;
 		margin-left: -10%;
@@ -452,6 +455,8 @@ footer {
 			160px
 			/* 16. partnerImg*/
 			385px
+			/* Divider 4 */
+			41px
 			/* 17. faq*/
 			739px
 			/* 18. footer*/
@@ -498,6 +503,8 @@ footer {
 			"partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText"
 			/*16*/
 			"partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg"
+			/* Divider */
+			"path5 path5 path5 path5 path5 path5 path5 path5 path5 path5 path5 path5"
 			/*17*/
 			"faq faq faq faq faq faq faq faq faq faq faq faq"
 			/*18*/
@@ -733,8 +740,9 @@ footer {
 
 
 	#speaker_illustration {
-		width: 200px;
-		height: 450px;
+		margin-top: 50%;
+		width: 100%;
+		height: auto;
 	}
 
 	.d_font12px {
@@ -768,13 +776,14 @@ footer {
 		;
 	}
 	.agenda__container {
-		
+		width: 100vw;
 		margin-left: -10vw;
 		margin-right: -10vw;
 		background-image: url(./assets/agenda-section-background.svg);
 		background-repeat: no-repeat;
 	}
 	.d_agendaHeader {
+		margin-top: 100px;
 		grid-area: agenda_header;
 		text-align: left;
 	}
@@ -861,5 +870,8 @@ footer {
 	}
 	.university-img{
 		width: 100%;
+	}
+	.university-name {
+		text-align: center;
 	}
 }
