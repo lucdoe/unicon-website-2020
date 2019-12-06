@@ -171,6 +171,8 @@ footer {
 		"faq faq faq faq"
 		/*17*/
 		"footer footer footer footer";
+
+		justify-items: stretch;
 }
 
 /* END of: grid definiton MOBILE*/
@@ -178,11 +180,7 @@ header {
 	display: flex;
 }
 
-.text-center {
-	text-align: center;
-}
-
-.m_title {
+/*.m_title {
 	font-size: 38px;
 	font-weight: 900;
 	color: var(--unicon-pink);
@@ -288,29 +286,29 @@ header {
 
 footer {
 	background-color: var(--unicon-lightblue);
-}
+}*/
 
 /* Hide desktop elements with different content on mobile */
 @media screen and (max-width: 900px) {
 	.d_titlesubTitle {
-		visibility: hidden;
+		display: none;
 	}
 
 	.d_dateLocation {
-		visibility: hidden;
+		display: none;
 	}
 
 	.d_video {
-		visibility: hidden;
+		display: none;
 	}
 
 	.d_imageDivRight {
-		visibility: hidden;
-		overflow: hidden;
+		display: none;
+		overflow: none;
 	}
 
 	.d_imageDivLeft {
-		visibility: hidden;
+		display: none;
 	}
 	.d_imageDivRight img {
 		width: 0;
@@ -321,7 +319,7 @@ footer {
 		height: 0;
 	}
 	.d_speakerWrapper {
-		visibility: hidden;
+		display: none;
 	}
 	.d_speakerImg {
 		width: 0;
@@ -329,10 +327,6 @@ footer {
 	#speaker_illustration {
 		width: 0;
 	}
-
-	
-
-
 }
 
 /* START of Desktop classes */
