@@ -9,64 +9,52 @@
 	<meta name="description" content="Unicon Berlin - Digital Product Conference by Students for Students">
 	<meta name="keywords" content="unicon, digital product conference, student conference, conference berlin">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
-	<div class="grid">
-		<header>
-			<img class="logo" src="./assets/logo-new-thinner.png" alt="unicon logo">
-			<nav class="topnav" id="myTopnav">
-				<ul class="nav__links" href="#home">
-					<li><a href="">HOME</a></li>
-					<li><a href="">ABOUT</a></li>
-				</ul>
-			</nav>
-			<a id="cta" class="signUpButton" href="#signup"><button>SIGN UP</button></a>
-			<!-- 			<a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+	<header>
+		<nav class="topnav" id="myTopnav">
+			<a><img class="logo" src="./assets/logo-new-thinner.png" alt="unicon logo"></a>
+			<a href="#signup">SIGN UP</a>
+			<a href="#news">GALLERY</a>
+			<a href="#contact">ABOUT</a>
+			<a href="#about">HOME</a>
+			<a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
 				<i class="material-icons-round">menu</i>
-			</a> -->
-		</header>
-
-
+			</a>
+		</nav>
+	</header>
+	<div class="grid">
 		<section class="start_text__container text-center">
 			<h1 class="m_title">unicon 2020</h1>
 			<h3 class="m_titlesubTitle">celebrating love for digital products</h3>
 			<h3 class="d_titlesubTitle">celebrating love for digital products -</h3>
 			<h3 class="d_titlesubTitle">made for students by students</h3>
-			<p class="m_dateLocation">5th - 7th of March 2020 <br> CODE University Campus Berlin</p><a
-				href="#signup"><button id="signup-btn-start" class="m_signUp">SIGN UP</button></a>
+			<p class="m_dateLocation">5th - 7th of March 2020 <br> CODE University Campus Berlin</p><a href="#signup"><button id="signup-btn-start" class="m_signUp">SIGN UP</button></a>
 			<p class="d_dateLocation">digital product conference <br> 5th to 7th of March 2020 <br> CODE University
 				Campus Berlin</p>
 		</section>
-
 		<section class="start_img__container">
 			<img id="m_start_img" src="./assets/mobile/start_mobile.svg">
 		</section>
-
-
-		<section class="video__container text-center">
+		<div class="video_text__container">
 			<h2 class="m_videoHeader">thanks for being part of unicon 2019</h2>
 			<p class="m_videoSubTitles">100 participants, 5 speeches, 6 workshops, 1 challenge PLUS
 				afterparty</p>
+		</div>
+		<section class="video__container">
 			<div class="m_iframeContainer d_iframeContainer">
-				<iframe class="m_iframe d_iframe" src="https://www.youtube.com/embed/WWvEcMjX4es?controls=0"
-					frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-					allowfullscreen></iframe>
+				<iframe class="m_iframe d_iframe" src="https://www.youtube.com/embed/WWvEcMjX4es?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</section>
-
-
 		<div class="signup_img__container"></div>
 		<article class="signup_text__container text-center">
 			<p class="m_textSignUp">Join our digital product conference that is made by students and
-				aims to connect students from inspiring universities and diverse backgrounds through tech.</p> <a
-				href="#signup"><button id="signup-btn-section" class="m_signUp">SIGN UP</button></a>
+				aims to connect students from inspiring universities and diverse backgrounds through tech.</p> <a href="#signup"><button id="signup-btn-section" class="m_signUp">SIGN UP</button></a>
 		</article>
-
-
 		<div class="speech_img__container">
-			<img class="d_sectionImg"
-				src="https://dogstodaymagazine.co.uk/wp-content/uploads/2016/05/placeholder-image.png">
+			<img class="d_sectionImg" src="https://dogstodaymagazine.co.uk/wp-content/uploads/2016/05/placeholder-image.png">
 		</div>
 		<div class="speech_text__container">
 			<h2>Speeches</h2>
@@ -77,8 +65,6 @@
 			<p class="d_textInfoQuote"><i>"The speakers were likely to stay and be a true part of the event"</i>
 			</p>
 		</div>
-
-
 		<section class="student_text__container text-center">
 			<div class="">
 				<h2>Students</h2>
@@ -92,15 +78,11 @@
 		</section>
 		<!-- delete class here and see if it still works (d_imageDivRight)-->
 		<div class="student_img__container">
-			<img class="d_sectionImg"
-				src="https://dogstodaymagazine.co.uk/wp-content/uploads/2016/05/placeholder-image.png">
+			<img class="d_sectionImg" src="https://dogstodaymagazine.co.uk/wp-content/uploads/2016/05/placeholder-image.png">
 		</div>
-
-
 		<!-- delete class here and see if it still works (d_imageDivLeft)-->
 		<div class="challenge_img__container ">
-			<img class="d_sectionImg"
-				src="https://dogstodaymagazine.co.uk/wp-content/uploads/2016/05/placeholder-image.png">
+			<img class="d_sectionImg" src="https://dogstodaymagazine.co.uk/wp-content/uploads/2016/05/placeholder-image.png">
 		</div>
 		<!-- delete class here and see if it still works )-->
 		<div class="challenge_text__container text-center">
@@ -112,8 +94,6 @@
 			<p class="d_textInfoQuote"><i>"The speakers were likely to stay and be a true part of the event"</i>
 			</p>
 		</div>
-
-
 		<!-- delete class here and see if it still works )-->
 		<div class="workshop_text__container text-center">
 			<h2>Workshops</h2>
@@ -124,10 +104,8 @@
 			</p>
 		</div>
 		<!-- delete class here and see if it still works )-->
-		<div class="workshop_img__container"><img class="d_sectionImg"
-				src="https://dogstodaymagazine.co.uk/wp-content/uploads/2016/05/placeholder-image.png">
+		<div class="workshop_img__container"><img class="d_sectionImg" src="https://dogstodaymagazine.co.uk/wp-content/uploads/2016/05/placeholder-image.png">
 		</div>
-
 		<!-- delete class here and see if it still works (d_speakerHeader)-->
 		<div class="speaker_text__container d_speakerHeader">
 			<h2>Former Speakers</h2>
@@ -137,57 +115,45 @@
 				worked
 				for, but also what they have experienced on a personal level and what of those experience can
 				support us - as students - most. In the last year, our speakers talked about topcis like.</p>
-			</div>
+		</div>
 		<!-- delete class here and see if it still works (d_speakerWrapper)-->
 		<div class="speaker_img__container d_speakerWrapper">
 			<div id="speakers_div" class="speaker-grid">
 				<div id="speaker1" class="d_speaker">
-					<img class="d_speakerImg"
-						src="https://dogstodaymagazine.co.uk/wp-content/uploads/2016/05/placeholder-image.png">
+					<img class="d_speakerImg" src="https://dogstodaymagazine.co.uk/wp-content/uploads/2016/05/placeholder-image.png">
 					<h3 class="d_speakerName">Florian Heinemann</h3>
 					<p class="d_speakerPosition">Founding Partner at Project A</p>
 				</div>
 				<div id="speaker2" class="d_speaker">
-					<img class="d_speakerImg"
-						src="https://dogstodaymagazine.co.uk/wp-content/uploads/2016/05/placeholder-image.png">
+					<img class="d_speakerImg" src="https://dogstodaymagazine.co.uk/wp-content/uploads/2016/05/placeholder-image.png">
 					<h3 class="d_speakerName">Florian Heinemann</h3>
 					<p class="d_speakerPosition">Founding Partner at Project A</p>
 				</div>
 				<div id="speaker3" class="d_speaker">
-					<img class="d_speakerImg"
-						src="https://dogstodaymagazine.co.uk/wp-content/uploads/2016/05/placeholder-image.png">
+					<img class="d_speakerImg" src="https://dogstodaymagazine.co.uk/wp-content/uploads/2016/05/placeholder-image.png">
 					<h3 class="d_speakerName">Florian Heinemann</h3>
 					<p class="d_speakerPosition">Founding Partner at Project A</p>
 				</div>
 				<div id="speaker4" class="d_speaker">
-					<img class="d_speakerImg"
-						src="https://dogstodaymagazine.co.uk/wp-content/uploads/2016/05/placeholder-image.png">
+					<img class="d_speakerImg" src="https://dogstodaymagazine.co.uk/wp-content/uploads/2016/05/placeholder-image.png">
 					<h3 class="d_speakerName">Florian Heinemann</h3>
 					<p class="d_speakerPosition">Founding Partner at Project A</p>
 				</div>
 				<div id="speaker5" class="d_speaker">
-					<img class="d_speakerImg"
-						src="https://dogstodaymagazine.co.uk/wp-content/uploads/2016/05/placeholder-image.png">
+					<img class="d_speakerImg" src="https://dogstodaymagazine.co.uk/wp-content/uploads/2016/05/placeholder-image.png">
 					<h3 class="d_speakerName">Florian Heinemann</h3>
 					<p class="d_speakerPosition">Founding Partner at Project A</p>
 				</div>
 				<div id="speaker6" class="d_speaker">
-					<img class="d_speakerImg"
-						src="https://dogstodaymagazine.co.uk/wp-content/uploads/2016/05/placeholder-image.png">
+					<img class="d_speakerImg" src="https://dogstodaymagazine.co.uk/wp-content/uploads/2016/05/placeholder-image.png">
 					<h3 class="d_speakerName">Florian Heinemann</h3>
 					<p class="d_speakerPosition">Founding Partner at Project A</p>
 				</div>
 				<div id="speaker_illustration_div">
-
-					<img id="speaker_illustration"
-						src="https://dogstodaymagazine.co.uk/wp-content/uploads/2016/05/placeholder-image.png">
-
+					<img id="speaker_illustration" src="https://dogstodaymagazine.co.uk/wp-content/uploads/2016/05/placeholder-image.png">
 				</div>
 			</div>
-
 		</div>
-
-
 		<section class="agenda__container">
 			<div class="d_agendaHeader">
 				<h2>Agenda</h2>
@@ -272,8 +238,6 @@
 				</div>
 			</article>
 		</section>
-
-
 		<article class="university_text__container">
 			<div class="d_studentsHeader">
 				<h2>Students at unicon</h2>
@@ -283,8 +247,6 @@
 			</div>
 		</article>
 		<div class="university_img__container"></div>
-
-
 		<section class="partner_text__container">
 			<h2>Partners at unicon</h2>
 			<p class="m_textInfoP d_textInfoP">Every year, we’re partnering up with several companies to make the
@@ -295,35 +257,40 @@
 				Are you Interested in becoming a partner company? Contact us!</p>
 		</section>
 		<div class="partner_img__container"></div>
-
-
 		<section class="faq__container">
-			<h2>Accordion</h2>
-			<button class="accordion">Section 1</button>
+			<h2>FAQ</h2>
+			<button class="accordion">How does the application process work?</button>
 			<div class="panel">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-					et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-					aliquip ex ea commodo consequat.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 			</div>
-			<button class="accordion">Section 2</button>
+			<button class="accordion">How many people are going to join the event?</button>
 			<div class="panel">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-					et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-					aliquip ex ea commodo consequat.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 			</div>
-			<button class="accordion">Section 3</button>
+			<button class="accordion">Why just 150 participtants?</button>
 			<div class="panel">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-					et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-					aliquip ex ea commodo consequat.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+			<button class="accordion">Do you offer accommodation?</button>
+			<div class="panel">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+			<button class="accordion">How do you select participants?</button>
+			<div class="panel">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+			<button class="accordion">How much does it cost to join unicon and what is included?</button>
+			<div class="panel">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+			<button class="accordion">How do I sign up for unicon 2020?</button>
+			<div class="panel">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 			</div>
 		</section>
-
-
 		<footer>
 		</footer>
 	</div>
-	<script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
