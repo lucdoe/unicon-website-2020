@@ -186,8 +186,12 @@ header {
 	display: flex;
 }
 
-.text-center {
-	text-align: center;
+.agenda__container {
+	display: none;
+}
+
+#speech_img {
+	display: none;
 }
 
 .m_title {
@@ -249,6 +253,9 @@ header {
 	margin: 10px 18px;
 	font-size: 12px;
 }
+.d_textInfoQuote {
+	display: none;
+}
 
 .m_font12px {
 	font-size: 12px;
@@ -301,24 +308,24 @@ footer {
 /* Hide desktop elements with different content on mobile */
 @media screen and (max-width: 900px) {
 	.d_titlesubTitle {
-		visibility: hidden;
+		display: none;
 	}
 
 	.d_dateLocation {
-		visibility: hidden;
+		display: none;
 	}
 
 	.d_video {
-		visibility: hidden;
+		display: none;
 	}
 
 	.d_imageDivRight {
-		visibility: hidden;
-		overflow: hidden;
+		display: none;
+		overflow: none;
 	}
 
 	.d_imageDivLeft {
-		visibility: hidden;
+		display: none;
 	}
 
 	.d_imageDivRight img {
@@ -342,10 +349,6 @@ footer {
 	#speaker_illustration {
 		width: 0;
 	}
-
-
-
-
 }
 
 /* START of Desktop classes */
