@@ -419,96 +419,95 @@ footer {
 	}
 
 	.grid {
-		display: grid;
-		grid-template-columns: repeat(12, 6.66vw);
+		grid-template-columns: repeat(12, 1fr);
 		grid-template-rows:
-			/* 2. startText*/
+			/* 1. startText*/
 			367px
-			/* 3. startImg*/
-			auto
-			/* 4. video*/
-			auto
-			/* Divider 1 */
+			/* 2. startImg*/
+			416px
+			/* 3. videoText*/
+			100px
+			/*3.1 video*/
+			565px
+			/* 4. Divider 1 */
 			41px
 			/* 5. signup*/
-			240px
-			/* Divider 2 */
+			360px
+			/* 6. Divider 2 */
 			41px
-			/* 6. - 9. sppech, students, challenge, workshp, */
+			/* 7. - 10. sppech, students, challenge, workshp, */
 			repeat(4, 380px)
-			/* Divider 3 */
+			/* 11. Divider 3 */
 			41px
-			/* 10. speakerText*/
+			/* 12. speakerText*/
 			120px
-			/* 11. speakerImg*/
-			650px
-			/* 12. agenda*/
+			/* 13. speakerImg*/
+			575px
+			/* 14. agenda*/
 			684px
-			/* 13. universText*/
-			auto
-			/* 14. universImg*/
-			auto
-			/* Divider 4 */
+			/* 15. universText*/
+			90px
+			/* 16. universImg*/
+			329px
+			/* 17. Divider 4 */
 			41px
-			/* 15. partnerText*/
+			/* 18. partnerText*/
 			160px
-			/* 16. partnerImg*/
+			/* 19. partnerImg*/
 			385px
-			/* Divider 4 */
+			/* 20. Divider 5 */
 			41px
-			/* 17. faq*/
+			/* 21. faq*/
 			739px
-			/* 18. footer*/
+			/* 22. footer*/
 			342px;
 
 		grid-template-areas:
-			/* 2 */
+			/*1 */
 			"startText startText startText startText startText startText startText startText startText startText startText startText"
-			/*3 */
+			/*2 */
 			"startImg startImg startImg startImg startImg startImg startImg startImg startImg startImg startImg startImg"
-			/*4 */
+			/*3 */
+			"videoT videoT videoT videoT videoT videoT videoT videoT videoT videoT videoT videoT"
+			/*3.1*/
 			"video video video video video video video video video video video video"
-			/* Divider */
+			/*4 */
 			"path1 path1 path1 path1 path1 path1 path1 path1 path1 path1 path1 path1"
 			/*5*/
 			"signupImg signupImg signupImg signupImg signupImg signupImg signupText signupText signupText signupText signupText signupText"
-			/* Divider */
+			/*6 */
 			"path2 path2 path2 path2 path2 path2 path2 path2 path2 path2 path2 path2"
-			/*6*/
-			"speechImg speechImg speechImg speechImg speechImg speechImg speechText speechText speechText speechText speechText speechText"
 			/*7*/
-			"studentText studentText studentText studentText studentText studentText studentImg studentImg studentImg studentImg studentImg studentImg"
+			"speechImg speechImg speechImg speechImg speechImg speechImg speechText speechText speechText speechText speechText speechText"
 			/*8*/
-			"challengeImg challengeImg challengeImg challengeImg challengeImg challengeImg challengeText challengeText challengeText challengeText challengeText challengeText"
+			"studentText studentText studentText studentText studentText studentText studentImg studentImg studentImg studentImg studentImg studentImg"
 			/*9*/
-			"workshpText workshpText workshpText workshpText workshpText workshpText workshpImg workshpImg workshpImg workshpImg workshpImg workshpImg"
-			/* Divider */
-			"path3 path3 path3 path3 path3 path3 path3 path3 path3 path3 path3 path3"
+			"challengeImg challengeImg challengeImg challengeImg challengeImg challengeImg challengeText challengeText challengeText challengeText challengeText challengeText"
 			/*10*/
-			"speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText"
-			/*11*/
-			"speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg "
+			"workshpText workshpText workshpText workshpText workshpText workshpText workshpImg workshpImg workshpImg workshpImg workshpImg workshpImg"
+			/* 11 */
+			"path3 path3 path3 path3 path3 path3 path3 path3 path3 path3 path3 path3"
 			/*12*/
-			"agenda agenda agenda agenda agenda agenda agenda agenda agenda agenda agenda agenda"
+			"speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText"
 			/*13*/
-			"universText universText universText universText universText universText universText universText universText universText universText universText"
+			"speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg "
 			/*14*/
-			"universImg universImg universImg universImg universImg universImg universImg universImg universImg universImg universImg universImg"
-			/* Divider */
-			"path4 path4 path4 path4 path4 path4 path4 path4 path4 path4 path4 path4"
+			"agenda agenda agenda agenda agenda agenda agenda agenda agenda agenda agenda agenda"
 			/*15*/
-			"partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText"
+			"universText universText universText universText universText universText universText universText universText universText universText universText"
 			/*16*/
+			"universImg universImg universImg universImg universImg universImg universImg universImg universImg universImg universImg universImg"
+			/* 17 */
+			"path4 path4 path4 path4 path4 path4 path4 path4 path4 path4 path4 path4"
+			/*18*/
+			"partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText"
+			/*19*/
 			"partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg"
-			/*17*/
-			"faq faq faq faq faq faq faq faq faq faq faq faq"
-			/*18*/
-			"footer footer footer footer footer footer footer footer footer footer footer footer"
-			/* Divider */
+			/*20 */
 			"path5 path5 path5 path5 path5 path5 path5 path5 path5 path5 path5 path5"
-			/*17*/
+			/*21*/
 			"faq faq faq faq faq faq faq faq faq faq faq faq"
-			/*18*/
+			/*22*/
 			"footer footer footer footer footer footer footer footer footer footer footer footer";
 		justify-items: left;
 		text-align: left;
