@@ -134,17 +134,17 @@ footer {
 		/* 11. speakerImg*/
 		326px
 		/* 12. universText*/
-		100px
+		120px
 		/* 13. universImg*/
-		116px
+		160px
 		/* 14. partnerText*/
-		190px
+		200px
 		/* 15. partnerImg*/
-		100px
+		180px
 		/* 16. FAQ*/
-		444px
+		580px
 		/* 17. footer*/
-		144px;
+		150px;
 
 	grid-template-areas:
 		/*2*/
@@ -197,29 +197,10 @@ header {
 	padding-top: 50px;
 }
 
-.video_text__container {
-	text-align: center;
-	justify-self: center;
-	padding-top: 50px;
-}
-
-.m_videoHeader,
-.m_videoSubTitles {
-	width: 195px;
-}
-
 .logo {
 	width: 96px;
 	height: 38px;
 	float: left;
-}
-
-#m_start_img {
-	width: 380px;
-}
-
-#speech_img {
-	display: none;
 }
 
 .m_title {
@@ -227,13 +208,15 @@ header {
 	font-weight: 900;
 	color: var(--unicon-pink);
 }
-
 .m_titlesubTitle {
 	font-size: 14px;
 	font-weight: 900;
 	color: var(--unicon-pink);
 }
-
+#m_start_img {
+	width: 100%;
+	height: 277px;
+}
 .m_dateLocation {
 	font-size: 14px;
 	font-weight: 600;
@@ -241,11 +224,37 @@ header {
 	margin-bottom: 40px;
 }
 
-#m_start_img {
-	height: 277px;
-	width: 100%;
+
+.m_videoHeader {
+	font-size: 16px;
+	font-weight: 900;
+	margin-bottom: 10px;
+}
+.m_videoSubTitles {
+	font-size: 12px;
+	font-weight: 600;
+	margin-bottom: 55px;
+}
+.video_text__container {
+	text-align: center;
+	justify-self: center;
+	padding-top: 50px;
+}
+.m_videoHeader,
+.m_videoSubTitles {
+	width: 270px;
+}
+iframe.m_iframe {
+	height: 160px;
 }
 
+
+.m_textSignUp {
+	font-size: 14px;
+	font-weight: 600;
+	margin-bottom: 25px;
+	width: 340px;
+}
 .m_signUp {
 	font-size: 20px;
 	font-weight: 800;
@@ -256,78 +265,116 @@ header {
 	padding: 9px 25px;
 }
 
-.university-img,
+
+#speech_img,
 .divider,
-.university-name {
+.university-name, 
+.d_textInfoQuote,
+.d_titlesubTitle,
+.agenda__container,
+.d_dateLocation,
+.d_video,
+.d_imageDivRight, 
+.d_imageDivLeft,
+.d_speakerWrapper,
+.d_sectionImg,
+#globe_illustration
+ {
 	display: none;
 }
 
 
-.m_videoHeader {
-	font-size: 16px;
-	font-weight: 900;
-	margin-bottom: 10px;
-}
-
-.m_videoSubTitles {
-	font-size: 12px;
-	font-weight: 600;
-	margin-bottom: 55px;
-}
 
 
-.m_textSignUp {
-	font-size: 14px;
-	font-weight: 600;
-	margin-bottom: 25px;
-	width: 290px;
-}
 
 .m_textInfoP {
 	margin-top: 10px;
 	font-size: 12px;
-	width: 280px;
+	width: 340px;
 }
 
-.d_textInfoQuote {
-	display: none;
+
+#uni_tum{
+	grid-area: tum;
 }
+#uni_whu {
+	grid-area: whu;
+}
+#uni_hpi {
+	grid-area: hpi;
+}
+#uni_warwick {
+	grid-area: waw;
+}
+#uni_zeppelin {
+	grid-area: zep;
+}
+#uni_mannheim {
+	grid-area: uom;
+}
+#uni_tub {
+	grid-area: tub;
+}
+#uni_maastricht {
+	grid-area: maa;
+}
+.university_img__container {
+	display: grid;
+	grid-template-columns: repeat(4, 80px);
+	grid-template-rows:
+		50px 50px;
+	grid-row-gap: 20px;
+	grid-column-gap: 15px;
+	grid-template-areas:
+		"tub whu tum hpi"
+		"zep uom waw maa";
+	align-items: center;
+	justify-items: center;
+	margin-bottom: 40px;
+}
+.university-img {
+	width: 100px;
+	height: 80px;
+}
+
+
+.partner_img__container {
+	display: grid;
+	grid-template-columns: repeat(4, 60px);
+	grid-template-rows:
+		95px 95px;
+	grid-row-gap: 40px;
+	grid-column-gap: 30px;
+	grid-template-areas:
+		"flh ros"
+		"scc jub";
+}
+
 
 .m_font12px {
 	font-size: 12px;
 }
 
+#faq_header {
+	margin-bottom: 35px;
+}
+
 
 footer {
 	background-color: var(--unicon-lightblue);
+	width: 100%;
+	display: flex;
+	justify-content:  space-evenly;
+}
+footer h4 {
+	margin: 15px;
+}
+footer ul {
+	list-style: none;
 }
 
 /* Hide desktop elements with different content on mobile */
 @media screen and (max-width: 900px) {
-	.agenda__container {
-		display: none;
-	}
-
-	.d_titlesubTitle {
-		display: none;
-	}
-
-	.d_dateLocation {
-		display: none;
-	}
-
-	.d_video {
-		display: none;
-	}
-
-	.d_imageDivRight {
-		display: none;
-		overflow: none;
-	}
-
-	.d_imageDivLeft {
-		display: none;
-	}
 
 	.d_imageDivRight img {
 		width: 0;
@@ -339,20 +386,12 @@ footer {
 		height: 0;
 	}
 
-	.d_speakerWrapper {
-		display: none;
-	}
-
 	.d_speakerImg {
 		width: 0;
 	}
 
 	#speaker_illustration {
 		width: 0;
-	}
-
-	.d_sectionImg {
-		display: none;
 	}
 }
 
@@ -513,7 +552,7 @@ footer {
 		text-align: left;
 	}
 
-	.speaker-grid {
+	.university_img__container {
 		display: grid;
 		grid-template-columns: repeat(4, 25%);
 		grid-template-rows:
@@ -953,6 +992,7 @@ footer {
 @media screen and (max-width: 600px) {
 	.topnav.responsive {
 		position: relative;
+		background-color: rgba(179, 226, 237, 0.97);
 	}
 
 	.topnav.responsive a.icon {
@@ -965,6 +1005,8 @@ footer {
 		float: none;
 		display: block;
 		text-align: center;
+		font-weight: 900;
+		font-size: 16px;	
 	}
 
 	nav a:nth-child(2) {
@@ -980,7 +1022,7 @@ footer {
 	background-color: white;
 	color: black;
 	cursor: pointer;
-	padding: 18px;
+	padding: 18px 20px;
 	width: 100%;
 	border: 1px solid var(--unicon-lightblue);
 	text-align: left;
