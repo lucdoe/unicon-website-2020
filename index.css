@@ -35,8 +35,14 @@
 	grid-area: video;
 }
 
+.path1-container-mobile {
+	grid-area: div1;
+}
 .signup_text__container {
 	grid-area: signupText;
+}
+.path2-container-mobile {
+	grid-area: div2;
 }
 
 .signup_img__container {
@@ -122,13 +128,17 @@ footer {
 		/* 3. startImg*/
 		277px
 		/* 4. videoText*/
-		200px
+		140px
 		/* 4.1 video*/
-		250px
+		270px
+		/*5.1 divider*/
+		12px
 		/* 5. signupText*/
-		235px
+		200px
+		/*5.2 divider*/
+		12px
 		/* 6.- 9. sppech, students, challenge, workshop*/
-		repeat(4, 170px)
+		repeat(4, 190px)
 		/* 10. spaekerText*/
 		140px
 		/* 11. speakerImg*/
@@ -142,7 +152,7 @@ footer {
 		/* 15. partnerImg*/
 		180px
 		/* 16. FAQ*/
-		580px
+		550px
 		/* 17. footer*/
 		150px;
 
@@ -155,8 +165,12 @@ footer {
 		"videoT videoT videoT videoT"
 		/*4.1*/
 		"video video video video"
+		/*5.1*/
+		"div1 div1 div1 div1"
 		/*5*/
 		"signupText signupText signupText signupText"
+		/*5.2*/
+		"div2 div2 div2 div2"
 		/*6*/
 		"speechText speechText speechText speechText"
 		/*7*/
@@ -184,6 +198,7 @@ footer {
 
 	text-align: center;
 	justify-items: center;
+	align-items: center;
 }
 
 
@@ -193,7 +208,6 @@ header {
 }
 
 .start_text__container {
-	align-self: center;
 	padding-top: 50px;
 }
 
@@ -233,22 +247,24 @@ header {
 .m_videoSubTitles {
 	font-size: 12px;
 	font-weight: 600;
-	margin-bottom: 55px;
 }
 .video_text__container {
 	text-align: center;
-	justify-self: center;
-	padding-top: 50px;
+	align-self: end;
 }
 .m_videoHeader,
 .m_videoSubTitles {
-	width: 270px;
+	width: 290px;
 }
 iframe.m_iframe {
 	height: 160px;
+	border: 8px solid var(--unicon-lightblue);
+	border-radius: 5px;
 }
 
-
+.signup_text__container {
+	align-self: center;
+}
 .m_textSignUp {
 	font-size: 14px;
 	font-weight: 600;
@@ -265,9 +281,18 @@ iframe.m_iframe {
 	padding: 9px 25px;
 }
 
+.divider {
+	width: 100%;
+}
+
+h2::first-letter {
+	color: var(--unicon-pink);
+}
+span {
+	color: var(--unicon-pink);
+}
 
 #speech_img,
-.divider,
 .university-name, 
 .d_textInfoQuote,
 .d_titlesubTitle,
@@ -337,7 +362,10 @@ iframe.m_iframe {
 	height: 80px;
 }
 
-
+.partner_text__container {
+	background: rgb(232,49,124);
+	background: linear-gradient(90deg, rgba(232,49,124,1) 0%, rgba(232,49,124,1) 0%, rgba(179,226,237,1) 100%); 
+}
 .partner_img__container {
 	display: grid;
 	grid-template-columns: repeat(4, 60px);
@@ -348,6 +376,7 @@ iframe.m_iframe {
 	grid-template-areas:
 		"flh ros"
 		"scc jub";
+	background-color: background-image: linear-gradient(to bottom, #e8317c, #e8317c -20%,  #b3e2ed 98%);
 }
 
 
