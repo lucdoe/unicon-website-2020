@@ -1064,8 +1064,8 @@ footer ul {
 		grid-row-gap: 20px;
 		grid-column-gap: 15px;
 		grid-template-areas:
-			"tub whu tum hpi globe globe"
-			"zep uom waw maa globe globe";
+			"tum whu hpi waw globe globe"
+			"zep tub uom maa globe globe";
 		align-items: center;
 		justify-items: center;
 		margin-bottom: 40px;
