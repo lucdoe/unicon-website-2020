@@ -685,9 +685,7 @@ footer ul {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: 
-		100px
-		100px
-		100px;
+		auto auto auto;
 		grid-template-areas: 
 		"partner1 partner2 partner3 partner4"
 		"partner5 partner6 partner7 partner8"
