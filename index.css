@@ -17,9 +17,6 @@
 }
 
 /* START of: grid-area definition */
-/*header {
-	grid-area: navbar;
-}*/
 
 .start_text__container {
 	grid-area: startText;
@@ -33,12 +30,19 @@
 .video_text__container {
 	grid-area: videoT;
 }
+
 .video__container {
 	grid-area: video;
 }
 
+.path1-container-mobile {
+	grid-area: div1;
+}
 .signup_text__container {
 	grid-area: signupText;
+}
+.path2-container-mobile {
+	grid-area: div2;
 }
 
 .signup_img__container {
@@ -119,40 +123,40 @@ footer {
 .grid {
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows:
-/*		 1. nav
-		50px*/
 		/*2. startText*/
 		400px
 		/* 3. startImg*/
 		277px
 		/* 4. videoText*/
-		200px
+		140px
 		/* 4.1 video*/
-		250px
+		270px
+		/*5.1 divider*/
+		12px
 		/* 5. signupText*/
-		235px
+		200px
+		/*5.2 divider*/
+		12px
 		/* 6.- 9. sppech, students, challenge, workshop*/
-		repeat(4, 170px)
+		repeat(4, 190px)
 		/* 10. spaekerText*/
 		140px
 		/* 11. speakerImg*/
 		326px
 		/* 12. universText*/
-		100px
+		120px
 		/* 13. universImg*/
-		116px
+		160px
 		/* 14. partnerText*/
-		190px
+		200px
 		/* 15. partnerImg*/
-		100px
+		180px
 		/* 16. FAQ*/
-		444px
+		550px
 		/* 17. footer*/
-		144px;
+		150px;
 
 	grid-template-areas:
-		/*1*/
-		/*"navbar navbar navbar navbar"*/
 		/*2*/
 		"startText startText startText startText"
 		/*3*/
@@ -161,8 +165,12 @@ footer {
 		"videoT videoT videoT videoT"
 		/*4.1*/
 		"video video video video"
+		/*5.1*/
+		"div1 div1 div1 div1"
 		/*5*/
 		"signupText signupText signupText signupText"
+		/*5.2*/
+		"div2 div2 div2 div2"
 		/*6*/
 		"speechText speechText speechText speechText"
 		/*7*/
@@ -188,9 +196,10 @@ footer {
 		/*17*/
 		"footer footer footer footer";
 
-		text-align: center;
-		justify-items: center;
-	}
+	text-align: center;
+	justify-items: center;
+	align-items: center;
+}
 
 
 /* END of: grid definiton MOBILE*/
@@ -199,17 +208,7 @@ header {
 }
 
 .start_text__container {
-	align-self: center;
 	padding-top: 50px;
-}
-.video_text__container {
-	text-align: center;
-	justify-self: center;
-	padding-top: 50px;
-}
-
-.m_videoHeader, .m_videoSubTitles {
-	width: 195px;
 }
 
 .logo {
@@ -218,26 +217,20 @@ header {
 	float: left;
 }
 
-#m_start_img {
-	width: 380px;
-}
-
-#speech_img {
-	display: none;
-}
-
 .m_title {
 	font-size: 38px;
 	font-weight: 900;
 	color: var(--unicon-pink);
 }
-
 .m_titlesubTitle {
 	font-size: 14px;
 	font-weight: 900;
 	color: var(--unicon-pink);
 }
-
+#m_start_img {
+	width: 100%;
+	height: 277px;
+}
 .m_dateLocation {
 	font-size: 14px;
 	font-weight: 600;
@@ -245,11 +238,42 @@ header {
 	margin-bottom: 40px;
 }
 
-#m_start_img {
-	height: 277px;
-	width: 100%;
+
+.m_videoHeader {
+	font-size: 16px;
+	font-weight: 900;
+	margin-bottom: 10px;
+}
+.m_videoSubTitles {
+	font-size: 12px;
+	font-weight: 600;
+}
+.video_text__container {
+	text-align: center;
+	align-self: end;
+}
+.m_videoHeader,
+.m_videoSubTitles {
+	width: 290px;
+}
+@media screen and (max-width: 900px){
+	iframe.m_iframe {
+		height: 160px;
+		border: 8px solid var(--unicon-lightblue);
+		border-radius: 5px;
+	}
 }
 
+
+.signup_text__container {
+	align-self: center;
+}
+.m_textSignUp {
+	font-size: 14px;
+	font-weight: 600;
+	margin-bottom: 25px;
+	width: 340px;
+}
 .m_signUp {
 	font-size: 20px;
 	font-weight: 800;
@@ -260,111 +284,133 @@ header {
 	padding: 9px 25px;
 }
 
-
-.m_videoHeader {
-	font-size: 16px;
-	font-weight: 900;
-	margin-bottom: 10px;
+.divider {
+	width: 100%;
 }
 
-.m_videoSubTitles {
-	font-size: 12px;
-	font-weight: 600;
-	margin-bottom: 55px;
+h2::first-letter {
+	color: var(--unicon-pink);
+}
+span {
+	color: var(--unicon-pink);
+}
+
+@media screen and (max-width: 900px){
+	#speech_img,
+	.university-name, 
+	.d_textInfoQuote,
+	.d_titlesubTitle,
+	.agenda__container,
+	.d_dateLocation,
+	.d_video,
+	.d_imageDivRight, 
+	.d_imageDivLeft,
+	.d_speakerWrapper,
+	.d_sectionImg,
+	#globe_illustration
+	 {
+		display: none;
+	}
 }
 
 
 
-.m_textSignUp {
-	font-size: 14px;
-	font-weight: 600;
-	margin-bottom: 25px;
-	width: 290px;
-}
+
+
 
 .m_textInfoP {
 	margin-top: 10px;
 	font-size: 12px;
-	width: 280px;
+	width: 340px;
 }
-.d_textInfoQuote {
-	display: none;
+
+
+#uni_tum{
+	grid-area: tum;
 }
+#uni_whu {
+	grid-area: whu;
+}
+#uni_hpi {
+	grid-area: hpi;
+}
+#uni_warwick {
+	grid-area: waw;
+}
+#uni_zeppelin {
+	grid-area: zep;
+}
+#uni_mannheim {
+	grid-area: uom;
+}
+#uni_tub {
+	grid-area: tub;
+}
+#uni_maastricht {
+	grid-area: maa;
+}
+.university_img__container {
+	display: grid;
+	grid-template-columns: repeat(4, 80px);
+	grid-template-rows:
+		50px 50px;
+	grid-row-gap: 20px;
+	grid-column-gap: 15px;
+	grid-template-areas:
+		"tub whu tum hpi"
+		"zep uom waw maa";
+	align-items: center;
+	justify-items: center;
+	margin-bottom: 40px;
+}
+.university-img {
+	width: 100px;
+	height: 80px;
+}
+
+.partner_text__container {
+	background: rgb(232,49,124);
+	background: linear-gradient(90deg, rgba(232,49,124,1) 0%, rgba(232,49,124,1) 0%, rgba(179,226,237,1) 100%); 
+}
+.partner_img__container {
+	display: grid;
+	grid-template-columns: repeat(4, 60px);
+	grid-template-rows:
+		95px 95px;
+	grid-row-gap: 40px;
+	grid-column-gap: 30px;
+	grid-template-areas:
+		"flh ros"
+		"scc jub";
+	background-color: linear-gradient(to bottom, #e8317c, #e8317c -20%,  #b3e2ed 98%);
+}
+
 
 .m_font12px {
 	font-size: 12px;
 }
 
-
-.accordion {
-	background-color: #eee;
-	color: #444;
-	cursor: pointer;
-	padding: 18px;
-	width: 100%;
-	border: none;
-	text-align: left;
-	outline: none;
-	font-size: 15px;
-	transition: 0.4s;
-}
-
-.active,
-.accordion:hover {
-	background-color: #ccc;
-}
-
-.accordion:after {
-	content: '\002B';
-	color: #777;
-	font-weight: bold;
-	float: right;
-	margin-left: 5px;
-}
-
-.active:after {
-	content: "\2212";
-}
-
-.panel {
-	padding: 0 18px;
-	background-color: white;
-	max-height: 0;
-	overflow: hidden;
-	transition: max-height 0.2s ease-out;
+#faq_header {
+	margin-bottom: 35px;
 }
 
 
 footer {
 	background-color: var(--unicon-lightblue);
+	width: 100%;
+	display: flex;
+	justify-content:  space-evenly;
+}
+footer h4 {
+	margin: 15px;
+}
+footer ul {
+	list-style: none;
 }
 
 /* Hide desktop elements with different content on mobile */
 @media screen and (max-width: 900px) {
-	.agenda__container {
-		display: none;
-	}
-	.d_titlesubTitle {
-		display: none;
-	}
-
-	.d_dateLocation {
-		display: none;
-	}
-
-	.d_video {
-		display: none;
-	}
-
-	.d_imageDivRight {
-		display: none;
-		overflow: none;
-	}
-
-	.d_imageDivLeft {
-		display: none;
-	}
-
+	
 	.d_imageDivRight img {
 		width: 0;
 		height: 0;
@@ -375,10 +421,6 @@ footer {
 		height: 0;
 	}
 
-	.d_speakerWrapper {
-		display: none;
-	}
-
 	.d_speakerImg {
 		width: 0;
 	}
@@ -386,141 +428,174 @@ footer {
 	#speaker_illustration {
 		width: 0;
 	}
-	.d_sectionImg {
+	#d_start_img {
 		display: none;
 	}
+	.signup_img__container,
+	.speech_img__container,
+	.student_img__container,
+	.challenge_img__container,
+	.workshop_img__container{
+		display: none;
+	}
+
 }
 
 /* START of Desktop classes */
 @media screen and (min-width: 900px) {
-	#page-wrapper{
+	body{
+		overflow-x: hidden;
+	}
+	footer {
+		width: 100vw;
+		margin-left: -10vw;
+	}
+	#page-wrapper {
 		margin-left: 10%;
 		margin-right: 10%;
 	}
 
-	#path1-container{
+	#path1-container {
 		grid-area: path1;
 	}
-	#path2-container{
+
+	#path2-container {
 		grid-area: path2;
 	}
-	#path3-container{
+
+	#path3-container {
 		grid-area: path3;
 	}
-	#path4-container{
+
+	#path4-container {
 		grid-area: path4;
 	}
-	#path5-container{
+
+	#path5-container {
 		grid-area: path5;
 	}
+
 	.divider {
-		width:100vw;
+		width: 100vw;
 		margin-left: -10%;
 		margin-right: -10%;
 	}
+
 	#speaker1 {
 		grid-area: speaker1;
 	}
+
 	#speaker2 {
 		grid-area: speaker2;
 	}
+
 	#speaker3 {
 		grid-area: speaker3;
 	}
+
 	#speaker4 {
 		grid-area: speaker4;
 	}
+
 	#speaker5 {
 		grid-area: speaker5;
 	}
+
 	#speaker6 {
 		grid-area: speaker6;
 	}
 
 	#speaker_illustration_div {
 		grid-area: speakerIllu;
+		display: flex;
+		align-content: center;
 
 	}
-
+	.signup_img__container {
+		width: 100%;
+	}
+	#signup-img {
+		width: 100%;
+	}
 	.grid {
-		display: grid;
-		grid-template-columns: repeat(12, 6.66vw);
+		width: 100%;
+		grid-template-columns: repeat(12, 1fr);
 		grid-template-rows:
-			/* 1. navbar*/
-			72px
-			/* 2. startText*/
+			/* 1. startText*/
 			367px
-			/* 3. startImg*/
+			/* 2. startImg*/
+			416px
+			/* 3. videoText*/
+			200px
+			/*3.1 video*/
 			auto
-			/* 4. video*/
-			auto
-			/* Divider 1 */
+			/* 4. Divider 1 */
 			41px
 			/* 5. signup*/
-			240px
-			/* Divider 2 */
+			360px
+			/* 6. Divider 2 */
 			41px
-			/* 6. - 9. sppech, students, challenge, workshp, */
+			/* 7. - 10. sppech, students, challenge, workshp, */
 			repeat(4, 380px)
-			/* Divider 3 */
+			/* 11. Divider 3 */
 			41px
-			/* 10. speakerText*/
-			120px
-			/* 11. speakerImg*/
-			650px
-			/* 12. agenda*/
+			/* 12. speakerText*/
+			auto
+			/* 13. speakerImg*/
+			auto
+			/* 14. agenda*/
 			684px
-			/* 13. universText*/
-			auto
-			/* 14. universImg*/
-			auto
-			/* Divider 4 */
+			/* 15. universText*/
+			150px
+			/* 16. universImg*/
+			329px
+			/* 17. Divider 4 */
 			41px
-			/* 15. partnerText*/
-			160px
-			/* 16. partnerImg*/
+			/* 18. partnerText*/
 			auto
-			/* Divider 4 */
+			/* 19. partnerImg*/
+			385px
+			/* 20. Divider 5 */
 			41px
-			/* 17. faq*/
+			/* 21. faq*/
 			739px
-			/* 18. footer*/
-			342px;
+			/* 22. footer*/
+			auto;
 
 		grid-template-areas:
-			/* 1 */
-			/*'navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar'*/
-			/* 2 */
+			/*1 */
 			"startText startText startText startText startText startText startText startText startText startText startText startText"
-			/*3 */
+			/*2 */
 			"startImg startImg startImg startImg startImg startImg startImg startImg startImg startImg startImg startImg"
-			/*4 */
+			/*3 */
+			"videoT videoT videoT videoT videoT videoT videoT videoT videoT videoT videoT videoT"
+			/*3.1*/
 			"video video video video video video video video video video video video"
-			/* Divider */
+			/*4 */
 			"path1 path1 path1 path1 path1 path1 path1 path1 path1 path1 path1 path1"
 			/*5*/
 			"signupImg signupImg signupImg signupImg signupImg signupImg signupText signupText signupText signupText signupText signupText"
-			/* Divider */
+			/*6 */
 			"path2 path2 path2 path2 path2 path2 path2 path2 path2 path2 path2 path2"
-			/*6*/
-			"speechImg speechImg speechImg speechImg speechImg speechImg speechText speechText speechText speechText speechText speechText"
 			/*7*/
-			"studentText studentText studentText studentText studentText studentText studentImg studentImg studentImg studentImg studentImg studentImg"
+			"speechImg speechImg speechImg speechImg speechImg speechImg speechText speechText speechText speechText speechText speechText"
 			/*8*/
-			"challengeImg challengeImg challengeImg challengeImg challengeImg challengeImg challengeText challengeText challengeText challengeText challengeText challengeText"
+			"studentText studentText studentText studentText studentText studentText studentImg studentImg studentImg studentImg studentImg studentImg"
 			/*9*/
-			"workshpText workshpText workshpText workshpText workshpText workshpText workshpImg workshpImg workshpImg workshpImg workshpImg workshpImg"
-			/* Divider */
-			"path3 path3 path3 path3 path3 path3 path3 path3 path3 path3 path3 path3"
+			"challengeImg challengeImg challengeImg challengeImg challengeImg challengeImg challengeText challengeText challengeText challengeText challengeText challengeText"
 			/*10*/
-			"speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText"
-			/*11*/
-			"speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg "
+			"workshpText workshpText workshpText workshpText workshpText workshpText workshpImg workshpImg workshpImg workshpImg workshpImg workshpImg"
+			/* 11 */
+			"path3 path3 path3 path3 path3 path3 path3 path3 path3 path3 path3 path3"
 			/*12*/
-			"agenda agenda agenda agenda agenda agenda agenda agenda agenda agenda agenda agenda"
+			"speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText"
 			/*13*/
-			"universText universText universText universText universText universText universText universText universText universText universText universText"
+			"speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg "
 			/*14*/
+			"agenda agenda agenda agenda agenda agenda agenda agenda agenda agenda agenda agenda"
+			/*15*/
+			"universText universText universText universText universText universText universText universText universText universText universText universText"
+			/*16*/
 			"universImg universImg universImg universImg universImg universImg universImg universImg universImg universImg universImg universImg"
 			/* Divider */
 			"path4 path4 path4 path4 path4 path4 path4 path4 path4 path4 path4 path4"
@@ -530,25 +605,43 @@ footer {
 			"partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerIllu partnerIllu partnerIllu partnerIllu"
 			/* Divider */
 			"path5 path5 path5 path5 path5 path5 path5 path5 path5 path5 path5 path5"
-			/*17*/
+			/*21*/
 			"faq faq faq faq faq faq faq faq faq faq faq faq"
-			/*18*/
-			"footer footer footer footer footer footer footer footer footer footer footer footer"
-		;
+			/*22*/
+			"footer footer footer footer footer footer footer footer footer footer footer footer";
 		justify-items: left;
 		text-align: left;
-
+	}
+	header {
+		margin-left: -10vw;
+	}
+	h2::first-letter {
+		color: unset;
+	}
+	.start_text__container {
+		padding-top: 350px;
+	}
+	.video__container {
+		width: 100%;
 	}
 	.speaker-grid {
 		display: grid;
-		grid-template-columns: repeat(4, 25%);
-		grid-template-rows: 
-		280px
-		280px;
-		grid-template-areas: 
-		"speaker1 speaker2 speaker3 speakerIllu"
-		"speaker4 speaker5 speaker6 speakerIllu"		
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows:
+			auto auto;
+		row-gap: 20px;
+		column-gap: 20px;
+		grid-template-areas:
+			"speaker1 speaker2 speaker3 speakerIllu"
+			"speaker4 speaker5 speaker6 speakerIllu"
 		;
+	}
+	.speaker_img__container {
+		padding-top: 6%;
+		padding-bottom: 20%;
+	}
+	.speaker_text__container {
+		padding-top: 15%;
 	}
 	#partner1{
 		grid-area: partner1;
@@ -586,24 +679,29 @@ footer {
 	#partner12{
 		grid-area: partner12;
 	}
-	#partner-container {
+	.partner_img__container {
+
 		display: grid;
-		grid-template-columns: repeat(4, 25%);
+		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: 
-		150px
-		150px
-		150px;
+		100px
+		100px
+		100px;
 		grid-template-areas: 
 		"partner1 partner2 partner3 partner4"
 		"partner5 partner6 partner7 partner8"
 		"partner9 partner10 partner11 partner12"		
 		;
 	}
-	#partner-illu {
+	#partner-illu-div {
 		grid-area: partnerIllu;
+		
+	}
+	#partner-illu {
+		width: 100%;
 	}
 	.d_partner-image{
-		width: 15vw;
+		width: 10vw;
 	}
 	/* Disable mobile classes */
 	/* display: none; */
@@ -628,19 +726,17 @@ footer {
 
 	.m_dateLocation {
 		display: none;
-
 	}
 
 	#m_start_img {
 		display: none;
 	}
 
-
-
-
-	
-
+	#signup-btn-start {
+		display: none
+	}
 	.m_textInfoP {
+		width: unset;
 		margin: 10px 18px;
 		font-size: 12px;
 	}
@@ -650,11 +746,20 @@ footer {
 		font-size: 12px;
 	}
 
+	.m_videoSubTitles {
+		width: unset;
+	}
+	.m_videoHeader {
+		width: unset;
+	}
 
+	.path1-container-mobile,
+	.path2-container-mobile{
+		display: none;
+	}
 	/* Define desktop classes */
 	#d_start_img {
-		margin-left: -10%;
-		margin-right: -10%;
+		margin-left: -10vw;
 		width: 100vw;
 	}
 
@@ -723,6 +828,8 @@ footer {
 	.d_iframeContainer {
 		margin-left: 10%;
 		margin-right: 10%;
+		margin-top: 10%;
+		margin-bottom: 10%;
 		text-align: left;
 		position: relative;
 		padding-bottom: 45%;
@@ -734,6 +841,7 @@ footer {
 		width: 100%;
 		height: 100%;
 	}
+
 
 	.d_textSignUp {
 		/*grid-column-start: 4;*/
@@ -750,6 +858,7 @@ footer {
 		margin-left: 10%;
 		margin-right: 10%;
 	}
+
 	h2 {
 		font-size: 35px;
 	}
@@ -811,26 +920,34 @@ footer {
 
 	.d_speakerImg {
 		border-radius: 50%;
-		width: 200px;
-		height: 200px;
+		width: 100%;
+		height: 100%;
+		max-width: 178px;
+		max-height: 178px;
 		overflow: hidden;
+		position:absolute;
+		top: 0;
 	}
-
-
-
+	.speaker-img-div{
+		padding-top: 100%;
+		position: relative;
+		max-height: 178px;
+		display: flex;
+		justify-content: center;
+		
+	}
 	.d_speakerName {
 		font-size: 24px;
-		;
+		text-align: center;
+		width: fit-content;
 	}
 
 	.d_speakerPosition {
 		font-size: 16px;
+		text-align: center;
 	}
-
 	.d_speaker {
-		margin: 20px;
-
-
+		
 	}
 
 
@@ -843,73 +960,79 @@ footer {
 	.d_font12px {
 		font-size: 12px;
 	}
-	#agenda_background{
-		margin-left:10vw;
+
+	#agenda_background {
+		margin-left: 10vw;
 		margin-right: 10vw;
 		text-align: left;
 		display: grid;
 		grid-template-columns: repeat(3, 33%);
-		grid-template-rows: 
-		auto
-		auto
-		auto
-		auto
-		auto
-		auto
-		auto;
-		grid-template-areas: 
-		"agenda_header agenda_header agenda_header"
-		
-		"agenda_none1 agenda_none2 agenda_d3"
-		
-		"agenda_none1 agenda_d2 agenda_d3"
-		
-		"agenda_d1 agenda_d2 agenda_d3"
-		
-		"agenda_none3 agenda_d2 agenda_d3"
-		"agenda_none3 agenda_none4 agenda_d3"
-		;
+		grid-template-rows:
+			auto auto auto auto auto auto auto;
+		grid-template-areas:
+			"agenda_header agenda_header agenda_header"
+
+			"agenda_none1 agenda_none2 agenda_d3"
+
+			"agenda_none1 agenda_d2 agenda_d3"
+
+			"agenda_d1 agenda_d2 agenda_d3"
+
+			"agenda_none3 agenda_d2 agenda_d3"
+			"agenda_none3 agenda_none4 agenda_d3";
 	}
+
 	.agenda__container {
 		width: 100vw;
 		margin-left: -10vw;
-		margin-right: -10vw;
+
 		background-image: url(./assets/desktop/agenda-section-background.svg);
-		background-repeat: no-repeat;
+		background-size: cover;
 	}
+
 	.d_agendaHeader {
 		margin-top: 100px;
 		grid-area: agenda_header;
 		text-align: left;
 	}
+
 	.agenda-none {
 		grid-area: agenda_none;
 	}
+
 	#agenda-none1 {
 		grid-area: agenda_none1;
 	}
+
 	#agenda-none2 {
 		grid-area: agenda_none2;
 	}
+
 	#agenda-none3 {
 		grid-area: agenda_none3;
 	}
+
 	#agenda-none4 {
 		grid-area: agenda_none4;
 	}
+
 	.d_agendaDay {
 		float: left;
 		margin-left: 10%;
 	}
+
 	#agenda-day1 {
 		grid-area: agenda_d1;
 	}
+
 	#agenda-day2 {
 		grid-area: agenda_d2;
 	}
+
 	#agenda-day3 {
 		grid-area: agenda_d3;
 	}
+
 	.d_agendaTable {
 		margin-top: 30px;
 	}
@@ -926,6 +1049,39 @@ footer {
 		text-align: left;
 		margin-top: 50px;
 	}
+
+	#globe_illustration {
+		grid-area: globe;
+	}
+
+	.university_img__container {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-rows:
+			150px 150px;
+		grid-row-gap: 20px;
+		grid-column-gap: 15px;
+		grid-template-areas:
+			"tub whu tum hpi globe globe"
+			"zep uom waw maa globe globe";
+		align-items: center;
+		justify-items: center;
+		margin-bottom: 40px;
+	}
+	.university-img {
+		width: 100%;
+	}
+
+	.university-name {
+		text-align: center;
+	}
+	.partner_text__container{
+		background: unset;
+	}
+	.partner_img__container{
+		max-width: 100%;
+	}
 }
 
 
@@ -935,22 +1091,22 @@ footer {
 
 /* Add a black background color to the top navigation */
 .topnav {
-  overflow: hidden;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%;
-  background-color: white;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: white;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  float: right;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 18px;
-  text-decoration: none;
-  font-size: 17px;
+	float: right;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 18px;
+	text-decoration: none;
+	font-size: 17px;
 }
 
 .topnav a:first-child {
@@ -959,134 +1115,105 @@ footer {
 }
 
 .topnav a:first-child {
-  float: left;
-  display: block;
+	float: left;
+	display: block;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+	background-color: #ddd;
+	color: black;
 }
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: #4CAF50;
-  color: white;
+	background-color: #4CAF50;
+	color: white;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
-  display: none;
-} 
+	display: none;
+}
 
 
- /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
+	.topnav a:not(:first-child) {
+		display: none;
+	}
+
+	.topnav a.icon {
+		float: right;
+		display: block;
+	}
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
-  .topnav.responsive {
-  	position: relative;
-  }
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: center;
-  }
-  nav a:nth-child(2) {
-  	margin-top: 25px;
-  }
-} 
+	.topnav.responsive {
+		position: relative;
+		background-color: rgba(179, 226, 237, 0.97);
+	}
 
-.accordion {
-  background-color: white;
-  color: black;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: 1px solid var(--unicon-lightblue);
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
+	.topnav.responsive a.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: center;
+		font-weight: 900;
+		font-size: 16px;	
+	}
+
+	nav a:nth-child(2) {
+		margin-top: 25px;
+	}
 }
 
-.active, .accordion:hover {
-  background-color: #ccc;
+
+
+
+
+.accordion {
+	background-color: white;
+	color: black;
+	cursor: pointer;
+	padding: 18px 20px;
+	width: 100%;
+	border: 1px solid var(--unicon-lightblue);
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+	background-color: #ccc;
 }
 
 .accordion:after {
-  content: '\203A';
-  color: black;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
+	content: '\203A';
+	color: black;
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
 }
 
 .active:after {
-  content: "\2212";
+	content: "\2212";
 }
 
 .panel {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
+	padding: 0 18px;
+	background-color: white;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
 }
-	#uni_tum {
-		grid-area: tum;
-	}
-	#uni_whu {
-		grid-area: whu;
-	}
-	#uni_hpi{
-		grid-area: hpi;
-	}
-	#uni_warwick {
-		grid-area: warwick;
-	}
-	#uni_friedrichshafen {
-		grid-area: friedrichshafen;
-	}
-	#uni_tub {
-		grid-area: tub;
-	}
-	#uni_mannheim{
-		grid-area: mannheim;
-	}
-	#uni_maastricht{
-		grid-area: maastricht;
-	}
-	#globe_illustration{
-		grid-area: globe;
-	}
-	#university_grid_container{
-		display: grid;
-		grid-template-columns: repeat(6, 16.66%);
-		grid-template-rows: 
-		200px
-		200px;
-		grid-template-areas: 
-		"tum whu hpi warwick globe globe"
-		"friedrichshafen tub mannheim maastricht globe globe";
-	}
-	.university-img{
-		width: 100%;
-	}
-	.university-name {
-		text-align: center;
-	}
-}
+
