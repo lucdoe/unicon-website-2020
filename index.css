@@ -308,7 +308,8 @@ span {
 	.d_speakerWrapper,
 	.d_sectionImg,
 	#globe_illustration,
-	#partner-illu-div
+	#partner-illu-div,
+	#d_faq_header
 	 {
 		display: none;
 	}
@@ -391,7 +392,7 @@ span {
 	font-size: 12px;
 }
 
-#faq_header {
+#m_faq_header {
 	margin-bottom: 35px;
 }
 
@@ -552,11 +553,11 @@ footer ul {
 			/* 13. speakerImg*/
 			auto
 			/* 14. agenda*/
-			684px
+			auto
 			/* 15. universText*/
-			150px
+			auto
 			/* 16. universImg*/
-			329px
+			auto
 			/* 17. Divider 4 */
 			41px
 			/* 18. partnerText*/
@@ -834,7 +835,6 @@ footer ul {
 	.d_iframeContainer {
 		margin-left: 10%;
 		margin-right: 10%;
-		margin-top: 10%;
 		margin-bottom: 10%;
 		text-align: left;
 		position: relative;
@@ -991,7 +991,7 @@ footer ul {
 	.agenda__container {
 		width: 100vw;
 		margin-left: -10vw;
-
+		padding-bottom: 10%;
 		background-image: url(./assets/desktop/agenda-section-background.svg);
 		background-size: cover;
 	}
@@ -1053,7 +1053,7 @@ footer ul {
 
 	.d_studentsHeader {
 		text-align: left;
-		margin-top: 50px;
+		margin-top: 15%;
 	}
 
 	#globe_illustration {
@@ -1073,10 +1073,11 @@ footer ul {
 			"zep tub uom maa globe globe";
 		align-items: center;
 		justify-items: center;
-		margin-bottom: 40px;
+		margin-bottom: 15%;
 	}
 	.university-img {
 		width: 100%;
+		height: auto;
 	}
 
 	.university-name {
@@ -1084,9 +1085,17 @@ footer ul {
 	}
 	.partner_text__container{
 		background: unset;
+		padding-top: 15%;
 	}
 	.partner_img__container{
 		max-width: 100%;
+	}
+
+	#m_faq_header{
+		display: none;
+	}
+	#d_faq_header{
+		margin-bottom: 35px;
 	}
 }
 
