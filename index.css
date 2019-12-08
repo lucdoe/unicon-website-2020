@@ -512,8 +512,15 @@ footer ul {
 		align-content: center;
 
 	}
+	.signup_text__container {
+		text-align: center;
+	}
 	.signup_img__container {
 		width: 100%;
+	}
+	.d_textSignUp{
+		width: 90%;
+		padding-left: 10%;
 	}
 	#signup-img {
 		width: 100%;
