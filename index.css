@@ -307,7 +307,8 @@ span {
 	.d_imageDivLeft,
 	.d_speakerWrapper,
 	.d_sectionImg,
-	#globe_illustration
+	#globe_illustration,
+	#partner-illu-div
 	 {
 		display: none;
 	}
@@ -372,7 +373,7 @@ span {
 	background: rgb(232,49,124);
 	background: linear-gradient(90deg, rgba(232,49,124,1) 0%, rgba(232,49,124,1) 0%, rgba(179,226,237,1) 100%); 
 }
-.partner_img__container {
+.m_partner_img__container {
 	display: grid;
 	grid-template-columns: repeat(4, 60px);
 	grid-template-rows:
@@ -679,7 +680,7 @@ footer ul {
 	#partner12{
 		grid-area: partner12;
 	}
-	.partner_img__container {
+	.d_partner_img__container {
 
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
