@@ -130,7 +130,7 @@ footer {
 		/* 4. videoText*/
 		140px
 		/* 4.1 video*/
-		270px
+		360px
 		/*5.1 divider*/
 		12px
 		/* 5. signupText*/
@@ -140,15 +140,15 @@ footer {
 		/* 6.- 9. sppech, students, challenge, workshop*/
 		repeat(4, 190px)
 		/* 10. spaekerText*/
-		140px
+		190px
 		/* 11. speakerImg*/
-		326px
+		430px
 		/* 12. universText*/
 		120px
 		/* 13. universImg*/
 		160px
 		/* 14. partnerText*/
-		200px
+		225px
 		/* 15. partnerImg*/
 		180px
 		/* 16. FAQ*/
@@ -206,17 +206,17 @@ footer {
 header {
 	display: flex;
 }
-
-.start_text__container {
-	padding-top: 50px;
-}
-
 .logo {
 	width: 96px;
 	height: 38px;
 	float: left;
+	margin: 5px 8px;
 }
 
+
+.start_text__container {
+	padding-top: 50px;
+}
 .m_title {
 	font-size: 38px;
 	font-weight: 900;
@@ -239,6 +239,7 @@ header {
 }
 
 
+
 .m_videoHeader {
 	font-size: 16px;
 	font-weight: 900;
@@ -255,12 +256,18 @@ header {
 .m_videoHeader,
 .m_videoSubTitles {
 	width: 290px;
+	text-decoration: none;
+}
+.video__container {
+	margin-bottom: 50px;
 }
 iframe.m_iframe {
-	height: 160px;
+	height: 190px;
 	border: 8px solid var(--unicon-lightblue);
 	border-radius: 5px;
 }
+
+
 
 .signup_text__container {
 	align-self: center;
@@ -281,42 +288,87 @@ iframe.m_iframe {
 	padding: 9px 25px;
 }
 
+
+
+
 .divider {
 	width: 100%;
 }
 
+
+
 h2::first-letter {
 	color: var(--unicon-pink);
+}
+h2 {
+	text-decoration: underline var(--unicon-lightblue);
 }
 span {
 	color: var(--unicon-pink);
 }
 
-#speech_img,
-.university-name, 
-.d_textInfoQuote,
-.d_titlesubTitle,
-.agenda__container,
-.d_dateLocation,
-.d_video,
-.d_imageDivRight, 
-.d_imageDivLeft,
-.d_speakerWrapper,
-.d_sectionImg,
-#globe_illustration
- {
-	display: none;
+
+
+
+.speech_text__container {
+	margin-top: 40px;
 }
-
-
 
 
 
 .m_textInfoP {
 	margin-top: 10px;
 	font-size: 12px;
-	width: 340px;
+	margin: 10px 30px;
 }
+
+.speaker_text__container {
+	margin-top: 50px;
+}
+#speaker1 {
+	grid-area: speaker1;
+}
+#speaker2 {
+	grid-area: speaker2;
+}
+#speaker3 {
+	grid-area: speaker3;
+}
+#speaker4 {
+	grid-area: speaker4;
+}
+#speaker5 {
+	grid-area: speaker5;
+}
+#speaker6 {
+	grid-area: speaker6;
+}
+.speaker_img__container {
+	display: grid;
+	grid-template-columns: repeat(2, 120px);
+	grid-template-rows:
+		140px 140px;
+	grid-row-gap: 40px;
+	grid-column-gap: 30px;
+	grid-template-areas:
+		"speaker1 speaker2"
+		"speaker3 speaker4";
+	justify-items: center;
+	align-items: center;
+}
+.d_speaker img {
+	border: 5px solid var(--unicon-lightblue);
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+}
+h3.d_speakerName {
+	font-size: 12px;
+}
+p.d_speakerPosition {
+	font-size: 8px;
+}
+
 
 
 #uni_tum{
@@ -362,9 +414,15 @@ span {
 	height: 80px;
 }
 
-.partner_text__container {
-	background: rgb(232,49,124);
-	background: linear-gradient(90deg, rgba(232,49,124,1) 0%, rgba(232,49,124,1) 0%, rgba(179,226,237,1) 100%); 
+
+
+
+.partner_text__container h2 {
+	margin-top: 40px;
+}
+#contact_link {
+	color: var(--unicon-pink);
+font-weight: bold;
 }
 .partner_img__container {
 	display: grid;
@@ -376,8 +434,8 @@ span {
 	grid-template-areas:
 		"flh ros"
 		"scc jub";
-	background-color: background-image: linear-gradient(to bottom, #e8317c, #e8317c -20%,  #b3e2ed 98%);
 }
+
 
 
 .m_font12px {
@@ -402,6 +460,27 @@ footer ul {
 	list-style: none;
 }
 
+
+
+#speech_img,
+.university-name, 
+.d_textInfoQuote,
+.d_titlesubTitle,
+.agenda__container,
+.d_dateLocation,
+.d_video,
+.d_imageDivRight, 
+.d_imageDivLeft,
+.d_sectionImg,
+#globe_illustration,
+#speaker5,
+#speaker6
+ {
+	display: none;
+}
+
+
+
 /* Hide desktop elements with different content on mobile */
 @media screen and (max-width: 900px) {
 
@@ -413,10 +492,6 @@ footer ul {
 	.d_imageDivLeft img {
 		width: 0;
 		height: 0;
-	}
-
-	.d_speakerImg {
-		width: 0;
 	}
 
 	#speaker_illustration {
@@ -455,30 +530,6 @@ footer ul {
 		width: 100vw;
 		margin-left: -10%;
 		margin-right: -10%;
-	}
-
-	#speaker1 {
-		grid-area: speaker1;
-	}
-
-	#speaker2 {
-		grid-area: speaker2;
-	}
-
-	#speaker3 {
-		grid-area: speaker3;
-	}
-
-	#speaker4 {
-		grid-area: speaker4;
-	}
-
-	#speaker5 {
-		grid-area: speaker5;
-	}
-
-	#speaker6 {
-		grid-area: speaker6;
 	}
 
 	#speaker_illustration_div {
@@ -972,7 +1023,7 @@ footer ul {
 	display: block;
 	color: black;
 	text-align: center;
-	padding: 14px 18px;
+	padding: 16px 18px;
 	text-decoration: none;
 	font-size: 17px;
 }
@@ -1051,7 +1102,7 @@ footer ul {
 	background-color: white;
 	color: black;
 	cursor: pointer;
-	padding: 18px 20px;
+	padding: 18px 30px;
 	width: 100%;
 	border: 1px solid var(--unicon-lightblue);
 	text-align: left;
