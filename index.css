@@ -143,28 +143,30 @@ footer {
 		200px
 		/*5.2 divider*/
 		12px
-		/* 6.- 9. sppech, students, challenge, workshop*/
-		repeat(4, 190px)
+		/*6. sppech */
+		240px
+		/* 7.- 9. , students, challenge, workshop*/
+		repeat(3, 170px)
 		/* 10. spaekerText*/
 		190px
 		/* 11. speakerImg*/
 		360px
 		/* 12. universText*/
-		120px
+		150px
 		/* 13. universImg*/
-		160px
+		240px
 		/*14.1 divider*/
 		12px
 		/* 14. partnerText*/
-		200px
+		240px
 		/* 15. partnerImg*/
 		110px
 		/*15.2 divider*/
-		12px
+		25px
 		/* 16. FAQ*/
-		580px
+		600px
 		/* 17. footer*/
-		100px;
+		170px;
 
 	grid-template-areas:
 		/*2*/
@@ -221,12 +223,19 @@ header {
 	display: flex;
 	width: 100%;
 }
-
+.material-icons-round.md-36 { 
+	font-size: 36px; 
+}
 .logo {
 	width: 96px;
 	height: 38px;
 	float: left;
-	margin: 5px 8px;
+	margin: 5px 23px;
+}
+
+.signup_btn_nav {
+	background-color: var(--unicon-pink);
+	color: white;
 }
 
 .start_text__container {
@@ -327,7 +336,7 @@ span {
 
 
 .speech_text__container {
-	margin-top: 40px;
+	margin-bottom: -80px;
 }
 
 
@@ -340,7 +349,7 @@ span {
 }
 
 .speaker_text__container {
-	margin-top: 50px;
+	margin-top: 80px;
 }
 #speaker1 {
 	grid-area: speaker1;
@@ -385,7 +394,9 @@ p.d_speakerPosition {
 }
 
 
-
+.university_text__container {
+	margin-top: 45px;
+}
 #uni_tum{
 	grid-area: tum;
 }
@@ -412,7 +423,7 @@ p.d_speakerPosition {
 }
 .university_img__container {
 	display: grid;
-	grid-template-columns: repeat(4, 80px);
+	grid-template-columns: repeat(4, 76px);
 	grid-template-rows:
 		50px 50px;
 	grid-row-gap: 20px;
@@ -428,12 +439,16 @@ p.d_speakerPosition {
 	height: 60px;
 }
 
+.d_studentHeader {
+	margin-top: 30px;
+}
+
 
 .partner_text__container {
 	align-self: start;
 }
 .partner_text__container h2 {
-	margin-top: 20px;
+	margin-top: 30px;
 	padding-top: 0px;
 }
 #contact_link {
@@ -479,7 +494,7 @@ font-weight: bold;
 }
 .partner_img__container {
 	display: grid;
-	grid-template-columns: repeat(5, 60px);
+	grid-template-columns: repeat(5, 56px);
 	grid-template-rows:
 		40px 40px;
 	grid-row-gap: 10px;
@@ -487,6 +502,7 @@ font-weight: bold;
 	grid-template-areas:
 		"partner1 partner2 partner3 partner4 partner5"
 		"partner6 partner7 partner8 partner9 partner10";
+		margin-bottom: 30px;
 }
 .partner_image {
 	width: 60px;
@@ -501,6 +517,7 @@ font-weight: bold;
 
 #m_faq_header {
 	margin-bottom: 35px;
+	padding-top: 50px;
 }
 
 
@@ -515,13 +532,17 @@ footer {
 footer div h4 {
 	margin: 15px;
 	text-align: center;
-    font-size: 12px;
+    font-size: 15px;
 }
 footer ul {
 	list-style: none;
 }
 footer div li {
-	font-size: 8px;
+	font-size: 13px;
+	margin: 5px;
+}
+footer div li a {
+	color: var(--unicon-font-color);
 }
 
 
@@ -1219,6 +1240,8 @@ footer div li {
 		top: 0;
 		width: 100%;
 		background-color: rgba(179, 226, 237, 0.95);
+		border-bottom-left-radius: 15px;
+		border-bottom-right-radius: 15px;
 	}
 
 	.topnav.responsive a.icon {
@@ -1236,7 +1259,8 @@ footer div li {
 	}
 
 	nav a:nth-child(2) {
-		margin-top: 25px;
+		margin-top: 40px;
+		color: white;
 	}
 }
 
