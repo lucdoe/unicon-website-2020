@@ -13,23 +13,27 @@
 </head>
 
 <body>
-	<header>
-		<nav class="topnav" id="myTopnav">
-			<a><img class="logo" src="./assets/logo-new-thinner.png" alt="unicon logo"></a>
-			<a href="#signup">SIGN UP</a>
-			<a href="#news">GALLERY</a>
-			<a href="#contact">ABOUT</a>
-			<a href="#about">HOME</a>
-			<a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
-				<i class="material-icons-round">menu</i>
-			</a>
-		</nav>
-	</header>
-
 	<div class="grid">
 
+
+
+		<header>
+			<nav class="topnav" id="myTopnav">
+				<a><img class="logo" src="./assets/images/logo-new-thinner.png" alt="unicon logo"></a>
+				<a id="signup-btn-nav" href="#signup">SIGN UP</a>
+				<a href="#news">GALLERY</a>
+				<a href="#contact">ABOUT</a>
+				<a href="#about">HOME</a>
+				<a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+					<i class="material-icons-round">menu</i>
+				</a>
+			</nav>
+		</header>
+
+
+
 		<section class="start_text__container text-center">
-			<h1 class="m_title">unicon 2020</h1>
+			<h1 class="m_title d_title">unicon 2020</h1>
 			<h3 class="m_titlesubTitle">celebrating love for digital products</h3>
 			<h3 class="d_titlesubTitle">celebrating love for digital products -</h3>
 			<h3 class="d_titlesubTitle">made for students by students</h3>
@@ -37,43 +41,49 @@
 			<p class="d_dateLocation">digital product conference <br> 5th to 7th of March 2020 <br> CODE University
 				Campus Berlin</p>
 		</section>
-
 		<section class="start_img__container">
 			<img id="m_start_img" src="./assets/mobile/start_mobile.svg">
+			<!-- Leave this duplicate in, because different image file -->
+			<img id="d_start_img" src="./assets/desktop/lp-illustration-1.svg">
 		</section>
 
 
-		<div class="video_text__container">
-			<h2 class="m_videoHeader"><span>thanks</span> to everyone for being part of <span>unicon</span> 2019!</h2>
-			<p class="m_videoSubTitles">100 participants, 5 speeches, 6 workshops, 1 challenge PLUS
-				afterparty</p>
-		</div>
 
-		<section class="video__container">
+		<section class="video_text__container text-center">
+			<h2 class="m_videoHeader d_videoHeader">thanks for being part of unicon 2019</h2>
+			<p class="m_videoSubTitles d_videoSubTitles">100 participants, 5 speeches, 6 workshops, 1 challenge PLUS
+				afterparty</p>
+		</section>
+		<section class="video__container text-center">
 			<div class="m_iframeContainer d_iframeContainer">
 				<iframe class="m_iframe d_iframe" src="https://www.youtube.com/embed/WWvEcMjX4es?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</section>
 
 
-		<div class="path1-container-mobile">
-			<img class="divider" src="./assets/mobile/divider/path1.svg">
-		</div>
-		<div class="signup_img__container"></div>
 
+		<div id="path1-container-mobile">
+			<img class="divider" src="assets/mobile/divider/path1.svg">
+		</div>
+
+		<div class="signup_img__container">
+			<img id="signup-img" src="assets/desktop/people-running-to-unicon.svg">
+		</div>
 		<article class="signup_text__container text-center">
-			<p class="m_textSignUp">Join our digital product conference that is made by students and aims to connect students from inspiring universities and diverse backgrounds through tech.</p> <a href="#signup"><button id="signup-btn-section" class="m_signUp">SIGN UP</button></a>
+			<p class="m_textSignUp d_textSignUp">Join our digital product conference that is made by students and
+				aims to connect students from inspiring universities and diverse backgrounds through tech.</p> <a href="#signup"><button id="signup-btn-section" class="m_signUp">SIGN UP</button></a>
 		</article>
-		<div class="path2-container-mobile">
+
+		<div id="path2-container-mobile">
 			<img class="divider" src="assets/mobile/divider/path2.svg">
 		</div>
 
 
-		<div class="speech_img__container">
-			<img class="d_sectionImg" src="https://dogstodaymagazine.co.uk/wp-content/uploads/2016/05/placeholder-image.png">
-		</div>
 
-		<section class="speech_text__container">
+		<div class="speech_img__container">
+			<img class="d_sectionImg" src="./assets/desktop/speeches.jpg">
+		</div>
+		<div class="speech_text__container">
 			<h2>Speeches</h2>
 			<p class="m_textInfoP d_textInfoP">We invite renowned speakers to talk about their personal
 				experiences with developing digital products. Last year´s speakers included CXOs from Trivago,
@@ -81,24 +91,26 @@
 				entrepreneurs to join us.</p>
 			<p class="d_textInfoQuote"><i>"The speakers were likely to stay and be a true part of the event"</i>
 			</p>
-		</section>
-
+		</div>
 
 		<section class="student_text__container text-center">
+			<div class="">
 				<h2>Students</h2>
-				<p class="m_textInfoP d_textInfoP">We invite renowned speakers to talk about their personal experiences with developing digital products. Last year´s speakers included CXOs from Trivago, Project A Ventures, Outfittery and Blinkist. For unicon 2020, we have convinced amazing entrepreneurs to join us.</p>
-			<p class="d_textInfoQuote"><i>"The speakers were likely to stay and be a true part of the event"</i>
+				<p class="m_textInfoP d_textInfoP">We invite renowned speakers to talk about their personal
+					experiences with developing digital products. Last year´s speakers included CXOs from Trivago,
+					Project A Ventures, Outfittery and Blinkist. For unicon 2020, we have convinced amazing
+					entrepreneurs to join us.</p>
+				<p class="d_textInfoQuote"><i>"The speakers were likely to stay and be a true part of the event"</i>
+				</p>
+			</div>
 		</section>
-
 		<div class="student_img__container">
 			<img class="d_sectionImg" src="https://dogstodaymagazine.co.uk/wp-content/uploads/2016/05/placeholder-image.png">
 		</div>
 
-
 		<div class="challenge_img__container ">
 			<img class="d_sectionImg" src="https://dogstodaymagazine.co.uk/wp-content/uploads/2016/05/placeholder-image.png">
 		</div>
-
 		<div class="challenge_text__container text-center">
 			<h2>The Challenge</h2>
 			<p class="m_textInfoP d_textInfoP">In oder to combine the diverse skills of our attendees, we will
@@ -109,272 +121,371 @@
 			</p>
 		</div>
 
-
 		<div class="workshop_text__container text-center">
 			<h2>Workshops</h2>
 			<p class="m_textInfoP d_textInfoP">To enable close contact to industry leaders with high credibility and many years of experience as well as hands on deep dives, we will organise several masterclasses and workshops about specific topics regarding digital product development.</p>
 			<p class="d_textInfoQuote"><i>"The speakers were likely to stay and be a true part of the event"</i>
 			</p>
 		</div>
-
 		<div class="workshop_img__container">
-			<img class="d_sectionImg" src="https://dogstodaymagazine.co.uk/wp-content/uploads/2016/05/placeholder-image.png">
+			<img class="d_sectionImg" src="./assets/desktop/workshops.jpg">
 		</div>
+
 
 
 		<div class="speaker_text__container d_speakerHeader">
 			<h2>Former Speakers</h2>
 			<p class="m_textInfoP d_textInfoP">Our goal when choosing speakers is always to ensure a big variety in topics, as well as backgrounds. We are not only looking at the companies they have founded or worked for, but also what they have experienced on a personal level and what of those experience can support us - as students - most. In the last year, our speakers talked about topcis like ...</p>
 		</div>
-
 		<div class="speaker_img__container">
-				<div id="speaker1" class="d_speaker">
-					<img class="d_speakerImg" src="./assets/mobile/speaker/flo_heinemann.jpg">
-					<h3 class="d_speakerName">Florian Heinemann</h3>
-					<p class="d_speakerPosition">Project A</p>
-				</div>
-				<div id="speaker2" class="d_speaker">
-					<img class="d_speakerImg" src="./assets/mobile/speaker/rolf_schromgens.jpg">
-					<h3 class="d_speakerName">Rolf Schrömgens</h3>
-					<p class="d_speakerPosition">Trivago</p>
-				</div>
-				<div id="speaker3" class="d_speaker">
-					<img class="d_speakerImg" src="./assets/mobile/speaker/scott_chacon.jpg">
-					<h3 class="d_speakerName">Scott Chacon</h3>
-					<p class="d_speakerPosition">GitHub, Chatterbug</p>
-				</div>
-				<div id="speaker4" class="d_speaker">
-					<img class="d_speakerImg" src="./assets/mobile/speaker/julia_boesch.jpg">
-					<h3 class="d_speakerName">Julia Bösch</h3>
-					<p class="d_speakerPosition">Outfittery</p>
-				</div>
-				<div id="speaker5" class="d_speaker">
-					<img class="d_speakerImg" src="https://dogstodaymagazine.co.uk/wp-content/uploads/2016/05/placeholder-image.png">
-					<h3 class="d_speakerName">Florian Heinemann</h3>
-					<p class="d_speakerPosition">Founding Partner at Project A</p>
-				</div>
-				<div id="speaker6" class="d_speaker">
-					<img class="d_speakerImg" src="https://dogstodaymagazine.co.uk/wp-content/uploads/2016/05/placeholder-image.png">
-					<h3 class="d_speakerName">Florian Heinemann</h3>
-					<p class="d_speakerPosition">Founding Partner at Project A</p>
-				</div>
-				<div id="speaker_illustration_div">
-					<img id="speaker_illustration" src="https://dogstodaymagazine.co.uk/wp-content/uploads/2016/05/placeholder-image.png">
-				</div>
+			<div id="speaker1" class="d_speaker">
+				<img class="d_speakerImg" src="assets/mobile/speaker/lukasz_gado.jpg">
+				<h3 class="d_speakerName">Lukasz Gadowski</h3>
+				<p class="d_speakerPosition">Co-Founder of Delivery Hero, Circ</p>
+			</div>
+			<div id="speaker2" class="d_speaker">
+				<img class="d_speakerImg" src="assets/mobile/speaker/julia_boesch.jpg">
+				<h3 class="d_speakerName">Julia Bösch</h3>
+				<p class="d_speakerPosition">Co-Founder of Outfittery</p>
+			</div>
+			<div id="speaker3" class="d_speaker">
+				<img class="d_speakerImg" src="assets/mobile/speaker/scott_chacon.jpg">
+				<h3 class="d_speakerName">Scott Chacon</h3>
+				<p class="d_speakerPosition">Co-Founder of GitHub, CHatterbug</p>
+			</div>
+			<div id="speaker4" class="d_speaker">
+				<img class="d_speakerImg" src="assets/mobile/speaker/flo_heinemann.jpg">
+				<h3 class="d_speakerName">Florian Heinemann</h3>
+				<p class="d_speakerPosition">Founding Partner at Project A</p>
+			</div>
+			<div id="speaker5" class="d_speaker">
+				<img class="d_speakerImg" src="assets/mobile/speaker/tum.jpg">
+				<h3 class="d_speakerName">Finn Age Hänsel</h3>
+				<p class="d_speakerPosition">CEO of Movinga</p>
+			</div>
+			<div id="speaker6" class="d_speaker">
+				<img class="d_speakerImg" src="assets/mobile/speaker/tum.jpg">
+				<h3 class="d_speakerName">Judith Dada</h3>
+				<p class="d_speakerPosition">Partner at La Famiglia VC</p>
+			</div>
+			<div id="speaker_illustration_div">
+				<img id="speaker_illustration" src="./assets/desktop/speaker-illustration.svg">
+			</div>
 		</div>
 
 
 
-			<section class="agenda__container">
-				<div id="agenda_background">
-					<div class="d_agendaHeader">
-						<h2>Agenda</h2>
-					</div>
+		<section class="agenda__container">
+			<div id="agenda_background">
+				<div class="d_agendaHeader">
+					<h2>Agenda</h2>
 				</div>
-			<div id="agenda-none1"></div>
-			<div id="agenda-none2"></div>
-			<div id="agenda-day1" class="d_agendaDay">
-				<h3>Day 1</h3>
-				<table class="d_agendaTable">
-					<tbody>
-						<tr>
-							<td>19:00</td>
-							<td>Start</td>
-						</tr>
-						<tr>
-							<td>19:00 - 19:30</td>
-							<td>Welcome</td>
-						</tr>
-						<tr>
-							<td>19:30 - 20:15</td>
-							<td>Speech 1</td>
-						</tr>
-						<tr>
-							<td>20:30 - 21:15</td>
-							<td>Speech 2</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div id="agenda-none3"></div>
-			<div id="agenda-day2" class="d_agendaDay">
-				<h3>Day 2</h3>
-				<table class="d_agendaTable">
-					<tbody>
-						<tr>
-							<td>9:00</td>
-							<td>Breakfast</td>
-						</tr>
-						<tr>
-							<td>10:15 - 11:45</td>
-							<td>Welcome Speech</td>
-						</tr>
-						<tr>
-							<td>12:00 - 13:00</td>
-							<td>Lunch</td>
-						</tr>
-						<tr>
-							<td>13:15 - 15:30</td>
-							<td>Interviews</td>
-						</tr>
-						<tr>
-							<td>16:30 - 18:00</td>
-							<td>Workshop</td>
-						</tr>
-						<tr>
-							<td>19:00 - ...</td>
-							<td>Dinner and kicker</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div id="agenda-none4"></div>
-			<div id="agenda-day3" class="d_agendaDay">
-				<h3>Day 3</h3>
-				<table class="d_agendaTable">
-					<tbody>
-						<tr>
-							<td>19:00</td>
-							<td>Start</td>
-						</tr>
-						<tr>
-							<td>19:00 - 19:30</td>
-							<td>Welcome</td>
-						</tr>
-						<tr>
-							<td>19:30 - 20:15</td>
-							<td>Speech 1</td>
-						</tr>
-						<tr>
-							<td>20:30 - 21:15</td>
-							<td>Speech 2</td>
-						</tr>
-					</tbody>
-				</table>
+				<article class="university_text__container">
+					<div class="d_studentsHeader">
+						<h2>Students at <span>unicon</span></h2>
+						<p class="m_textInfoP d_textInfoP">We’re happy to say the our attendees at the last two conferences came from over 20 different universities, including the following:
+						</p>
+					</div>
+				</article>
+				<div id="agenda-none1"></div>
+				<div id="agenda-none2"></div>
+				<div id="agenda-day1" class="d_agendaDay">
+					<h3>Day 1</h3>
+					<table class="d_agendaTable">
+						<tbody>
+							<tr>
+								<td>19:00</td>
+								<td>Start</td>
+							</tr>
+							<tr>
+								<td>19:00 - 19:30</td>
+								<td>Welcome</td>
+							</tr>
+							<tr>
+								<td>19:30 - 20:15</td>
+								<td>Speech 1</td>
+							</tr>
+							<tr>
+								<td>20:30 - 21:15</td>
+								<td>Speech 2</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div id="agenda-none3"></div>
+				<div id="agenda-day2" class="d_agendaDay">
+					<h3>Day 2</h3>
+					<table class="d_agendaTable">
+						<tbody>
+							<tr>
+								<td>9:00</td>
+								<td>Breakfast</td>
+							</tr>
+							<tr>
+								<td>10:15 - 11:45</td>
+								<td>Welcome Speech</td>
+							</tr>
+							<tr>
+								<td>12:00 - 13:00</td>
+								<td>Lunch</td>
+							</tr>
+							<tr>
+								<td>13:15 - 15:30</td>
+								<td>Interviews</td>
+							</tr>
+							<tr>
+								<td>16:30 - 18:00</td>
+								<td>Workshop</td>
+							</tr>
+							<tr>
+								<td>19:00 - ...</td>
+								<td>Dinner and kicker</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div id="agenda-none4"></div>
+				<div id="agenda-day3" class="d_agendaDay">
+					<h3>Day 3</h3>
+					<table class="d_agendaTable">
+						<tbody>
+							<tr>
+								<td>19:00</td>
+								<td>Start</td>
+							</tr>
+							<tr>
+								<td>19:00 - 19:30</td>
+								<td>Welcome</td>
+							</tr>
+							<tr>
+								<td>19:30 - 20:15</td>
+								<td>Speech 1</td>
+							</tr>
+							<tr>
+								<td>20:30 - 21:15</td>
+								<td>Speech 2</td>
+							</tr>
+							<tr>
+								<td>19:00</td>
+								<td>Start</td>
+							</tr>
+							<tr>
+								<td>19:00 - 19:30</td>
+								<td>Welcome</td>
+							</tr>
+							<tr>
+								<td>19:30 - 20:15</td>
+								<td>Speech 1</td>
+							</tr>
+							<tr>
+								<td>20:30 - 21:15</td>
+								<td>Speech 2</td>
+							</tr>
+							<tr>
+								<td>19:00 - 19:30</td>
+								<td>Welcome</td>
+							</tr>
+							<tr>
+								<td>19:30 - 20:15</td>
+								<td>Speech 1</td>
+							</tr>
+							<tr>
+								<td>20:30 - 21:15</td>
+								<td>Speech 2</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 			</div>
 		</section>
+
 
 
 		<article class="university_text__container">
 			<div class="d_studentsHeader">
-				<h2>Students at <span>unicon</span></h2>
-				<p class="m_textInfoP d_textInfoP">We’re happy to say the our attendees at the last two conferences came from over 20 different universities, including the following:
+				<h2>Students at unicon</h2>
+				<p class="m_textInfoP d_textInfoP">We’re happy to say that our attendees at the last two
+					conferences
+					came from over 20 different universities, including the following:
 				</p>
 			</div>
 		</article>
-
 		<div class="university_img__container">
-				<div id="uni_tum" class="university_div">
-					<img class="university-img" src="assets/tum@3x.png">
-					<h3 class="university-name">Munich</h3>
-				</div>
-				<div id="uni_whu" class="university_div">
-					<img class="university-img" src="assets/whu@3x.png">
-					<h3 class="university-name">Vallendar</h3>
-				</div>
-				<div id="uni_hpi" class="university_div">
-					<img class="university-img" src="assets/hpi@3x.png">
-					<h3 class="university-name">Potsdam</h3>
-				</div>
-				<div id="uni_warwick" class="university_div">
-					<img class="university-img" src="assets/warwick@3x.png">
-					<h3 class="university-name">Warwick</h3>
-				</div>
-				<div id="uni_friedrichshafen" class="university_div">
-					<img class="university-img" src="assets/tum@3x.png">
-					<h3 class="university-name">Friedrichshafen</h3>
-				</div>
-				<div id="uni_tub" class="university_div">
-					<img class="university-img" src="assets/tum@3x.png">
-					<h3 class="university-name">Berlin</h3>
-				</div>
-				<div id="uni_mannheim" class="university_div">
-					<img class="university-img" src="assets/tum@3x.png">
-					<h3 class="university-name">Mannheim</h3>
-				</div>
-				<div id="uni_maastricht" class="university_div">
-					<img class="university-img" src="assets/tum@3x.png">
-					<h3 class="university-name">Maastricht</h3>
-				</div>
-				<div id="globe_illustration">globe illustration</div>
+			<div id="uni_tum" class="university_div">
+				<img class="university-img" src="assets/images/unis/tum.png">
+				<h3 class="university-name">Munich</h3>
+			</div>
+			<div id="uni_whu" class="university_div">
+				<img class="university-img" src="assets/images/unis/whu.png">
+				<h3 class="university-name">Vallendar</h3>
+			</div>
+			<div id="uni_hpi" class="university_div">
+				<img class="university-img" src="assets/images/unis/hpi.png">
+				<h3 class="university-name">Potsdam</h3>
+			</div>
+			<div id="uni_warwick" class="university_div">
+				<img class="university-img" src="assets/images/unis/warwick.png">
+				<h3 class="university-name">Warwick</h3>
+			</div>
+			<div id="uni_friedrichshafen" class="university_div">
+				<img class="university-img" src="assets/images/unis/zeppelin.png">
+				<h3 class="university-name">Friedrichshafen</h3>
+			</div>
+			<div id="uni_tub" class="university_div">
+				<img class="university-img" src="assets/images/unis/tuberlin.png">
+				<h3 class="university-name">Berlin</h3>
+			</div>
+			<div id="uni_mannheim" class="university_div">
+				<img class="university-img" src="assets/images/unis/mannheim.png">
+				<h3 class="university-name">Mannheim</h3>
+			</div>
+			<div id="uni_maastricht" class="university_div">
+				<img class="university-img" src="assets/images/unis/maastricht.png">
+				<h3 class="university-name">Maastricht</h3>
+			</div>
+			<div id="globe_illustration">globe illustration</div>
 		</div>
 
+
+
+		<div id="path3-container-mobile">
+			<img class="divider" src="assets/mobile/divider/path1.svg">
+		</div>
 
 		<section class="partner_text__container">
 			<h2>Partners at <span>unicon</span></h2>
 			<p class="m_textInfoP d_textInfoP">Every year, we’re partnering up with several companies to make the experience as interesting as possible - for all attendees as well as our patners. They can contribute with workshops, given by industry experts, doing job interviews or just being there for an exchange of thoughts. Are you a participants and have ideas about companies we should collaborate with us? Reach out to us.
-Are you Interested in becoming a partner company? <br><a id="contact_link" href="#contact">Contact us!</a></p>
+				Are you Interested in becoming a partner company? <br><a id="contact_link" href="#contact">Contact us!</a></p>
 		</section>
 
-		<div class="partner_img__container"></div>
+		<div id="partner-illu-div">
+			<img id="partner-illu" src="./assets/desktop/partner-illu.svg">
+			<button class="d_learn-more-btn">></button>
+			<h3 class="d_learn-more-btn-text">Learn More</h3>
+		</div>
+
+		<div class="partner_img__container">
+			<div id="partner1">
+				<img class="partner_image" src="./assets/images/partners/hubraum.jpg">
+			</div>
+			<div id="partner2">
+				<img class="partner_image" src="./assets/images/partners/linkedin.jpg">
+			</div>
+			<div id="partner3">
+				<img class="partner_image" src="./assets/images/partners/hubert.jpg">
+			</div>
+			<div id="partner4">
+				<img class="partner_image" src="./assets/images/partners/coya.jpg">
+			</div>
+			<div id="partner5">
+				<img class="partner_image" src="./assets/images/partners/futury.jpg">
+			</div>
+			<div id="partner6">
+				<img class="partner_image" src="./assets/images/partners/kpmg.jpg">
+			</div>
+			<div id="partner7">
+				<img class="partner_image" src="./assets/images/partners/heycar.jpg">
+			</div>
+			<div id="partner8">
+				<img class="partner_image" src="./assets/images/partners/ca.jpg">
+			</div>
+			<div id="partner9">
+				<img class="partner_image" src="./assets/images/partners/check-24.jpg">
+			</div>
+			<div id="partner10">
+				<img class="partner_image" src="./assets/images/partners/code.jpg">
+			</div>
+			<div id="partner11">
+				<img class="partner_image" src="">
+			</div>
+			<div id="partner12">
+				<img class="partner_image" src="">
+			</div>
+		</div>
+
+		<div id="path4-container-mobile">
+			<img class="divider" src="assets/mobile/divider/path2.svg">
+		</div>
+
 
 
 		<section class="faq__container">
-			<h2 id="faq_header">FAQ</h2>
+			<h2 id="m_faq_header">FAQ</h2>
+			<h2 id="d_faq_header">Frequently Asked Questions</h2>
 			<button class="accordion">How does the application process work?</button>
 			<div class="panel">
-				<p>Due to the limited amount of space in our location, the CODE campus, we also have to limit slots for participants. That’s why we had to find a way to choose the applicants.
-
-We ask you for some basic information about yourself as a first step of the application process. Besides that, we are really interested in why you would like to join the conference. The answer is optional, but it would make our decision easier if you give a short explanation. Please make sure that your application is written in English.
-
-Important: All students can apply! You just have to be a enrolled at a university or university of applied sciences.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 			</div>
 			<button class="accordion">How many people are going to join the event?</button>
 			<div class="panel">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 			</div>
 			<button class="accordion">Why just 150 participtants?</button>
 			<div class="panel">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 			</div>
 			<button class="accordion">Do you offer accommodation?</button>
 			<div class="panel">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 			</div>
 			<button class="accordion">How do you select participants?</button>
 			<div class="panel">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 			</div>
-			<button class="accordion">How much does it cost to join unicon and what is included?</button>
+			<button class="accordion">How much does it cost to join unicon and what is
+				included?</button>
 			<div class="panel">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 			</div>
 			<button class="accordion">How do I sign up for unicon 2020?</button>
 			<div class="panel">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 			</div>
 		</section>
 
 
+		
 		<footer>
 			<div>
 				<h4>Sitemap</h4>
-				 <ul>
+				<ul>
 					<li>Home</li>
 					<li>About</li>
 					<li>History</li>
 					<li>Apply</li>
-				</ul> 
+				</ul>
 			</div>
 			<div>
 				<h4>Find us on</h4>
-				 <ul>
+				<ul>
 					<li>unicon.berlin</li>
 					<li>unicon.berlin</li>
 					<li>unicon.berlin</li>
-				</ul> 
+				</ul>
 			</div>
 			<div>
 				<h4>Legal</h4>
-				 <ul>
+				<ul>
 					<li>Imprint</li>
 					<li>Terms and Conditions</li>
 					<li>Privacy Policy</li>
-				</ul> 
+				</ul>
 			</div>
 		</footer>
-
-	</div>
 </body>
 
 </html>

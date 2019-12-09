@@ -35,13 +35,13 @@
 	grid-area: video;
 }
 
-.path1-container-mobile {
+#path1-container-mobile {
 	grid-area: div1;
 }
 .signup_text__container {
 	grid-area: signupText;
 }
-.path2-container-mobile {
+#path2-container-mobile {
 	grid-area: div2;
 }
 
@@ -101,12 +101,18 @@
 	grid-area: universImg;
 }
 
+#path3-container-mobile {
+	grid-area: div3;
+}
 .partner_text__container {
 	grid-area: partnerText;
 }
 
 .partner_img__container {
 	grid-area: partnerImg;
+}
+#path4-container-mobile {
+	grid-area: div4;
 }
 
 .faq__container {
@@ -142,19 +148,23 @@ footer {
 		/* 10. spaekerText*/
 		190px
 		/* 11. speakerImg*/
-		430px
+		360px
 		/* 12. universText*/
 		120px
 		/* 13. universImg*/
 		160px
+		/*14.1 divider*/
+		12px
 		/* 14. partnerText*/
-		225px
+		200px
 		/* 15. partnerImg*/
-		180px
+		110px
+		/*15.2 divider*/
+		12px
 		/* 16. FAQ*/
-		550px
+		580px
 		/* 17. footer*/
-		150px;
+		100px;
 
 	grid-template-areas:
 		/*2*/
@@ -187,10 +197,14 @@ footer {
 		"universText universText universText universText"
 		/*13*/
 		"universImg universImg universImg universImg"
+		/*14.1*/
+		"div3 div3 div3 div3"
 		/*14*/
 		"partnerText partnerText partnerText partnerText"
 		/*15*/
 		"partnerImg partnerImg partnerImg partnerImg"
+		/*15.1*/
+		"div4 div4 div4 div4"
 		/*16*/
 		"faq faq faq faq"
 		/*17*/
@@ -205,7 +219,9 @@ footer {
 /* END of: grid definiton MOBILE*/
 header {
 	display: flex;
+	width: 100%;
 }
+
 .logo {
 	width: 96px;
 	height: 38px;
@@ -213,9 +229,8 @@ header {
 	margin: 5px 8px;
 }
 
-
 .start_text__container {
-	padding-top: 50px;
+	padding-top: 70px;
 }
 .m_title {
 	font-size: 38px;
@@ -269,6 +284,7 @@ iframe.m_iframe {
 
 
 
+
 .signup_text__container {
 	align-self: center;
 }
@@ -316,6 +332,7 @@ span {
 
 
 
+
 .m_textInfoP {
 	margin-top: 10px;
 	font-size: 12px;
@@ -345,14 +362,12 @@ span {
 }
 .speaker_img__container {
 	display: grid;
-	grid-template-columns: repeat(2, 120px);
+	grid-template-columns: repeat(2, 160px);
 	grid-template-rows:
-		140px 140px;
-	grid-row-gap: 40px;
-	grid-column-gap: 30px;
+		150px 150px;
 	grid-template-areas:
-		"speaker1 speaker2"
-		"speaker3 speaker4";
+		"speaker4 speaker1"
+		"speaker3 speaker2";
 	justify-items: center;
 	align-items: center;
 }
@@ -363,7 +378,7 @@ span {
 	height: 80px;
 }
 h3.d_speakerName {
-	font-size: 12px;
+	font-size: 10px;
 }
 p.d_speakerPosition {
 	font-size: 8px;
@@ -401,39 +416,81 @@ p.d_speakerPosition {
 	grid-template-rows:
 		50px 50px;
 	grid-row-gap: 20px;
-	grid-column-gap: 15px;
 	grid-template-areas:
 		"tub whu tum hpi"
 		"zep uom waw maa";
 	align-items: center;
 	justify-items: center;
-	margin-bottom: 40px;
+	margin-bottom: 80px;
 }
 .university-img {
-	width: 100px;
-	height: 80px;
+	width: 80px;
+	height: 60px;
 }
 
 
-
-
+.partner_text__container {
+	align-self: start;
+}
 .partner_text__container h2 {
-	margin-top: 40px;
+	margin-top: 20px;
+	padding-top: 0px;
 }
 #contact_link {
 	color: var(--unicon-pink);
 font-weight: bold;
 }
+
+#partner1{
+		grid-area: partner1;
+}
+#partner2{
+	grid-area: partner2;
+}
+#partner3{
+	grid-area: partner3;
+}
+#partner4{
+	grid-area: partner4;
+}
+#partner5{
+	grid-area: partner5;
+}
+#partner6{
+	grid-area: partner6;
+}
+#partner7{
+	grid-area: partner7;
+}
+#partner8{
+	grid-area: partner8;
+}
+#partner9{
+	grid-area: partner9;
+}
+#partner10{
+	grid-area: partner10;
+}
+#partner11{
+	grid-area: partner11;
+}
+#partner12{
+	grid-area: partner12;
+}
 .partner_img__container {
 	display: grid;
-	grid-template-columns: repeat(4, 60px);
+	grid-template-columns: repeat(5, 60px);
 	grid-template-rows:
-		95px 95px;
-	grid-row-gap: 40px;
-	grid-column-gap: 30px;
+		40px 40px;
+	grid-row-gap: 10px;
+	grid-column-gap: 10px;
 	grid-template-areas:
-		"flh ros"
-		"scc jub";
+		"partner1 partner2 partner3 partner4 partner5"
+		"partner6 partner7 partner8 partner9 partner10";
+}
+.partner_image {
+	width: 60px;
+	height: 40px;
 }
 
 
@@ -442,7 +499,7 @@ font-weight: bold;
 	font-size: 12px;
 }
 
-#faq_header {
+#m_faq_header {
 	margin-bottom: 35px;
 }
 
@@ -450,14 +507,21 @@ font-weight: bold;
 footer {
 	background-color: var(--unicon-lightblue);
 	width: 100%;
+	height: 100%;
 	display: flex;
 	justify-content:  space-evenly;
+	margin-left: 0vw;
 }
-footer h4 {
+footer div h4 {
 	margin: 15px;
+	text-align: center;
+    font-size: 12px;
 }
 footer ul {
 	list-style: none;
+}
+footer div li {
+	font-size: 8px;
 }
 
 
@@ -474,70 +538,36 @@ footer ul {
 .d_sectionImg,
 #globe_illustration,
 #speaker5,
-#speaker6
+#speaker6,
+#partner11,
+#partner12,
+#partner-illu,
+#partner-illu-div,
+#speaker_illustration,
+#d_start_img,
+.signup_img__container,
+.speech_img__container,
+.student_img__container,
+.challenge_img__container,
+.workshop_img__container,
+#d_faq_header
  {
 	display: none;
 }
 
 
 
-/* Hide desktop elements with different content on mobile */
-@media screen and (max-width: 900px) {
-
-	.d_imageDivRight img {
-		width: 0;
-		height: 0;
-	}
-
-	.d_imageDivLeft img {
-		width: 0;
-		height: 0;
-	}
-
-	#speaker_illustration {
-		width: 0;
-	}
+#speaker_illustration_div {
+	grid-area: speakerIllu;
 }
+
 
 /* START of Desktop classes */
 @media screen and (min-width: 900px) {
-	#page-wrapper {
-		margin-left: 10%;
-		margin-right: 10%;
-	}
-
-	#path1-container {
-		grid-area: path1;
-	}
-
-	#path2-container {
-		grid-area: path2;
-	}
-
-	#path3-container {
-		grid-area: path3;
-	}
-
-	#path4-container {
-		grid-area: path4;
-	}
-
-	#path5-container {
-		grid-area: path5;
-	}
-
-	.divider {
-		width: 100vw;
-		margin-left: -10%;
-		margin-right: -10%;
-	}
-
-	#speaker_illustration_div {
-		grid-area: speakerIllu;
-
-	}
-
+	/* GRID DEFINITION */
+	/* Main grid container */
 	.grid {
+		width: 100%;
 		grid-template-columns: repeat(12, 1fr);
 		grid-template-rows:
 			/* 1. startText*/
@@ -545,9 +575,9 @@ footer ul {
 			/* 2. startImg*/
 			416px
 			/* 3. videoText*/
-			100px
+			200px
 			/*3.1 video*/
-			565px
+			auto
 			/* 4. Divider 1 */
 			41px
 			/* 5. signup*/
@@ -559,19 +589,19 @@ footer ul {
 			/* 11. Divider 3 */
 			41px
 			/* 12. speakerText*/
-			120px
+			auto
 			/* 13. speakerImg*/
-			575px
+			auto
 			/* 14. agenda*/
-			684px
+			auto
 			/* 15. universText*/
-			90px
+			auto
 			/* 16. universImg*/
-			329px
+			auto
 			/* 17. Divider 4 */
 			41px
 			/* 18. partnerText*/
-			160px
+			auto
 			/* 19. partnerImg*/
 			385px
 			/* 20. Divider 5 */
@@ -579,7 +609,7 @@ footer ul {
 			/* 21. faq*/
 			739px
 			/* 22. footer*/
-			342px;
+			auto;
 
 		grid-template-areas:
 			/*1 */
@@ -616,13 +646,13 @@ footer ul {
 			"universText universText universText universText universText universText universText universText universText universText universText universText"
 			/*16*/
 			"universImg universImg universImg universImg universImg universImg universImg universImg universImg universImg universImg universImg"
-			/* 17 */
+			/* Divider */
 			"path4 path4 path4 path4 path4 path4 path4 path4 path4 path4 path4 path4"
-			/*18*/
-			"partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText"
-			/*19*/
-			"partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg"
-			/*20 */
+			/*15*/
+			"partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerIllu partnerIllu partnerIllu partnerIllu"
+			/*16*/
+			"partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerIllu partnerIllu partnerIllu partnerIllu"
+			/* Divider */
 			"path5 path5 path5 path5 path5 path5 path5 path5 path5 path5 path5 path5"
 			/*21*/
 			"faq faq faq faq faq faq faq faq faq faq faq faq"
@@ -632,233 +662,59 @@ footer ul {
 		text-align: left;
 	}
 
-	.university_img__container {
+	/* Main grid areas */
+	/* Most main grid areas are defined outside of media query and can be used for desktop layout as well */
+	/* Partner illustration as main grid area, partner grid only has partner images inside */
+	#partner-illu-div {
+		grid-area: partnerIllu;
+		
+	}
+	
+	/* Divider img containers */
+	#path1-container {
+		grid-area: path1;
+	}
+
+	#path2-container {
+		grid-area: path2;
+	}
+
+	#path3-container {
+		grid-area: path3;
+	}
+
+	#path4-container {
+		grid-area: path4;
+	}
+
+	#path5-container {
+		grid-area: path5;
+	}
+
+
+	/* Speaker-grid container */
+	.speaker-grid {
 		display: grid;
-		grid-template-columns: repeat(4, 25%);
+		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows:
-			280px 280px;
+			auto auto;
+		row-gap: 20px;
+		column-gap: 20px;
 		grid-template-areas:
 			"speaker1 speaker2 speaker3 speakerIllu"
 			"speaker4 speaker5 speaker6 speakerIllu"
 		;
 	}
 
-	/* Disable mobile classes */
-	/* display: none; */
 
-	.m_titlesubTitle {
-		display: none;
+	#speaker_illustration_div {
+		grid-area: speakerIllu;
+		display: flex;
+		align-content: center;
+
 	}
 
-	.m_dateLocation {
-		display: none;
-	}
-
-	#m_start_img {
-		display: none;
-	}
-
-
-	.m_textInfoP {
-		margin: 10px 18px;
-		font-size: 12px;
-	}
-
-	.m_font12px {
-		display: none;
-		font-size: 12px;
-	}
-
-
-	/* Define desktop classes */
-	#d_start_img {
-		margin-left: -10%;
-		margin-right: -10%;
-		width: 100vw;
-	}
-
-	.d_title {
-		grid-column-start: 1;
-		grid-column-end: 6;
-		font-size: 100px;
-		font-weight: 900;
-		color: var(--unicon-pink);
-		margin-top: 65px;
-		text-align: left;
-	}
-
-
-	.d_titlesubTitle {
-		text-align: left;
-		font-size: 25px;
-		font-weight: 500;
-		color: var(--unicon-font-color);
-	}
-
-	.m_dateLocation {
-		visibility: hidden;
-	}
-
-	.d_dateLocation {
-		text-align: left;
-		font-size: 22px;
-		font-weight: 500;
-		margin-top: 260px;
-		margin-bottom: 40px;
-	}
-
-	#signup-btn-start {
-		visibility: hidden;
-	}
-
-	.d_signUp {
-		font-size: 20px;
-		font-weight: 800;
-		background-color: var(--unicon-pink);
-		color: white;
-		border-radius: 5px;
-		border: none;
-		padding: 9px 25px;
-	}
-
-
-
-	.d_videoHeader {
-		text-align: left;
-		font-size: 25px;
-		font-weight: 700;
-		margin-left: 75px;
-		margin-top: 100px;
-	}
-
-	.d_videoSubTitles {
-		text-align: left;
-		font-size: 25px;
-		font-weight: 500;
-		margin-left: 180px;
-		margin-bottom: 55px;
-	}
-
-	.d_iframeContainer {
-		margin-left: 10%;
-		margin-right: 10%;
-		text-align: left;
-		position: relative;
-		padding-bottom: 45%;
-		overflow: hidden;
-	}
-
-	.d_iframe {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-	}
-
-	.d_textSignUp {
-		/*grid-column-start: 4;*/
-		font-size: 20px;
-		text-align: left;
-		font-weight: 500;
-		margin-bottom: 25px;
-
-		margin-right: 10vw;
-	}
-
-	.d_sectionImg {
-		max-width: 80%;
-		margin-left: 10%;
-		margin-right: 10%;
-	}
-
-	h2 {
-		font-size: 35px;
-	}
-
-	.d_textInfoWrapperLeft {
-		overflow: hidden;
-		max-width: 30%;
-		float: left;
-		margin-top: 50px;
-		margin-left: 10%;
-		text-align: right;
-	}
-
-	.d_textInfoWrapperRight {
-		overflow: hidden;
-		margin-top: 50px;
-		text-align: left;
-		max-width: 30%;
-		margin-right: 10%;
-		float: right;
-	}
-
-	.d_textInfoP {
-		margin-top: 18px;
-		font-size: 16px;
-		float: none;
-		/*display: inline;*/
-	}
-
-	.d_imageDivRight {
-		margin-right: 180px;
-		width: 500px;
-		height: 400px;
-		overflow: hidden;
-		float: right;
-	}
-
-	.d_imageDivRight img {
-		width: 500px;
-		height: 400px;
-	}
-
-	.d_imageDivLeft {
-		margin-left: 180px;
-		width: 500px;
-		height: 400px;
-		overflow: hidden;
-		float: left;
-	}
-
-	.d_imageDivLeft img {
-		width: 500px;
-		height: 400px;
-	}
-
-	.d_textInfoQuote {
-		margin-top: 50px;
-	}
-
-	.d_speakerImg {
-		border-radius: 50%;
-		width: 200px;
-		height: 200px;
-		overflow: hidden;
-	}
-
-	.d_speakerName {
-		font-size: 24px;
-	}
-
-	.d_speakerPosition {
-		font-size: 16px;
-	}
-
-	.d_speaker {
-		margin: 20px;
-	}
-
-
-	#speaker_illustration {
-		margin-top: 50%;
-		width: 100%;
-		height: auto;
-	}
-
-	.d_font12px {
-		font-size: 12px;
-	}
-
+	/* Agenda-grid container */
 	#agenda_background {
 		margin-left: 10vw;
 		margin-right: 10vw;
@@ -879,24 +735,7 @@ footer ul {
 			"agenda_none3 agenda_d2 agenda_d3"
 			"agenda_none3 agenda_none4 agenda_d3";
 	}
-
-	.agenda__container {
-		width: 100vw;
-		margin-left: -10vw;
-		margin-right: -10vw;
-		background-image: url(./assets/agenda-section-background.svg);
-		background-repeat: no-repeat;
-	}
-
-	.d_agendaHeader {
-		margin-top: 100px;
-		grid-area: agenda_header;
-		text-align: left;
-	}
-
-	.agenda-none {
-		grid-area: agenda_none;
-	}
+	/* Agenda-grid areas */
 
 	#agenda-none1 {
 		grid-area: agenda_none1;
@@ -914,11 +753,6 @@ footer ul {
 		grid-area: agenda_none4;
 	}
 
-	.d_agendaDay {
-		float: left;
-		margin-left: 10%;
-	}
-
 	#agenda-day1 {
 		grid-area: agenda_d1;
 	}
@@ -929,6 +763,315 @@ footer ul {
 
 	#agenda-day3 {
 		grid-area: agenda_d3;
+	}
+
+	/* Universities-grid container */
+	.university_img__container {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-rows:
+			150px 150px;
+		grid-row-gap: 20px;
+		grid-column-gap: 15px;
+		grid-template-areas:
+			"tum whu hpi waw globe globe"
+			"zep tub uom maa globe globe";
+		align-items: center;
+		justify-items: center;
+		margin-bottom: 15%;
+	}
+	/* Universities-grid areas */
+	#globe_illustration {
+		grid-area: globe;
+	}
+
+	/* Partners-grid container */
+	.d_partner_img__container {
+
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: 
+		auto auto auto;
+		grid-template-areas: 
+		"partner1 partner2 partner3 partner4"
+		"partner5 partner6 partner7 partner8"
+		"partner9 partner10 partner11 partner12"		
+		;
+	}
+	
+
+	/* Disable mobile classes that interfere with desktop layout */
+	.m_titlesubTitle,
+	.m_dateLocation,
+	#m_start_img,
+	#signup-btn-start,
+	#m_faq_header,
+	.path1-container-mobile,
+	.path2-container-mobile{
+		display: none;
+	}
+	.m_textInfoP {
+		width: unset;
+		margin: 10px 18px;
+		font-size: 12px;
+	}
+
+	.m_font12px {
+		display: none;
+		font-size: 12px;
+	}
+
+	.m_videoSubTitles {
+		width: unset;
+	}
+	.m_videoHeader {
+		width: unset;
+	}
+
+
+	/* START OF DESKTOP CLASS DEFINITION */
+	/* Body, wrapper and dividers */
+
+	#page-wrapper {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	.divider {
+		width: 100vw;
+		margin-left: -10%;
+		margin-right: -10%;
+	}
+	/* Learn more buttons */
+	.d_learn-more-btn {
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background-color: var(--unicon-pink);
+		float: right;
+		color: white;
+		font-size: 30px;
+		font-weight: 900;
+	}
+	.d_learn-more-btn-text{
+		margin-top: 12.5px;
+		margin-right: 15px;
+		float:right;
+	}
+
+	/*
+	++++++++++++++++++++++++
+	SECTION SPECIFIC CLASSES
+	++++++++++++++++++++++++
+	*/
+
+
+
+	/* 
+	Start Section 
+	+++++++++++++
+	*/
+	.start_text__container {
+		padding-top: 350px;
+	}
+	#d_start_img {
+		margin-left: -10vw;
+		width: 100vw;
+	}
+	.d_title {
+		grid-column-start: 1;
+		grid-column-end: 6;
+		font-size: 100px;
+		font-weight: 900;
+		color: var(--unicon-pink);
+		margin-top: 65px;
+		text-align: left;
+	}
+
+
+	.d_titlesubTitle {
+		text-align: left;
+		font-size: 25px;
+		font-weight: 500;
+		color: var(--unicon-font-color);
+	}
+
+	.d_dateLocation {
+		text-align: left;
+		font-size: 22px;
+		font-weight: 500;
+		margin-top: 260px;
+		margin-bottom: 40px;
+	}
+
+	/* 
+	Aftermovie Section
+	++++++++++++++++++
+	*/
+	.video__container {
+		width: 100%;
+	}
+
+	.d_videoHeader {
+		text-align: left;
+		font-size: 25px;
+		font-weight: 700;
+		margin-left: 75px;
+		margin-top: 100px;
+	}
+
+	.d_videoSubTitles {
+		text-align: left;
+		font-size: 25px;
+		font-weight: 500;
+		margin-left: 180px;
+		margin-bottom: 55px;
+	}
+
+	.d_iframeContainer {
+		margin-left: 10%;
+		margin-right: 10%;
+		margin-bottom: 10%;
+		text-align: left;
+		position: relative;
+		padding-bottom: 45%;
+		overflow: hidden;
+	}
+
+	.d_iframe {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+
+	/* 
+	Signup Section
+	++++++++++++++
+	*/
+	.d_signUp {
+		font-size: 20px;
+		font-weight: 800;
+		background-color: var(--unicon-pink);
+		color: white;
+		border-radius: 5px;
+		border: none;
+		padding: 9px 25px;
+	}
+	.d_textSignUp {
+		font-size: 20px;
+		text-align: left;
+		font-weight: 500;
+		margin-bottom: 25px;
+		margin-right: 10vw;
+		width: 90%;
+		padding-left: 10%;
+	}
+	.signup_text__container {
+		text-align: center;
+	}
+	.signup_img__container {
+		width: 100%;
+	}
+	#signup-img {
+		width: 100%;
+	}
+
+	/* 
+	Speeches-Workshops Section
+	++++++++++++++++++++++++++
+	*/
+	h2 {
+		font-size: 35px;
+		text-transform: lowercase;
+	}
+	h2::first-letter {
+		color: unset;
+	}
+
+	.d_textInfoP {
+		margin-top: 18px;
+		font-size: 16px;
+		float: none;
+	}
+
+	.d_textInfoQuote {
+		margin-top: 50px;
+	}
+
+	.d_sectionImg {
+		max-width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	/* 
+	Former Speakers Section
+	+++++++++++++++++++++++
+	*/
+
+	.speaker_text__container {
+		padding-top: 15%;
+	}
+
+	.d_speakerImg {
+		border-radius: 50%;
+		width: 100%;
+		height: 100%;
+		max-width: 178px;
+		max-height: 178px;
+		overflow: hidden;
+		position:absolute;
+		top: 0;
+	}
+
+/*	.speaker-img-div{
+		padding-top: 100%;
+		position: relative;
+		max-height: 178px;
+		display: flex;
+		justify-content: center;
+		
+	}*/
+
+	.d_speakerName {
+		font-size: 24px;
+		text-align: center;
+		width: fit-content;
+	}
+
+	.d_speakerPosition {
+		font-size: 16px;
+		text-align: center;
+	}
+
+	#speaker_illustration {
+		margin-top: 50%;
+		width: 100%;
+		height: auto;
+	}
+
+
+	/* 
+	Agenda Section
+	++++++++++++++
+	*/
+	.agenda__container {
+		width: 100vw;
+		margin-left: -10vw;
+		padding-bottom: 10%;
+		background-image: url(./assets/desktop/agenda-section-background.svg);
+		background-size: cover;
+	}
+
+	.d_agendaHeader {
+		margin-top: 100px;
+		grid-area: agenda_header;
+		text-align: left;
+	}
+	.d_agendaDay {
+		float: left;
+		margin-left: 10%;
 	}
 
 	.d_agendaTable {
@@ -943,67 +1086,68 @@ footer ul {
 		width: 150px;
 	}
 
+	/* 
+	Universities Section
+	++++++++++++++++++++
+	*/
 	.d_studentsHeader {
 		text-align: left;
-		margin-top: 50px;
-	}
-
-	#uni_tum {
-	grid-area: tum;
-	}
-
-	#uni_whu {
-		grid-area: whu;
-	}
-
-	#uni_hpi {
-		grid-area: hpi;
-	}
-
-	#uni_warwick {
-		grid-area: warwick;
-	}
-
-	#uni_friedrichshafen {
-		grid-area: friedrichshafen;
-	}
-
-	#uni_tub {
-		grid-area: tub;
-	}
-
-	#uni_mannheim {
-		grid-area: mannheim;
-	}
-
-	#uni_maastricht {
-		grid-area: maastricht;
-	}
-
-	#globe_illustration {
-		grid-area: globe;
-	}
-
-	#university_grid_container {
-		display: grid;
-		grid-template-columns: repeat(6, 16.66%);
-		grid-template-rows:
-			200px 200px;
-		grid-template-areas:
-			"tum whu hpi warwick globe globe"
-			"friedrichshafen tub mannheim maastricht globe globe";
+		margin-top: 15%;
 	}
 
 	.university-img {
 		width: 100%;
+		height: auto;
 	}
 
 	.university-name {
 		text-align: center;
 	}
+
+	/* 
+	Partners Section
+	++++++++++++++++
+	*/
+	.partner_img__container{
+		max-width: 100%;
+	}
+	#partner-illu {
+		width: 100%;
+	}
+
+	/* 
+	FAQ Section
+	+++++++++++
+	*/
+	#d_faq_header{
+		margin-bottom: 35px;
+	}
+
+	/* 
+	Footer
+	++++++
+	*/
+	footer h4 {
+		text-align: center;
+		font-size: 34px;
+	}
+	footer ul {
+		text-align: center;
+		font-size: 18px;
+		margin-top: 10px;
+	}
+	footer li {
+		margin: 10px;
+	}
 }
 
 
+
+
+
+
+
+	
 
 
 
@@ -1071,8 +1215,10 @@ footer ul {
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
 	.topnav.responsive {
-		position: relative;
-		background-color: rgba(179, 226, 237, 0.97);
+		position: fixed;
+		top: 0;
+		width: 100%;
+		background-color: rgba(179, 226, 237, 0.95);
 	}
 
 	.topnav.responsive a.icon {
@@ -1093,8 +1239,6 @@ footer ul {
 		margin-top: 25px;
 	}
 }
-
-
 
 
 
@@ -1135,4 +1279,3 @@ footer ul {
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
 }
-
