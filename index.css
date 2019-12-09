@@ -230,7 +230,7 @@ header {
 	width: 96px;
 	height: 38px;
 	float: left;
-	margin: 5px 23px;
+	margin: 5px 21px;
 }
 
 .signup_btn_nav {
@@ -1211,7 +1211,6 @@ footer div li a {
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-	background-color: #4CAF50;
 	color: white;
 }
 
