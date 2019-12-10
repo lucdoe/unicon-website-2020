@@ -227,8 +227,8 @@ header {
 	font-size: 36px; 
 }
 .logo {
-	width: 96px;
-	height: 38px;
+	width: 120px;
+	height: 46px;
 	float: left;
 	margin: 5px 21px;
 }
@@ -546,6 +546,7 @@ footer div li a {
 .agenda__container,
 .university_name,
 .university_illustration,
+.university_image_desktop,
 #partner11, #partner12,
 .info_section_quote {
 	display: none;
