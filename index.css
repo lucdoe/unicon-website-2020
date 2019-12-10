@@ -35,13 +35,13 @@
 	grid-area: video;
 }
 
-#path1-container-mobile {
+.divider_one__container {
 	grid-area: div1;
 }
 .signup_text__container {
 	grid-area: signupText;
 }
-#path2-container-mobile {
+.divider_two__container {
 	grid-area: div2;
 }
 
@@ -101,7 +101,7 @@
 	grid-area: universImg;
 }
 
-#path3-container-mobile {
+.divider_three__container {
 	grid-area: div3;
 }
 .partner_text__container {
@@ -111,7 +111,7 @@
 .partner_img__container {
 	grid-area: partnerImg;
 }
-#path4-container-mobile {
+.divider_four__container {
 	grid-area: div4;
 }
 
@@ -130,9 +130,9 @@ footer {
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows:
 		/*2. startText*/
-		400px
+		380px
 		/* 3. startImg*/
-		277px
+		300px
 		/* 4. videoText*/
 		140px
 		/* 4.1 video*/
@@ -241,51 +241,59 @@ header {
 .start_text__container {
 	padding-top: 70px;
 }
-.m_title {
+.website_title {
 	font-size: 38px;
 	font-weight: 900;
 	color: var(--unicon-pink);
 }
-.m_titlesubTitle {
+.website_subtitle {
 	font-size: 14px;
 	font-weight: 900;
 	color: var(--unicon-pink);
 }
-#m_start_img {
+.start_illustration_mobile {
 	width: 100%;
 	height: 277px;
 }
-.m_dateLocation {
+.date_and_location {
 	font-size: 14px;
 	font-weight: 600;
 	margin-top: 40px;
 	margin-bottom: 40px;
 }
-
-
-
-.m_videoHeader {
-	font-size: 16px;
-	font-weight: 900;
-	margin-bottom: 10px;
+.signUp_button_page {
+	font-size: 20px;
+	font-weight: 800;
+	background-color: var(--unicon-pink);
+	color: white;
+	border-radius: 5px;
+	border: none;
+	padding: 9px 25px;
 }
-.m_videoSubTitles {
-	font-size: 12px;
-	font-weight: 600;
-}
+
+
 .video_text__container {
 	text-align: center;
 	align-self: end;
 }
-.m_videoHeader,
-.m_videoSubTitles {
+.video_header {
+	font-size: 16px;
+	font-weight: 900;
+	margin-bottom: 10px;
+}
+.video_subHeader {
+	font-size: 12px;
+	font-weight: 600;
+}
+.video_header,
+.video_subHeader {
 	width: 290px;
 	text-decoration: none;
 }
 .video__container {
 	margin-bottom: 50px;
 }
-iframe.m_iframe {
+iframe {
 	height: 190px;
 	border: 8px solid var(--unicon-lightblue);
 	border-radius: 5px;
@@ -297,21 +305,13 @@ iframe.m_iframe {
 .signup_text__container {
 	align-self: center;
 }
-.m_textSignUp {
+.signUp_text {
 	font-size: 14px;
 	font-weight: 600;
 	margin-bottom: 25px;
 	width: 340px;
 }
-.m_signUp {
-	font-size: 20px;
-	font-weight: 800;
-	background-color: var(--unicon-pink);
-	color: white;
-	border-radius: 5px;
-	border: none;
-	padding: 9px 25px;
-}
+
 
 
 
@@ -342,10 +342,10 @@ span {
 
 
 
-.m_textInfoP {
+.info_section_text {
 	margin-top: 10px;
 	font-size: 12px;
-	margin: 10px 30px;
+	margin: 10px 35px;
 }
 
 .speaker_text__container {
@@ -380,16 +380,16 @@ span {
 	justify-items: center;
 	align-items: center;
 }
-.d_speaker img {
+.speaker_image {
 	border: 5px solid var(--unicon-lightblue);
 	border-radius: 50%;
 	width: 80px;
 	height: 80px;
 }
-h3.d_speakerName {
+.speaker_name {
 	font-size: 10px;
 }
-p.d_speakerPosition {
+.speaker_company {
 	font-size: 8px;
 }
 
@@ -434,13 +434,9 @@ p.d_speakerPosition {
 	justify-items: center;
 	margin-bottom: 80px;
 }
-.university-img {
+.university_image {
 	width: 80px;
 	height: 60px;
-}
-
-.d_studentHeader {
-	margin-top: 30px;
 }
 
 
@@ -510,12 +506,7 @@ font-weight: bold;
 }
 
 
-
-.m_font12px {
-	font-size: 12px;
-}
-
-#m_faq_header {
+.faq_header {
 	margin-bottom: 35px;
 	padding-top: 50px;
 }
@@ -545,632 +536,25 @@ footer div li a {
 	color: var(--unicon-font-color);
 }
 
-
-
-#speech_img,
-.university-name, 
-.d_textInfoQuote,
-.d_titlesubTitle,
-.agenda__container,
-.d_dateLocation,
-.d_video,
-.d_imageDivRight, 
-.d_imageDivLeft,
-.d_sectionImg,
-#globe_illustration,
+.start_illustration_desktop,
+.desktop_divider,
+.signup_illustration,
+#info_section_image,
 #speaker5,
 #speaker6,
-#partner11,
-#partner12,
-#partner-illu,
-#partner-illu-div,
 #speaker_illustration,
-#d_start_img,
-.signup_img__container,
-.speech_img__container,
-.student_img__container,
-.challenge_img__container,
-.workshop_img__container,
-#d_faq_header
- {
+.agenda__container,
+.university_name,
+.university_illustration,
+#partner11, #partner12,
+.info_section_quote {
 	display: none;
 }
-
 
 
 #speaker_illustration_div {
 	grid-area: speakerIllu;
 }
-
-
-/* START of Desktop classes */
-@media screen and (min-width: 900px) {
-	/* GRID DEFINITION */
-	/* Main grid container */
-	.grid {
-		width: 100%;
-		grid-template-columns: repeat(12, 1fr);
-		grid-template-rows:
-			/* 1. startText*/
-			367px
-			/* 2. startImg*/
-			416px
-			/* 3. videoText*/
-			200px
-			/*3.1 video*/
-			auto
-			/* 4. Divider 1 */
-			41px
-			/* 5. signup*/
-			360px
-			/* 6. Divider 2 */
-			41px
-			/* 7. - 10. sppech, students, challenge, workshp, */
-			repeat(4, 380px)
-			/* 11. Divider 3 */
-			41px
-			/* 12. speakerText*/
-			auto
-			/* 13. speakerImg*/
-			auto
-			/* 14. agenda*/
-			auto
-			/* 15. universText*/
-			auto
-			/* 16. universImg*/
-			auto
-			/* 17. Divider 4 */
-			41px
-			/* 18. partnerText*/
-			auto
-			/* 19. partnerImg*/
-			385px
-			/* 20. Divider 5 */
-			41px
-			/* 21. faq*/
-			739px
-			/* 22. footer*/
-			auto;
-
-		grid-template-areas:
-			/*1 */
-			"startText startText startText startText startText startText startText startText startText startText startText startText"
-			/*2 */
-			"startImg startImg startImg startImg startImg startImg startImg startImg startImg startImg startImg startImg"
-			/*3 */
-			"videoT videoT videoT videoT videoT videoT videoT videoT videoT videoT videoT videoT"
-			/*3.1*/
-			"video video video video video video video video video video video video"
-			/*4 */
-			"path1 path1 path1 path1 path1 path1 path1 path1 path1 path1 path1 path1"
-			/*5*/
-			"signupImg signupImg signupImg signupImg signupImg signupImg signupText signupText signupText signupText signupText signupText"
-			/*6 */
-			"path2 path2 path2 path2 path2 path2 path2 path2 path2 path2 path2 path2"
-			/*7*/
-			"speechImg speechImg speechImg speechImg speechImg speechImg speechText speechText speechText speechText speechText speechText"
-			/*8*/
-			"studentText studentText studentText studentText studentText studentText studentImg studentImg studentImg studentImg studentImg studentImg"
-			/*9*/
-			"challengeImg challengeImg challengeImg challengeImg challengeImg challengeImg challengeText challengeText challengeText challengeText challengeText challengeText"
-			/*10*/
-			"workshpText workshpText workshpText workshpText workshpText workshpText workshpImg workshpImg workshpImg workshpImg workshpImg workshpImg"
-			/* 11 */
-			"path3 path3 path3 path3 path3 path3 path3 path3 path3 path3 path3 path3"
-			/*12*/
-			"speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText"
-			/*13*/
-			"speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg "
-			/*14*/
-			"agenda agenda agenda agenda agenda agenda agenda agenda agenda agenda agenda agenda"
-			/*15*/
-			"universText universText universText universText universText universText universText universText universText universText universText universText"
-			/*16*/
-			"universImg universImg universImg universImg universImg universImg universImg universImg universImg universImg universImg universImg"
-			/* Divider */
-			"path4 path4 path4 path4 path4 path4 path4 path4 path4 path4 path4 path4"
-			/*15*/
-			"partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerIllu partnerIllu partnerIllu partnerIllu"
-			/*16*/
-			"partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerIllu partnerIllu partnerIllu partnerIllu"
-			/* Divider */
-			"path5 path5 path5 path5 path5 path5 path5 path5 path5 path5 path5 path5"
-			/*21*/
-			"faq faq faq faq faq faq faq faq faq faq faq faq"
-			/*22*/
-			"footer footer footer footer footer footer footer footer footer footer footer footer";
-		justify-items: left;
-		text-align: left;
-	}
-
-	/* Main grid areas */
-	/* Most main grid areas are defined outside of media query and can be used for desktop layout as well */
-	/* Partner illustration as main grid area, partner grid only has partner images inside */
-	#partner-illu-div {
-		grid-area: partnerIllu;
-		
-	}
-	
-	/* Divider img containers */
-	#path1-container {
-		grid-area: path1;
-	}
-
-	#path2-container {
-		grid-area: path2;
-	}
-
-	#path3-container {
-		grid-area: path3;
-	}
-
-	#path4-container {
-		grid-area: path4;
-	}
-
-	#path5-container {
-		grid-area: path5;
-	}
-
-
-	/* Speaker-grid container */
-	.speaker-grid {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		grid-template-rows:
-			auto auto;
-		row-gap: 20px;
-		column-gap: 20px;
-		grid-template-areas:
-			"speaker1 speaker2 speaker3 speakerIllu"
-			"speaker4 speaker5 speaker6 speakerIllu"
-		;
-	}
-
-
-	#speaker_illustration_div {
-		grid-area: speakerIllu;
-		display: flex;
-		align-content: center;
-
-	}
-
-	/* Agenda-grid container */
-	#agenda_background {
-		margin-left: 10vw;
-		margin-right: 10vw;
-		text-align: left;
-		display: grid;
-		grid-template-columns: repeat(3, 33%);
-		grid-template-rows:
-			auto auto auto auto auto auto auto;
-		grid-template-areas:
-			"agenda_header agenda_header agenda_header"
-
-			"agenda_none1 agenda_none2 agenda_d3"
-
-			"agenda_none1 agenda_d2 agenda_d3"
-
-			"agenda_d1 agenda_d2 agenda_d3"
-
-			"agenda_none3 agenda_d2 agenda_d3"
-			"agenda_none3 agenda_none4 agenda_d3";
-	}
-	/* Agenda-grid areas */
-
-	#agenda-none1 {
-		grid-area: agenda_none1;
-	}
-
-	#agenda-none2 {
-		grid-area: agenda_none2;
-	}
-
-	#agenda-none3 {
-		grid-area: agenda_none3;
-	}
-
-	#agenda-none4 {
-		grid-area: agenda_none4;
-	}
-
-	#agenda-day1 {
-		grid-area: agenda_d1;
-	}
-
-	#agenda-day2 {
-		grid-area: agenda_d2;
-	}
-
-	#agenda-day3 {
-		grid-area: agenda_d3;
-	}
-
-	/* Universities-grid container */
-	.university_img__container {
-		width: 100%;
-		display: grid;
-		grid-template-columns: repeat(6, 1fr);
-		grid-template-rows:
-			150px 150px;
-		grid-row-gap: 20px;
-		grid-column-gap: 15px;
-		grid-template-areas:
-			"tum whu hpi waw globe globe"
-			"zep tub uom maa globe globe";
-		align-items: center;
-		justify-items: center;
-		margin-bottom: 15%;
-	}
-	/* Universities-grid areas */
-	#globe_illustration {
-		grid-area: globe;
-	}
-
-	/* Partners-grid container */
-	.d_partner_img__container {
-
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		grid-template-rows: 
-		auto auto auto;
-		grid-template-areas: 
-		"partner1 partner2 partner3 partner4"
-		"partner5 partner6 partner7 partner8"
-		"partner9 partner10 partner11 partner12"		
-		;
-	}
-	
-
-	/* Disable mobile classes that interfere with desktop layout */
-	.m_titlesubTitle,
-	.m_dateLocation,
-	#m_start_img,
-	#signup-btn-start,
-	#m_faq_header,
-	.path1-container-mobile,
-	.path2-container-mobile{
-		display: none;
-	}
-	.m_textInfoP {
-		width: unset;
-		margin: 10px 18px;
-		font-size: 12px;
-	}
-
-	.m_font12px {
-		display: none;
-		font-size: 12px;
-	}
-
-	.m_videoSubTitles {
-		width: unset;
-	}
-	.m_videoHeader {
-		width: unset;
-	}
-
-
-	/* START OF DESKTOP CLASS DEFINITION */
-	/* Body, wrapper and dividers */
-
-	#page-wrapper {
-		margin-left: 10%;
-		margin-right: 10%;
-	}
-
-	.divider {
-		width: 100vw;
-		margin-left: -10%;
-		margin-right: -10%;
-	}
-	/* Learn more buttons */
-	.d_learn-more-btn {
-		width: 50px;
-		height: 50px;
-		border-radius: 50%;
-		background-color: var(--unicon-pink);
-		float: right;
-		color: white;
-		font-size: 30px;
-		font-weight: 900;
-	}
-	.d_learn-more-btn-text{
-		margin-top: 12.5px;
-		margin-right: 15px;
-		float:right;
-	}
-
-	/*
-	++++++++++++++++++++++++
-	SECTION SPECIFIC CLASSES
-	++++++++++++++++++++++++
-	*/
-
-
-
-	/* 
-	Start Section 
-	+++++++++++++
-	*/
-	.start_text__container {
-		padding-top: 350px;
-	}
-	#d_start_img {
-		margin-left: -10vw;
-		width: 100vw;
-	}
-	.d_title {
-		grid-column-start: 1;
-		grid-column-end: 6;
-		font-size: 100px;
-		font-weight: 900;
-		color: var(--unicon-pink);
-		margin-top: 65px;
-		text-align: left;
-	}
-
-
-	.d_titlesubTitle {
-		text-align: left;
-		font-size: 25px;
-		font-weight: 500;
-		color: var(--unicon-font-color);
-	}
-
-	.d_dateLocation {
-		text-align: left;
-		font-size: 22px;
-		font-weight: 500;
-		margin-top: 260px;
-		margin-bottom: 40px;
-	}
-
-	/* 
-	Aftermovie Section
-	++++++++++++++++++
-	*/
-	.video__container {
-		width: 100%;
-	}
-
-	.d_videoHeader {
-		text-align: left;
-		font-size: 25px;
-		font-weight: 700;
-		margin-left: 75px;
-		margin-top: 100px;
-	}
-
-	.d_videoSubTitles {
-		text-align: left;
-		font-size: 25px;
-		font-weight: 500;
-		margin-left: 180px;
-		margin-bottom: 55px;
-	}
-
-	.d_iframeContainer {
-		margin-left: 10%;
-		margin-right: 10%;
-		margin-bottom: 10%;
-		text-align: left;
-		position: relative;
-		padding-bottom: 45%;
-		overflow: hidden;
-	}
-
-	.d_iframe {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-	}
-
-	/* 
-	Signup Section
-	++++++++++++++
-	*/
-	.d_signUp {
-		font-size: 20px;
-		font-weight: 800;
-		background-color: var(--unicon-pink);
-		color: white;
-		border-radius: 5px;
-		border: none;
-		padding: 9px 25px;
-	}
-	.d_textSignUp {
-		font-size: 20px;
-		text-align: left;
-		font-weight: 500;
-		margin-bottom: 25px;
-		margin-right: 10vw;
-		width: 90%;
-		padding-left: 10%;
-	}
-	.signup_text__container {
-		text-align: center;
-	}
-	.signup_img__container {
-		width: 100%;
-	}
-	#signup-img {
-		width: 100%;
-	}
-
-	/* 
-	Speeches-Workshops Section
-	++++++++++++++++++++++++++
-	*/
-	h2 {
-		font-size: 35px;
-		text-transform: lowercase;
-	}
-	h2::first-letter {
-		color: unset;
-	}
-
-	.d_textInfoP {
-		margin-top: 18px;
-		font-size: 16px;
-		float: none;
-	}
-
-	.d_textInfoQuote {
-		margin-top: 50px;
-	}
-
-	.d_sectionImg {
-		max-width: 80%;
-		margin-left: 10%;
-		margin-right: 10%;
-	}
-
-	/* 
-	Former Speakers Section
-	+++++++++++++++++++++++
-	*/
-
-	.speaker_text__container {
-		padding-top: 15%;
-	}
-
-	.d_speakerImg {
-		border-radius: 50%;
-		width: 100%;
-		height: 100%;
-		max-width: 178px;
-		max-height: 178px;
-		overflow: hidden;
-		position:absolute;
-		top: 0;
-	}
-
-/*	.speaker-img-div{
-		padding-top: 100%;
-		position: relative;
-		max-height: 178px;
-		display: flex;
-		justify-content: center;
-		
-	}*/
-
-	.d_speakerName {
-		font-size: 24px;
-		text-align: center;
-		width: fit-content;
-	}
-
-	.d_speakerPosition {
-		font-size: 16px;
-		text-align: center;
-	}
-
-	#speaker_illustration {
-		margin-top: 50%;
-		width: 100%;
-		height: auto;
-	}
-
-
-	/* 
-	Agenda Section
-	++++++++++++++
-	*/
-	.agenda__container {
-		width: 100vw;
-		margin-left: -10vw;
-		padding-bottom: 10%;
-		background-image: url(./assets/desktop/agenda-section-background.svg);
-		background-size: cover;
-	}
-
-	.d_agendaHeader {
-		margin-top: 100px;
-		grid-area: agenda_header;
-		text-align: left;
-	}
-	.d_agendaDay {
-		float: left;
-		margin-left: 10%;
-	}
-
-	.d_agendaTable {
-		margin-top: 30px;
-	}
-
-	.d_agendaTable tr {
-		height: 40px;
-	}
-
-	.d_agendaTable td {
-		width: 150px;
-	}
-
-	/* 
-	Universities Section
-	++++++++++++++++++++
-	*/
-	.d_studentsHeader {
-		text-align: left;
-		margin-top: 15%;
-	}
-
-	.university-img {
-		width: 100%;
-		height: auto;
-	}
-
-	.university-name {
-		text-align: center;
-	}
-
-	/* 
-	Partners Section
-	++++++++++++++++
-	*/
-	.partner_img__container{
-		max-width: 100%;
-	}
-	#partner-illu {
-		width: 100%;
-	}
-
-	/* 
-	FAQ Section
-	+++++++++++
-	*/
-	#d_faq_header{
-		margin-bottom: 35px;
-	}
-
-	/* 
-	Footer
-	++++++
-	*/
-	footer h4 {
-		text-align: center;
-		font-size: 34px;
-	}
-	footer ul {
-		text-align: center;
-		font-size: 18px;
-		margin-top: 10px;
-	}
-	footer li {
-		margin: 10px;
-	}
-}
-
-
-
-
-
-
-
-	
-
-
 
 
 /* Add a black background color to the top navigation */
@@ -1302,3 +686,10 @@ footer div li a {
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
 }
+
+
+
+
+
+
+
