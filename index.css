@@ -353,8 +353,8 @@ header {
 	padding: 0;
 }
 #signup_btn_nav {
-	background-color: var(--unicon-pink);
-	color: white;
+	background-color: var(--unicon-lightblue);
+	color: var(--unicon-pink);
 }
 
 .start_text__container {
