@@ -261,8 +261,8 @@ header {
 }
 
 .topnav a:first-child {
-	padding-top: 5px;
 	padding-left: 8px;
+	padding-bottom: 0px;
 }
 
 .topnav a:first-child {
@@ -272,8 +272,7 @@ header {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-	background-color: #ddd;
-	color: black;
+	color: var(--unicon-pink);
 }
 
 /* Add an active class to highlight the current page */
@@ -343,14 +342,17 @@ header {
 	border-radius: 50px;
 	margin-bottom: 5px;
 }
-.logo {
+#logo {
 	width: 120px;
 	height: 46px;
 	float: left;
-	margin: 5px 21px;
+	margin: 1px 15px;
 }
 
-.signup_btn_nav {
+#first_link {
+	padding: 0;
+}
+#signup_btn_nav {
 	background-color: var(--unicon-pink);
 	color: white;
 }
