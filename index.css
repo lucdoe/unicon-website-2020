@@ -81,12 +81,20 @@
 	grid-area: workshpImg;
 }
 
+.divider_five__container {
+	grid-area: div5;
+}
+
 .speaker_text__container {
 	grid-area: speakerText;
 }
 
 .speaker_img__container {
 	grid-area: speakerImg;
+}
+
+.divider_six__container {
+	grid-area: div6;
 }
 
 .agenda__container {
@@ -144,13 +152,17 @@ footer {
 		/*5.2 divider*/
 		12px
 		/*6. sppech */
-		240px
+		300px
 		/* 7.- 9. , students, challenge, workshop*/
-		repeat(3, 170px)
+		repeat(3, 230px)
+		/*9.1*/
+		16px
 		/* 10. spaekerText*/
 		190px
 		/* 11. speakerImg*/
 		360px
+		/*11.1*/
+		16px
 		/* 12. universText*/
 		150px
 		/* 13. universImg*/
@@ -191,10 +203,14 @@ footer {
 		"challengeText challengeText challengeText challengeText"
 		/*9*/
 		"workshpText workshpText workshpText workshpText"
+		/*9.1*/
+		"div5 div5 div5 div5"
 		/*10*/
 		"speakerText speakerText speakerText speakerText"
 		/*11*/
 		"speakerImg speakerImg speakerImg speakerImg"
+		/*11.1*/
+		"div6 div6 div6 div6"
 		/*12*/
 		"universText universText universText universText"
 		/*13*/
@@ -225,6 +241,16 @@ header {
 }
 .material-icons-round.md-36 { 
 	font-size: 36px; 
+} 
+.material-icons-round.white {
+	color: white;
+}
+
+.material-icons-round.circle {
+	background-color: var(--unicon-pink);
+	padding: 10px 10px 11px 10px;
+	border-radius: 50px;
+	margin-bottom: 5px;
 }
 .logo {
 	width: 120px;
@@ -320,14 +346,10 @@ iframe {
 	width: 100%;
 }
 
-
-
-h2::first-letter {
-	color: var(--unicon-pink);
+.center {
+	text-align: center;
 }
-h2 {
-	text-decoration: underline var(--unicon-lightblue);
-}
+
 span {
 	color: var(--unicon-pink);
 }
@@ -395,7 +417,7 @@ span {
 
 
 .university_text__container {
-	margin-top: 45px;
+	margin-top: 85px;
 }
 #uni_tum{
 	grid-area: tum;
@@ -433,6 +455,7 @@ span {
 	align-items: center;
 	justify-items: center;
 	margin-bottom: 80px;
+	margin-top: 20px;
 }
 .university_image {
 	width: 80px;
@@ -503,6 +526,14 @@ font-weight: bold;
 .partner_image {
 	width: 60px;
 	height: 40px;
+}
+
+.divider_four__container {
+	margin-top: 30px;
+}
+
+.divider_five__container {
+	margin-top: 50px;
 }
 
 
@@ -663,6 +694,13 @@ footer div li a {
 	transition: 0.4s;
 }
 
+.border_2px_top {
+	border-top-width: 2px;
+}
+.border_2px_bot {
+	border-bottom-width: 2px;
+}
+
 .active,
 .accordion:hover {
 	background-color: #ccc;
@@ -687,6 +725,8 @@ footer div li a {
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
 }
+
+
 
 
 
