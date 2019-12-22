@@ -152,9 +152,9 @@ footer {
 		/*5.2 divider*/
 		12px
 		/*6. sppech */
-		300px
+		270px
 		/* 7.- 9. , students, challenge, workshop*/
-		repeat(3, 230px)
+		repeat(3, 200px)
 		/*9.1*/
 		16px
 		/* 10. spaekerText*/
@@ -329,6 +329,9 @@ header {
 	}
 }
 
+.material-icons-round.md-20 { 
+	font-size: 20px; 
+} 
 .material-icons-round.md-36 { 
 	font-size: 36px; 
 } 
@@ -337,8 +340,8 @@ header {
 }
 
 .material-icons-round.circle {
-	background-color: var(--unicon-pink);
-	padding: 10px 10px 11px 10px;
+	background-color: var(--unicon-lightblue);
+	padding: 8px 8px 9px 8px;
 	border-radius: 50px;
 	margin-bottom: 5px;
 }
@@ -659,10 +662,9 @@ font-weight: bold;
 	border-bottom-width: 2px;
 }
 
-.active, .accordion:hover {
+.accordion:hover {
   background-color:var(--unicon-lightblue);
   color: white;
-  margin: 10px 0px;
 }
 
 .accordion:after {
@@ -746,12 +748,78 @@ footer div li a {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 732px) {
+	#signup_btn_nav {
+		padding: 11px 26px;
+		color: white;
+		background-color: var(--unicon-pink);
+		margin-top: 13px;
+		margin-right: 20px;
+		margin-left: 25px;
+		border-radius: 5px;
+	}
+	.topnav a {
+		padding: 0;
+		padding-right: 25px;
+		padding-top: 25px;
+		font-size: 16px;
+  		font-weight: 800;
+	}
+	img#logo {
+		margin-top: 8px;
+	}
+	.start_illustration_mobile {
+		display: none;
+	}
+	.start_illustration_desktop {
+		display: block;
+		width: 100%;
+		max-height: 450px;
+	}
+	.video_text__container {
+		width: 75%;
+		text-align: left;
+		justify-self: start;
+		margin-bottom: 65px;
+		margin-left: 50px;
+	}
+	.video_header, .video_subHeader {
+		width: 100%;
+	}
+	.video__container {
+		width: 75%;
+	}
+	iframe {
+		width: 100%;
+		height: 300px;
+	}
+
 
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 950px) {
+	.start_text__container {
+		height: 350px;
+		padding-top: 150px;
+		text-align: left;
+		justify-self: start;
+		margin-left: 120px;
+	}
+	.website_title {
+		font-size: 100px;
+	}
+	.website_subtitle {
+		color: var(--unicon-font-color);
+		font-size: 24px;
+		font-weight: 600;
+	}
+	.date_and_location {
+		display: none;
+	}
+	.signUp_button_page {
+		display: none;
+	}
 
 }
 
