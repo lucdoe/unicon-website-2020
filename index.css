@@ -546,36 +546,52 @@ span {
 	margin-top: 85px;
 }
 
-#uni_tum {
-	grid-area: tum;
+#uni1 {
+	grid-area: uni1;
 }
 
-#uni_whu {
-	grid-area: whu;
+#uni2 {
+	grid-area: uni2;
 }
 
-#uni_hpi {
-	grid-area: hpi;
+#uni3 {
+	grid-area: uni3;
 }
 
-#uni_warwick {
-	grid-area: waw;
+#uni4 {
+	grid-area: uni4;
 }
 
-#uni_zeppelin {
-	grid-area: zep;
+#uni5 {
+	grid-area: uni5;
 }
 
-#uni_mannheim {
-	grid-area: uom;
+#uni6 {
+	grid-area: uni6;
 }
 
-#uni_tub {
-	grid-area: tub;
+#uni7 {
+	grid-area: uni7;
 }
 
-#uni_maastricht {
-	grid-area: maa;
+#uni8 {
+	grid-area: uni8;
+}
+
+#uni9 {
+	grid-area: uni9;
+}
+
+#uni10 {
+	grid-area: uni10;
+}
+
+#uni11 {
+	grid-area: uni11;
+}
+
+#uni12 {
+	grid-area: uni12;
 }
 
 .university_img__container {
@@ -585,8 +601,8 @@ span {
 		50px 50px;
 	grid-row-gap: 20px;
 	grid-template-areas:
-		"tub whu tum hpi"
-		"zep uom waw maa";
+		"uni1 uni2 uni3 uni4"
+		"uni5 uni6 uni7 uni8";
 	align-items: center;
 	justify-items: center;
 	margin-bottom: 80px;
@@ -879,7 +895,8 @@ footer div li a {
 		display: block;
 	}
 
-	.mobile_divider {
+	.mobile_divider,
+	.university_image {
 		display: none;
 	}
 
@@ -898,15 +915,14 @@ footer div li a {
 			/*8-11*/ repeat(4, 380px) 
 			/*12*/ 41px 
 			/*13*/ 120px 
-			/*14*/ 575px 
-			/*15*/ 685px 
+			/*14*/ 600px 
+			/*15*/ 600px 
 			/*16*/ 80px 
 			/*17*/ 483px 
 			/*18*/ 41px 
 			/*19*/ 159px 
 			/*20*/ 467px 
-			/*21*/ 41px 
-			/*22*/ 41px 
+			/*21*/ 41px  
 			/*23*/ auto
 			/*24*/ 250px;
 
@@ -924,20 +940,19 @@ footer div li a {
 			/* 11*/ ". workshpText workshpText workshpText workshpText workshpImg workshpImg workshpImg workshpImg workshpImg workshpImg workshpImg"
 			/* 12*/ "div3 div3 div3 div3 div3 div3 div3 div3 div3 div3 div3 div3"
 			/* 13 */ ". speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText ."
-			/* 14 */ ". speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg speakerIllu speakerIllu speakerIllu speakerIllu speakerIllu"
+			/* 14 */ ". speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg . speakerIllu speakerIllu speakerIllu speakerIllu"
 			/* 15 */ "agenda agenda agenda agenda agenda agenda agenda agenda agenda agenda agenda agenda"
 			/* 16 */ ". universText universText universText universText universText universText universText universText universText universText ."
-			/* 17 */ ". . universImg universImg universImg universImg universImg universIllu universIllu universIllu universIllu universIllu"
+			/* 17 */ ". universImg universImg universImg universImg universImg universImg universIllu universIllu universIllu universIllu universIllu"
 			/* 18 */ "div4 div4 div4 div4 div4 div4 div4 div4 div4 div4 div4 div4"
 			/* 19 */ ". partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText ."
-			/* 20 */ ". . partnerImg partnerImg partnerImg partnerImg partnerImg partnerIllu partnerIllu partnerIllu partnerIllu partnerIllu"
+			/* 20 */ ". partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerIllu partnerIllu partnerIllu partnerIllu partnerIllu"
 			/* 21 */ "div5 div5 div5 div5 div5 div5 div5 div5 div5 div5 div5 div5"
-			/* 22 */ "div6 div6 div6 div6 div6 div6 div6 div6 div6 div6 div6 div6"
 			/* 23 */ "faq faq faq faq faq faq faq faq faq faq faq faq"
 			/* 24 */ "footer footer footer footer footer footer footer footer footer footer footer footer";
 	}
 	#logo {
-		margin-left: 94%;
+		margin-left: 85px;
 		width: 115px;
 		height: 50px;
 	}
@@ -1034,6 +1049,81 @@ footer div li a {
 
 	.speaker_text__container {
 		text-align: left;
+	}
+	#speaker5,
+	#speaker6 {
+		display: none;
+	}
+	.speaker_img__container {
+		display: grid;
+		grid-template-columns: repeat(2, 260px);
+		grid-template-rows:
+		260px 260px;
+		grid-template-areas:
+			"speaker1 speaker2"
+			"speaker3 speaker4";
+		justify-items: stretch;
+		align-self: center;
+	}
+	.speaker_image {
+		width: 130px;
+		height: 130px;
+		border: none;
+	}
+	.speaker_name {
+		font-size: 18px;
+		font-weight: 900;
+	}
+	.speaker_company {
+		font-size: 15px;
+		font-weight: 600;
+	}
+	.agenda__container img {
+		width: 100%;
+	}
+
+	.university_img__container {
+		display: grid;
+		grid-template-columns: repeat(4, 120px);
+		grid-template-rows: repeat(3, 130px);
+		grid-template-areas:
+			"uni1 uni2 uni3 uni4"
+			"uni5 uni6 uni7 uni8"
+			"uni9 uni10 uni11 uni12";
+		justify-items: stretch;
+		align-self: center;
+		margin: 0;
+	}
+	.university_image_desktop {
+		width: 100%;
+	}
+	.university_illustration__container {
+		display: block;
+	}
+	.university_illustration__container img {
+		width: 70%;
+	}
+
+	.partner_img__container {
+		display: grid;
+		grid-template-columns: repeat(4, 120px);
+		grid-template-rows: repeat(3, 100px);
+		grid-template-areas:
+			"partner1 partner2 partner3 partner4"
+			"partner5 partner6 partner7 partner8"
+			"partner9 partner10 . .";
+		justify-items: stretch;
+		align-self: center;
+		margin: 0;
+	}
+	.partner_image {
+		width: 100%;
+		height: 100%;
+	}
+	.partner_illustration__container {
+		display: block;
+		width: 100%;
+		height: 80%;
 	}
 	.faq_header {
 		margin-left: 30px;
