@@ -903,51 +903,89 @@ footer div li a {
 	.grid {
 		text-align: normal;
 		grid-template-columns: repeat(12, 1fr);
-		grid-row-gap: 25px;
 		grid-template-rows:
 			/*1*/ 439px 
 			/*2*/ 416px 
+			/*2.1*/ 90px
 			/*3*/ 75px 
+			/*3.1*/ 80px
 			/*4*/ 565px 
+			/*4.1*/ 120px
 			/*5*/ 41px 
 			/*6*/ 244px 
 			/*7*/ 41px 
-			/*8-11*/ repeat(4, 380px) 
+			/*7.1*/ 150px
+			/*8*/ 380px
+			/*8.1*/ 100px
+			/*9*/ 380px
+			/*9.1*/ 100px
+			/*10*/ 380px
+			/*10.1*/ 100px
+			/*11*/ 380px
+			/*11.1*/ 150px
 			/*12*/ 41px 
+			/*12.1*/ 150px
 			/*13*/ 120px 
+			/*13.1*/ 85px
 			/*14*/ 600px 
+			/*14.1*/ 180px
 			/*15*/ 600px 
-			/*16*/ 80px 
-			/*17*/ 483px 
+			/*15.1*/ 180px
+			/*16*/ 80px
+			/*16.1*/ 70px 
+			/*17*/ 483px
+			/*17.1*/ 80px 
 			/*18*/ 41px 
+			/*18.1*/ 74px 
 			/*19*/ 159px 
+			/*19.1*/ 50px
 			/*20*/ 467px 
+			/*20.1*/ 74px
 			/*21*/ 41px  
+			/*21.1*/ 100px
 			/*23*/ auto
 			/*24*/ 250px;
 
 		grid-template-areas:
 			/* 1 */ ". startText startText startText startText startText startText startText startText startText startText ."
 			/* 2 */ "startImg startImg startImg startImg startImg startImg startImg startImg startImg startImg startImg startImg"
+			/* 2.1 */ "gap1 gap1 gap1 gap1 gap1 gap1 gap1 gap1 gap1 gap1 gap1 gap1"
 			/* 3 */ ". videoT videoT videoT videoT videoT videoT videoT videoT videoT videoT ."
+			/* 3.1 */ "gap2 gap2 gap2 gap2 gap2 gap2 gap2 gap2 gap2 gap2 gap2 gap2"
 			/* 4 */ ". video video video video video video video video video video ."
+			/* 4.1 */ "gap3 gap3 gap3 gap3 gap3 gap3 gap3 gap3 gap3 gap3 gap3 gap3"
 			/* 5 */ "div1 div1 div1 div1 div1 div1 div1 div1 div1 div1 div1 div1"
 			/* 6 */ ". signupImg signupImg signupImg signupImg signupImg . signupText signupText signupText signupText ."
 			/* 7 */ "div2 div2 div2 div2 div2 div2 div2 div2 div2 div2 div2 div2"
+			/* 7.1 */ "gap4 gap4 gap4 gap4 gap4 gap4 gap4 gap4 gap4 gap4 gap4 gap4"
 			/* 8 */ ". speechImg speechImg speechImg speechImg speechImg speechImg speechText speechText speechText speechText speechText"
+			/* 8.1 */ "gap5 gap5 gap5 gap5 gap5 gap5 gap5 gap5 gap5 gap5 gap5 gap5"
 			/* 9 */ ". studentText studentText studentText studentText studentImg studentImg studentImg studentImg studentImg studentImg studentImg"
+			/* 9.1 */ "gap6 gap6 gap6 gap6 gap6 gap6 gap6 gap6 gap6 gap6 gap6 gap6"
 			/* 10*/ ". challengeImg challengeImg challengeImg challengeImg challengeImg challengeImg challengeText challengeText challengeText challengeText challengeText"
+			/* 10.1 */ "gap7 gap7 gap7 gap7 gap7 gap7 gap7 gap7 gap7 gap7 gap7 gap7"
 			/* 11*/ ". workshpText workshpText workshpText workshpText workshpImg workshpImg workshpImg workshpImg workshpImg workshpImg workshpImg"
+			/* 11.1 */ "gap8 gap8 gap8 gap8 gap8 gap8 gap8 gap8 gap8 gap8 gap8 gap8"
 			/* 12*/ "div3 div3 div3 div3 div3 div3 div3 div3 div3 div3 div3 div3"
-			/* 13 */ ". speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText ."
+			/* 12.1 */ "gap9 gap9 gap9 gap9 gap9 gap9 gap9 gap9 gap9 gap9 gap9 gap9"
+			/* 13 */ ". speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText . ."
+			/* 13.1 */ "gap10 gap10 gap10 gap10 gap10 gap10 gap10 gap10 gap10 gap10 gap10 gap10"
 			/* 14 */ ". speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg . speakerIllu speakerIllu speakerIllu speakerIllu"
+			/*14.1*/ "gap11 gap11 gap11 gap11 gap11 gap11 gap11 gap11 gap11 gap11 gap11 gap11"
 			/* 15 */ "agenda agenda agenda agenda agenda agenda agenda agenda agenda agenda agenda agenda"
-			/* 16 */ ". universText universText universText universText universText universText universText universText universText universText ."
+			/*15.1*/ "gap12 gap12 gap12 gap12 gap12 gap12 gap12 gap12 gap12 gap12 gap12 gap12"
+			/* 16 */ ". universText universText universText universText universText universText universText universText universText . ."
+			/*16.1*/ "gap13 gap13 gap13 gap13 gap13 gap13 gap13 gap13 gap13 gap13 gap13 gap13"
 			/* 17 */ ". universImg universImg universImg universImg universImg universImg universIllu universIllu universIllu universIllu universIllu"
+			/*17.1*/ "gap14 gap14 gap14 gap14 gap14 gap14 gap14 gap14 gap14 gap14 gap14 gap14"
 			/* 18 */ "div4 div4 div4 div4 div4 div4 div4 div4 div4 div4 div4 div4"
-			/* 19 */ ". partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText ."
+			/*18.1*/ "gap15 gap15 gap15 gap15 gap15 gap15 gap15 gap15 gap15 gap15 gap15 gap15"
+			/* 19 */ ". partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText . ."
+			/*19.1*/ "gap16 gap16 gap16 gap16 gap16 gap16 gap16 gap16 gap16 gap16 gap16 gap16"
 			/* 20 */ ". partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerIllu partnerIllu partnerIllu partnerIllu partnerIllu"
+			/*20.1*/ "gap17 gap17 gap17 gap17 gap17 gap17 gap17 gap17 gap17 gap17 gap17 gap17"
 			/* 21 */ "div5 div5 div5 div5 div5 div5 div5 div5 div5 div5 div5 div5"
+			/*21.1*/ "gap18 gap18 gap18 gap18 gap18 gap18 gap18 gap18 gap18 gap18 gap18 gap18"
 			/* 23 */ "faq faq faq faq faq faq faq faq faq faq faq faq"
 			/* 24 */ "footer footer footer footer footer footer footer footer footer footer footer footer";
 	}
@@ -1081,7 +1119,9 @@ footer div li a {
 	.agenda__container img {
 		width: 100%;
 	}
-
+	.university_text__container {
+		justify-self: start;
+	}
 	.university_img__container {
 		display: grid;
 		grid-template-columns: repeat(4, 120px);
