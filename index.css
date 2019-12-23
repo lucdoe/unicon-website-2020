@@ -968,19 +968,19 @@ footer div li a {
 			/* 11.1 */ "gap8 gap8 gap8 gap8 gap8 gap8 gap8 gap8 gap8 gap8 gap8 gap8"
 			/* 12*/ "div3 div3 div3 div3 div3 div3 div3 div3 div3 div3 div3 div3"
 			/* 12.1 */ "gap9 gap9 gap9 gap9 gap9 gap9 gap9 gap9 gap9 gap9 gap9 gap9"
-			/* 13 */ ". speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText . ."
+			/* 13 */ ". speakerText speakerText speakerText speakerText speakerText speakerText speakerText speakerText . . ."
 			/* 13.1 */ "gap10 gap10 gap10 gap10 gap10 gap10 gap10 gap10 gap10 gap10 gap10 gap10"
 			/* 14 */ ". speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg . speakerIllu speakerIllu speakerIllu speakerIllu"
 			/*14.1*/ "gap11 gap11 gap11 gap11 gap11 gap11 gap11 gap11 gap11 gap11 gap11 gap11"
 			/* 15 */ "agenda agenda agenda agenda agenda agenda agenda agenda agenda agenda agenda agenda"
 			/*15.1*/ "gap12 gap12 gap12 gap12 gap12 gap12 gap12 gap12 gap12 gap12 gap12 gap12"
-			/* 16 */ ". universText universText universText universText universText universText universText universText universText . ."
+			/* 16 */ ". universText universText universText universText universText universText universText universText . . ."
 			/*16.1*/ "gap13 gap13 gap13 gap13 gap13 gap13 gap13 gap13 gap13 gap13 gap13 gap13"
 			/* 17 */ ". universImg universImg universImg universImg universImg universImg universIllu universIllu universIllu universIllu universIllu"
 			/*17.1*/ "gap14 gap14 gap14 gap14 gap14 gap14 gap14 gap14 gap14 gap14 gap14 gap14"
 			/* 18 */ "div4 div4 div4 div4 div4 div4 div4 div4 div4 div4 div4 div4"
 			/*18.1*/ "gap15 gap15 gap15 gap15 gap15 gap15 gap15 gap15 gap15 gap15 gap15 gap15"
-			/* 19 */ ". partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText . ."
+			/* 19 */ ". partnerText partnerText partnerText partnerText partnerText partnerText partnerText partnerText . . ."
 			/*19.1*/ "gap16 gap16 gap16 gap16 gap16 gap16 gap16 gap16 gap16 gap16 gap16 gap16"
 			/* 20 */ ". partnerImg partnerImg partnerImg partnerImg partnerImg partnerImg partnerIllu partnerIllu partnerIllu partnerIllu partnerIllu"
 			/*20.1*/ "gap17 gap17 gap17 gap17 gap17 gap17 gap17 gap17 gap17 gap17 gap17 gap17"
@@ -1165,12 +1165,17 @@ footer div li a {
 		width: 100%;
 		height: 80%;
 	}
+	.partner_illustration__container img {
+		width: 80%;
+		margin-top: -80px;
+	}
 	.faq_header {
-		margin-left: 30px;
+		margin-left: 7%;
 	}
 	.accordion {
 		font-size: 20px;
 		font-weight: 600;
+		padding: 18px 7%;
 	}
 	.panel p {
 		font-size: 16px;
