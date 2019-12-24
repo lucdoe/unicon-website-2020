@@ -250,9 +250,13 @@ header {
 	display: block;
 	color: black;
 	text-align: center;
-	padding: 15px 25px;
+	padding: 15px 125px;
 	text-decoration: none;
 	font-size: 15px;
+}
+
+#burger {
+	padding: 17px 31px;
 }
 
 .topnav a:first-child {
@@ -808,7 +812,11 @@ footer div li a {
 #partner12,
 .info_section_quote,
 .partner_illustration__container,
-.university_illustration__container {
+.university_illustration__container,
+#uni9,
+#uni10,
+#uni11,
+#uni12 {
 	display: none;
 }
 
