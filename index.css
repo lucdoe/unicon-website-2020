@@ -1306,7 +1306,7 @@ footer div li a {
 	}
 	.active_image {
 		width: 77%;
-		margin: 16px 15% 90px 15%;
+		margin: 16px 5% 90px 15%;
 		border-radius: 5px;
 		text-align: center;
 	}
@@ -1320,4 +1320,18 @@ footer div li a {
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+	.speaker_image {
+		width: 160px;
+		height: 160px;
+		border: none;
+	}
+	.speaker_name {
+		font-size: 18px;
+		font-weight: 900;
+	}
+	.speaker_company {
+		font-size: 15px;
+		font-weight: 600;
+	}
+}
