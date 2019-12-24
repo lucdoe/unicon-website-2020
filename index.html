@@ -15,15 +15,14 @@
 </head>
 
 <body>
-
+	<div id="home"></div>
 	<header>
 		<nav class="topnav" id="myTopnav">
-			<a id="first_link"><img id="logo" src="./assets/unicon_logo.png" alt="unicon logo"></a>
-			<a id="signup_btn_nav" href="#signup">SIGN UP</a>
-			<a href="#about">HOME</a>
-			<a href="#contact">ABOUT</a>
-			<a href="#news">GALLERY</a>
-			<a href="#news">HISTORY</a>
+			<a href="#home" id="first_link"><img id="logo" src="./assets/unicon_logo.png" alt="unicon logo"></a>
+			<a id="signup_btn_nav" href="apply.html">SIGN UP</a>
+			<a href="#home">HOME</a>
+			<a href="about.html">ABOUT</a>
+			<a href="#">IMPRESSIONS</a>
 			<a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
 				<i class="material-icons-round md-36">menu</i>
 			</a>
@@ -40,13 +39,13 @@
 		</section>
 		<section class="start_img__container">
 			<img class="start_illustration_mobile" src="./assets/mobile/illustrations/start_mobile.svg">
-			<img class="start_illustration_desktop" src="./assets/desktop/illustrations/start_illustration.svg">
+			<img class="start_illustration_desktop" src="./assets/desktop/illustrations/start.jpg">
 		</section>
 
 
 
 		<section class="video_text__container">
-			<h2 class="video_header">thanks for being part of unicon 2019</h2>
+			<h2 class="video_header">thanks for being part of <span>unicon</span> 2019</h2>
 			<p class="video_subHeader">100 participants, 5 speeches, 6 workshops, 1 challenge PLUS
 				afterparty</p>
 		</section>
@@ -78,7 +77,7 @@
 
 
 		<section class="speech_img__container">
-			<img id="info_section_image" src="./assets/desktop/info/speeches_left.jpg">
+			<div class="image_center"><img class="left_image" src="./assets/desktop/info/speeches_left.jpg"></div>
 		</section>
 		<section class="speech_text__container info_text left_text">
 			<i class="material-icons-round md-20 white circle center">
@@ -107,11 +106,11 @@
 				</p>
 		</section>
 		<section class="student_img__container">
-			<img id="info_section_image" src="">
+			<div class="image_center"><img class="right_image" src="./assets/desktop/info/students.jpg"></div>
 		</section>
 
 		<section class="challenge_img__container">
-			<img id="info_section_image" src="">
+			<div class="image_center"><img class="left_image" src="./assets/desktop/info/challenge.jpg"></div>
 		</section>
 		<section class="challenge_text__container info_text left_text">
 			<i class="material-icons-round md-20 white circle center">
@@ -136,7 +135,7 @@
 			</p>
 		</section>
 		<section class="workshop_img__container">
-			<img id="info_section_image" src="./assets/desktop/info/workshops.jpg">
+			<div class="image_center"><img class="right_image" src="./assets/desktop/info/workshop.jpg"></div>
 		</section>
 		<div class="divider_three__container">
 			<img class="divider mobile_divider" src="assets/mobile/illustrations/path1.svg">
@@ -197,7 +196,7 @@
 
 
 		<section class="university_text__container">
-				<h2 class="info_header left_text">students at unicon</h2>
+				<h2 class="info_header left_text">students at <span>unicon</span></h2>
 				<p class="info_section_text left_text">We’re happy to say that our attendees at the last two
 					conferences
 					came from over 20 different universities, including the following:
@@ -265,7 +264,7 @@
 		</div>
 
 		<section class="partner_text__container">
-			<h2 class="info_header left_text">partners of unicon</h2>
+			<h2 class="info_header left_text">partners of <span>unicon</span></h2>
 			<p class="info_section_text left_text">Every year, we’re partnering up with several companies to make the experience as interesting as possible - for all attendees as well as our patners. They can contribute with workshops, given by industry experts, doing job interviews or just being there for an exchange of thoughts. Are you a participants and have ideas about companies we should collaborate with us? Reach out to us.
 				Are you Interested in becoming a partner company? <a id="contact_link" href="mailto:paulina.steffen@code.berlin">Contact us!</a></p>
 		</section>
@@ -375,11 +374,10 @@
 			<div>
 				<h4>Sitemap</h4>
 				<ul>
-					<li><a href="#"><span><b>Apply</b></span></a></li>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Gallery</a></li>
-					<li><a href="#">History</a></li>
+					<li><a href="apply.html"><span><b>Apply</b></span></a></li>
+					<li><a href="#home">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="#">Impressions</a></li>
 				</ul>
 			</div>
 			<div>
