@@ -430,7 +430,7 @@ header {
 }
 
 .video__container {
-	margin-bottom: 50px;
+	margin-bottom: 10px;
 }
 
 iframe {
@@ -915,6 +915,7 @@ footer div li a {
 	.video_text__container {
 		text-align: left;
 		justify-self: start;
+		margin-left: 10%;
 	}
 
 	.video_header,
@@ -928,7 +929,7 @@ footer div li a {
 
 	iframe {
 		width: 100%;
-		height: 300px;
+		height: 250px;
 	}
 
 
