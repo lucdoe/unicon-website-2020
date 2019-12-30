@@ -1274,7 +1274,7 @@ div.box_wrapper div img {
 	}
 	.university_img__container {
 		display: grid;
-		grid-template-columns: repeat(4, 120px);
+		grid-template-columns: repeat(4, 180px);
 		grid-template-rows: repeat(3, 130px);
 		grid-template-areas:
 			"uni1 uni2 uni3 uni4"
@@ -1283,6 +1283,7 @@ div.box_wrapper div img {
 		justify-items: stretch;
 		align-self: center;
 		margin: 0;
+		width: 100%;
 	}
 	.university_image_desktop {
 		width: 100%;
@@ -1406,11 +1407,15 @@ div.box_wrapper div img {
 		border: none;
 	}
 	.speaker_name {
-		font-size: 18px;
+		font-size: 17px;
 		font-weight: 900;
 	}
 	.speaker_company {
-		font-size: 15px;
+		font-size: 12px;
 		font-weight: 600;
+	}
+	.speaker_img__container {
+		grid-column-gap: 5%;
+		width: 100%;
 	}
 }
