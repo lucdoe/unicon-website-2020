@@ -766,8 +766,14 @@ span {
 .panel p {
 	font-size: 10px;
 	font-weight: 600px;
+	font-size: 10px;
+	padding-left: 7%;
+	text-align: left;
 }
 
+.panel_exception {
+	text-align: center;
+}
 
 footer {
 	background-color: var(--unicon-lightblue);
@@ -1187,6 +1193,9 @@ footer div li a {
 		height: 130px;
 		border: none;
 	}
+	#speaker_illustration {
+		width: 100%;
+	}
 	.speaker_name {
 		font-size: 18px;
 		font-weight: 900;
@@ -1246,7 +1255,7 @@ footer div li a {
 	}
 	.partner_illustration__container img {
 		width: 80%;
-		margin-top: -80px;
+		margin-top: -90px;
 	}
 	.faq_header {
 		margin-left: 7%;
@@ -1254,11 +1263,12 @@ footer div li a {
 	.accordion {
 		font-size: 20px;
 		font-weight: 600;
-		padding: 18px 7%;
+		padding-left: 50px;
 	}
 	.panel p {
 		font-size: 16px;
 		text-align: left;
+		padding-left: 35px;
 	}
 
 	footer div h4 {
