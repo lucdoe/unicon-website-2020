@@ -802,6 +802,7 @@ footer div li {
 
 footer div li a {
 	color: var(--unicon-font-color);
+	text-decoration: none;
 }
 
 .start_illustration_desktop,
@@ -1268,6 +1269,9 @@ div.box_wrapper div img {
 	.university_text__container {
 		justify-self: start;
 	}
+	#uni9, #uni10, #uni11, #uni12 {
+		display: block;
+	}
 	.university_img__container {
 		display: grid;
 		grid-template-columns: repeat(4, 120px);
@@ -1283,6 +1287,7 @@ div.box_wrapper div img {
 	.university_image_desktop {
 		width: 100%;
 	}
+	.image_
 	.university_illustration__container {
 		display: block;
 	}
