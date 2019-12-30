@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="958" height="378" viewBox="0 0 958 378">
+    <defs>
+        <linearGradient id="a" x1="18.28%" x2="102.953%" y1="50%" y2="50%">
+            <stop offset="0%" stop-color="#71BFE7"/>
+            <stop offset="100%" stop-color="#E7317B"/>
+        </linearGradient>
+        <linearGradient id="b" x1="18.28%" x2="102.953%" y1="50%" y2="50%">
+            <stop offset="0%" stop-color="#71BFE7"/>
+            <stop offset="100%" stop-color="#E7317B"/>
+        </linearGradient>
+        <linearGradient id="c" x1="18.28%" x2="102.953%" y1="50%" y2="50%">
+            <stop offset="0%" stop-color="#71BFE7"/>
+            <stop offset="100%" stop-color="#E7317B"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="url(#a)" fill-opacity=".5" fill-rule="nonzero" d="M71.686 10.684C158.059-18.282 275 14.609 275 73.748c0 50.17-55.873 74.835-164.741 81C1.39 160.912-53.08 52.525 71.686 10.684z" opacity=".93" transform="rotate(180 137.5 77.5)"/>
+        <text fill="#000" font-family="Muli-Black, Muli Black" font-size="24" font-weight="700">
+            <tspan x="76" y="86">innovative</tspan>
+        </text>
+        <path fill="url(#a)" fill-opacity=".5" fill-rule="nonzero" d="M71.686 233.684C158.059 204.718 275 237.609 275 296.748c0 50.17-55.873 74.835-164.741 81C1.39 383.912-53.08 275.525 71.686 233.684z" opacity=".93" transform="rotate(180 137.5 300.5)"/>
+        <text fill="#000" font-family="Muli-Black, Muli Black" font-size="24" font-weight="700">
+            <tspan x="51" y="314">of high quality</tspan>
+        </text>
+        <path fill="url(#b)" fill-opacity=".5" fill-rule="nonzero" d="M437.169 233.684C515.69 204.718 622 237.609 622 296.748c0 50.17-50.793 74.835-149.765 81-98.971 6.164-148.49-102.223-35.066-144.064z" opacity=".93" transform="rotate(180 497 300.5)"/>
+        <text fill="#000" font-family="Muli-Black, Muli Black" font-size="24" font-weight="700">
+            <tspan x="461" y="309">smart</tspan>
+        </text>
+        <path fill="url(#a)" fill-opacity=".5" fill-rule="nonzero" d="M753.686 10.684C840.059-18.282 957 14.609 957 73.748c0 50.17-55.873 74.835-164.741 81C683.39 160.912 628.92 52.525 753.686 10.684z" opacity=".93" transform="rotate(180 819.5 77.5)"/>
+        <text fill="#000" font-family="Muli-Black, Muli Black" font-size="24" font-weight="700">
+            <tspan x="767" y="86">inspiring</tspan>
+        </text>
+        <path fill="url(#c)" fill-opacity=".5" fill-rule="nonzero" d="M424.566 10.684C492.723-18.282 585 14.609 585 73.748c0 50.17-44.089 74.835-129.996 81-85.907 6.164-128.889-102.223-30.438-144.064z" opacity=".93" transform="rotate(180 476.5 77.5)"/>
+        <text fill="#000" font-family="Muli-Black, Muli Black" font-size="24" font-weight="700">
+            <tspan x="436" y="86">unique</tspan>
+        </text>
+        <path fill="url(#a)" fill-opacity=".5" fill-rule="nonzero" d="M754.686 230.684C841.059 201.718 958 234.609 958 293.748c0 50.17-55.873 74.835-164.741 81-108.869 6.164-163.339-102.223-38.573-144.064z" opacity=".93" transform="rotate(180 820.5 297.5)"/>
+        <text fill="#000" font-family="Muli-Black, Muli Black" font-size="24" font-weight="700">
+            <tspan x="752" y="305">sustainable</tspan>
+        </text>
+    </g>
+</svg>

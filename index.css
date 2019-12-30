@@ -782,6 +782,7 @@ footer {
 	display: flex;
 	justify-content: space-evenly;
 	margin-left: 0vw;
+	text-align: center;
 }
 
 footer div h4 {
@@ -851,6 +852,9 @@ footer div li a {
 .gap_one {
 	margin-bottom: 95px;
 }
+.mobile_values {
+	width: 95%;
+}
 .founding_names {
 	font-size: 9px;
   	font-weight: 900;
@@ -866,6 +870,39 @@ footer div li a {
 }
 .desktop_values {
 	display: none;
+}
+
+.team_wrapper {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	margin-right: 5%;
+	margin-left: 5%;
+	align-content: flex-start; 
+}
+div.box_wrapper div img {
+	width: 75px;
+	height: 75px;
+}
+
+.team_name {
+	font-size: 11px;
+	font-weight: 900;
+	margin-top:  8px;
+	margin-bottom: 4px;
+}
+.team_respinsibility {
+	margin-bottom: 70px;
+	font-size: 8px;
+}
+.text_wrapper {
+	text-align: center;
+}
+
+.box_wrapper {
+	min-width: 25%;
+	width: auto; 
+	height: auto;
 }
 
 
@@ -894,7 +931,7 @@ footer div li a {
 @media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 732px) {
+@media (min-width: 732px) {
 	#signup_btn_nav {
 		padding: 11px 26px;
 		color: white;
@@ -937,8 +974,29 @@ footer div li a {
 		width: 100%;
 		height: 250px;
 	}
+	div.box_wrapper div img {
+	width: 130px;
+	height: 130px;
+	}
+	.team_name {
+		font-size: 22px;
+		font-weight: 900;
+		margin-top:  8px;
+		margin-bottom: 4px;
+	}
+	.team_respinsibility {
+		margin-bottom: 70px;
+		font-size: 14px;
+	}
+	.text_wrapper {
+		text-align: center;
+	}
 
-
+	.box_wrapper {
+		min-width: 25%;
+		width: auto; 
+		height: auto;
+	}
 }
 
 /* Large devices (laptops/desktops, 950px and up) */
@@ -974,7 +1032,7 @@ footer div li a {
 		grid-template-columns: repeat(12, 1fr);
 		grid-template-rows:
 			/*1*/ 439px 
-			/*2*/ 416px 
+			/*2*/ 450px 
 			/*2.1*/ 90px
 			/*3*/ 75px 
 			/*3.1*/ 80px
@@ -1114,7 +1172,7 @@ footer div li a {
 		height: 550px;
 	}
 	.signup_illustration {
-		width: 90%;
+		width: 100%;
 	}
 	.signUp_text {
 		font-size: 18px;
@@ -1155,7 +1213,7 @@ footer div li a {
 	}
 	.info_section_text {
 		font-size: 16px;
-		margin: 18px 0px 60px 0px;
+		margin: 18px 0px 0px 0px;
 	}
 	.info_section_quote {
 		font-size: 18px;
@@ -1309,6 +1367,11 @@ footer div li a {
 	.gap_one {
 		margin-bottom: 95px;
 	}
+	.about_imageWrapper {
+		display: grid;
+		align-items: center;
+		justify-items: center;
+	}
 	.founding_names {
 		font-size: 14px;
 	  	font-weight: 900;
@@ -1316,7 +1379,7 @@ footer div li a {
 	  	text-align: center;
 	}
 	.active_image {
-		width: 77%;
+		width: 57%;
 		margin: 16px 5% 90px 15%;
 		border-radius: 5px;
 		text-align: center;
