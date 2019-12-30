@@ -1234,17 +1234,17 @@ div.box_wrapper div img {
 	}
 	#speaker5,
 	#speaker6 {
-		display: none;
+		display: block;
 	}
 	.speaker_img__container {
 		display: grid;
-		grid-template-columns: repeat(2, 260px);
+		grid-template-columns: repeat(3, 190px);
 		grid-template-rows:
-		260px 260px;
+		230px 230px;
 		grid-template-areas:
-			"speaker1 speaker2"
-			"speaker3 speaker4";
-		justify-items: stretch;
+			"speaker1 speaker2 speaker3"
+			"speaker4 speaker5 speaker6";
+		justify-items: center;
 		align-self: center;
 	}
 	.speaker_image {
@@ -1256,11 +1256,11 @@ div.box_wrapper div img {
 		width: 100%;
 	}
 	.speaker_name {
-		font-size: 18px;
+		font-size: 15px;
 		font-weight: 900;
 	}
 	.speaker_company {
-		font-size: 15px;
+		font-size: 10px;
 		font-weight: 600;
 	}
 	.agenda__container img {
