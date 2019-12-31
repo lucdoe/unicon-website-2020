@@ -160,13 +160,13 @@ footer {
 		12px
 		200px
 		12px
-		270px
-		repeat(3, 200px)
+		290px
+		repeat(3, 220px)
 		16px
 		190px
 		360px
 		16px
-		150px
+		180px
 		240px
 		12px
 		240px
@@ -828,10 +828,18 @@ footer div li a {
 #uni9,
 #uni10,
 #uni11,
-#uni12 {
+#uni12,
+.date_and_location {
 	display: none;
 }
 
+.date_loc {
+	margin-bottom: 20px;
+}
+
+.button_margin_start {
+	margin-top: 55px;
+}
 
 .about_section {
 	text-align: center;
@@ -852,10 +860,13 @@ footer div li a {
 .about_text {
 	font-size: 12px;
 	font-weight: 600;
-	margin: 16px 5%;
+	margin: 22px 5%;
 }
 .gap_one {
 	margin-bottom: 95px;
+}
+.respo_margin {
+	margin-bottom: 45px;
 }
 .mobile_values {
 	width: 95%;
