@@ -1299,7 +1299,8 @@ div.box_wrapper div img {
 		width: 100%;
 	}
 	.university_image_desktop {
-		width: 100%;
+		width: 140px;
+		height: 105px;
 	}
 	.image_
 	.university_illustration__container {
@@ -1311,7 +1312,7 @@ div.box_wrapper div img {
 
 	.partner_img__container {
 		display: grid;
-		grid-template-columns: repeat(4, 120px);
+		grid-template-columns: repeat(4, 140px);
 		grid-template-rows: repeat(3, 100px);
 		grid-template-areas:
 			"partner1 partner2 partner3 partner4"
