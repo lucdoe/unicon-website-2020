@@ -943,7 +943,8 @@ div.box_wrapper div img {
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 732px) {
@@ -1011,6 +1012,9 @@ div.box_wrapper div img {
 		min-width: 25%;
 		width: auto; 
 		height: auto;
+	}
+	.info_section_quote {
+		margin-top: 20px;
 	}
 }
 
@@ -1227,12 +1231,17 @@ div.box_wrapper div img {
 	}
 	.info_section_text {
 		font-size: 16px;
-		margin: 18px 0px 0px 0px;
+		margin: 18px 0px 20px 0px;
 	}
+	.info_quote {
+		margin-top: 20px;
+	}
+	
 	.info_section_quote {
 		font-size: 18px;
 		font-weight: 600;
 		font-style: italic;
+		margin-top: 20px;
 	}
 
 	.left_text {
