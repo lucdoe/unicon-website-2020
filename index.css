@@ -371,7 +371,7 @@ header {
 .website_subtitle {
 	font-size: 14px;
 	font-weight: 900;
-	color: var(--unicon-pink);
+	color: var(--unicon-font-color);
 }
 
 .date_loc {
