@@ -321,6 +321,12 @@ header {
 		margin-top: 40px;
 		color: white;
 	}
+	.left-image {
+		height: 26vw;
+	}
+	.right-image {
+		height: 26vw;
+	}
 }
 
 .material-icons-round.md-20 {
