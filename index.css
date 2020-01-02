@@ -835,7 +835,9 @@ footer div li a {
 #uni10,
 #uni11,
 #uni12,
-.date_and_location {
+.date_and_location,
+.divider_x__container
+ {
 	display: none;
 }
 
@@ -944,6 +946,37 @@ div.box_wrapper div img {
 	margin-top: 10%;
 }
 
+.value_wrapper {
+		display: grid;
+		align-items: center;
+		justify-items: center;
+		width: 100%;
+		grid-template-columns: repeat(2, 180px);
+		grid-row-gap: 50px;
+		grid-template-rows: repeat(3, 100px);
+		margin: 20px 5% 100px 5%;
+	}
+
+	/* Centered text */
+	.centered {
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  font-weight: bold;
+	  font-size: 15px;
+	}
+	.values {
+	  position: relative;
+	  text-align: center;
+	  color: black;
+	  justify-self: center;
+	}
+
+	.values img {
+		width: 70%;
+	}
+
 
 
 
@@ -1023,6 +1056,31 @@ div.box_wrapper div img {
 	.info_section_quote {
 		margin-top: 20px;
 	}
+	.value_wrapper {
+		display: grid;
+		align-items: center;
+		width: 100%;
+		grid-template-columns: repeat(3, 30%);
+		grid-row-gap: 50px;
+		grid-template-rows: repeat(2, 160px);
+		margin: 20px 5% 100px 5%;
+	}
+	.values {
+	  position: relative;
+	  text-align: center;
+	  color: black;
+	  justify-self: center;
+	}
+
+	/* Centered text */
+	.centered {
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  font-weight: 900;
+	  font-size: 24px;
+	}
 }
 
 /* Large devices (laptops/desktops, 950px and up) */
@@ -1055,6 +1113,7 @@ div.box_wrapper div img {
 
 	.divider_x__container {
 		grid-area: gapx;
+		width: 100%;
 	}
 
 	.grid {
