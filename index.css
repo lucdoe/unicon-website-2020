@@ -1277,12 +1277,12 @@ div.box_wrapper div img {
 
 	.right_image {
 		width: 65%;
-		max-height: 600px;
+		max-height: 33vw;
 		border-radius: 50% 92% 76% 127%;
 	}
 	.left_image {
 		width: 75%;
-		max-height: 600px;
+		max-height: 33vw;
 		border-radius: 50% 92% 76% 127%;
 	}
 
