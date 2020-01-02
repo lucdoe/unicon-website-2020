@@ -360,6 +360,7 @@ header {
 
 .start_text__container {
 	padding-top: 70px;
+	height: 245px;
 }
 
 .website_title {
@@ -1051,7 +1052,7 @@ div.box_wrapper div img {
 		grid-template-columns: repeat(12, 1fr);
 		grid-template-rows:
 			/*1*/ 439px 
-			/*2*/ 550px 
+			/*2*/ 600px 
 			/*2.1*/ 90px
 			/*3*/ 75px 
 			/*3.1*/ 80px
