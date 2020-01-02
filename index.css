@@ -950,11 +950,10 @@ div.box_wrapper div img {
 		display: grid;
 		align-items: center;
 		justify-items: center;
-		width: 100%;
-		grid-template-columns: repeat(2, 180px);
-		grid-row-gap: 50px;
+		grid-template-columns: repeat(2, 150px);
+		grid-row-gap: 20px;
 		grid-template-rows: repeat(3, 100px);
-		margin: 20px 5% 100px 5%;
+		margin: 20px 5% 100px 8%;
 	}
 
 	/* Centered text */
@@ -964,7 +963,7 @@ div.box_wrapper div img {
 	  left: 50%;
 	  transform: translate(-50%, -50%);
 	  font-weight: bold;
-	  font-size: 15px;
+	  font-size: 12px;
 	}
 	.values {
 	  position: relative;
