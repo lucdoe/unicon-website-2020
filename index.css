@@ -1053,6 +1053,10 @@ div.box_wrapper div img {
 		display: none;
 	}
 
+	.divider_x__container {
+		grid-area: gapx;
+	}
+
 	.grid {
 		text-align: normal;
 		grid-template-columns: repeat(12, 1fr);
@@ -1077,13 +1081,14 @@ div.box_wrapper div img {
 			/*11*/ 380px
 			/*11.1*/ 150px
 			/*12*/ 41px 
-			/*12.1*/ 150px
+			/*12.1*/ 100px
 			/*13*/ 120px 
-			/*13.1*/ 85px
+			/*13.1*/ 55px
 			/*14*/ 600px 
-			/*14.1*/ 180px
-			/*15*/ 600px 
-			/*15.1*/ 180px
+			/*14.1*/ 100px
+			/*15*/ /*600px*/ 
+			/*15.x*/ 41px
+			/*15.1*/ 100px
 			/*16*/ 80px
 			/*16.1*/ 70px 
 			/*17*/ 483px
@@ -1125,7 +1130,8 @@ div.box_wrapper div img {
 			/* 13.1 */ "gap10 gap10 gap10 gap10 gap10 gap10 gap10 gap10 gap10 gap10 gap10 gap10"
 			/* 14 */ ". speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg . speakerIllu speakerIllu speakerIllu speakerIllu"
 			/*14.1*/ "gap11 gap11 gap11 gap11 gap11 gap11 gap11 gap11 gap11 gap11 gap11 gap11"
-			/* 15 */ "agenda agenda agenda agenda agenda agenda agenda agenda agenda agenda agenda agenda"
+			/*/* 15 */ /*"agenda agenda agenda agenda agenda agenda agenda agenda agenda agenda agenda agenda"*/
+			/*15.x */ "gapx gapx gapx gapx gapx gapx gapx gapx gapx gapx gapx gapx"
 			/*15.1*/ "gap12 gap12 gap12 gap12 gap12 gap12 gap12 gap12 gap12 gap12 gap12 gap12"
 			/* 16 */ ". universText universText universText universText universText universText universText universText . . ."
 			/*16.1*/ "gap13 gap13 gap13 gap13 gap13 gap13 gap13 gap13 gap13 gap13 gap13 gap13"
