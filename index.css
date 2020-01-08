@@ -608,9 +608,9 @@ span {
 
 .university_img__container {
 	display: grid;
-	grid-template-columns: repeat(4, 76px);
+	grid-template-columns: repeat(4, 80px);
 	grid-template-rows:
-		50px 50px;
+		90px 90px;
 	grid-row-gap: 20px;
 	grid-template-areas:
 		"uni1 uni2 uni3 uni4"
