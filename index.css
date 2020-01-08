@@ -975,10 +975,11 @@ div.box_wrapper div img {
 	.values img {
 		width: 70%;
 	}
-
 	#ebs_exception {
-	height: 150px;
+	height: 90px;
 }
+
+
 
 
 
@@ -991,6 +992,9 @@ div.box_wrapper div img {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 732px) {
+		#ebs_exception {
+	height: 150px;
+}
 	#signup_btn_nav {
 		padding: 11px 26px;
 		color: white;
