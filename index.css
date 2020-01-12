@@ -953,7 +953,7 @@ div.box_wrapper div img {
 		grid-template-columns: repeat(2, 150px);
 		grid-row-gap: 20px;
 		grid-template-rows: repeat(3, 100px);
-		margin: 20px 5% 100px 8%;
+		margin: 20px auto 100px auto;
 	}
 
 	/* Centered text */
@@ -978,6 +978,79 @@ div.box_wrapper div img {
 	#ebs_exception {
 	height: 90px;
 }
+.value_fix {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+
+.website_title_history {
+	margin-bottom: 75px;
+	font-size: 38px;
+	font-weight: 900;
+	color: var(--unicon-pink);
+	text-align: center;
+}
+.history_subtitle {
+	margin-bottom: 35px;
+	text-align: center;
+}
+.history_page_margin {
+	margin-bottom:  100px;
+}
+.history_signup_wrapper {
+	text-align: center;
+	margin: 25px 15px 25px 15px;
+}
+.history_signUp_text {
+	font-size: 14px;
+	font-weight: 600;
+	margin-bottom: 25px;
+}
+div.history_speaker_grid #speaker5, div.history_speaker_grid #speaker6 {
+	display: block;
+}
+.history_speaker_grid {
+	display: grid;
+	grid-template-columns: repeat(2, 50%);
+	grid-template-rows:
+		repeat(4, 120px);
+	grid-row-gap: 20px;
+	grid-template-areas:
+		"speaker4 speaker1"
+		"speaker3 speaker2"
+		"speaker5 speaker6"
+		"speaker7 speaker8";
+	justify-items: center;
+	align-items: center;
+	margin-bottom: 100px;
+}
+div.history_speaker_grid .speaker_box {
+ text-align: center;
+}
+div.history_speaker_grid img.speaker_image {
+	border: none;
+}
+div.history_speaker_grid .speaker_name {
+	font-size: 13px;
+}
+div.history_speaker_grid .speaker_company {
+	font-size: 9px;
+}
+.history_team {
+	margin-top: 50px;
+}
+.history_flex, .history_team_wrapper {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 100px;
+}
+.history_flex img {
+	width: 90%;
+}
+
+
 
 
 
@@ -988,12 +1061,33 @@ div.box_wrapper div img {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+	.history_signUp_text {
+		width: 400px;
+		margin: 25px auto 25px auto;
+		font-size: 18px;
+	}
+	div.history_speaker_grid .speaker_name {
+	font-size: 16px;
+}
+	div.history_speaker_grid .speaker_company {
+	font-size: 13px;
+}
+.history_flex img {
+	width: 80%;
+}
+.history_speaker {
+	margin-left: 25px;
+	margin-right: 25px;
+}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 732px) {
 		#ebs_exception {
 	height: 150px;
+}
+.history_flex img {
+	width: 70%;
 }
 	#signup_btn_nav {
 		padding: 11px 26px;
@@ -1501,6 +1595,20 @@ div.box_wrapper div img {
 		display: block;
 	}
 
+	.history_speaker_grid {
+		grid-template-rows: repeat(2, 200px);
+		grid-template-columns: repeat(4, 25%);
+		grid-template-areas: 
+		"speaker1 speaker2 speaker3 speaker4"
+		"speaker5 speaker6 speaker7 speaker8";
+	}
+	.history_flex img {
+	width: 60%;
+}
+.history_signup_wrapper {
+	margin-bottom: 100px;
+}
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -1522,4 +1630,7 @@ div.box_wrapper div img {
 		grid-column-gap: 5%;
 		width: 100%;
 	}
+	.history_flex img {
+	width: 50%;
+}
 }
