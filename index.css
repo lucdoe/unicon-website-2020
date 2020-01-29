@@ -281,6 +281,10 @@ header {
 	display: none;
 }
 
+.values img {
+	width: 90%;
+}
+
 
 @media screen and (max-width: 732px) {
 	.topnav a:not(:first-child) {
@@ -372,7 +376,7 @@ header {
 .website_title {
 	font-size: 38px;
 	font-weight: 900;
-	color: var(--unicon-pink);
+	color: var(--unicon-font-color);
 }
 
 .website_subtitle {
@@ -391,7 +395,7 @@ header {
 
 .date_and_location {
 	font-size: 14px;
-	font-weight: 600;
+	font-weight: 800;
 	margin-top: 40px;
 	margin-bottom: 40px;
 }
@@ -430,7 +434,8 @@ header {
 
 .video_subHeader {
 	font-size: 12px;
-	font-weight: 600;
+	font-weight: 650;
+	padding-left: 25px;
 }
 
 .video_header,
@@ -461,6 +466,7 @@ iframe {
 	font-weight: 600;
 	margin-bottom: 25px;
 	width: 340px;
+	text-align: center;
 }
 
 
@@ -475,8 +481,10 @@ iframe {
 	text-align: center;
 }
 
-span {
-	color: var(--unicon-pink);
+.info_span {
+	color: var(--unicon-lightblue);
+	font-weight: bold;
+	font-size: 20px;
 }
 
 
@@ -625,7 +633,19 @@ span {
 	width: 80px;
 	height: 60px;
 }
-
+.university_box {
+	text-align: center;
+	display: grid;
+	justify-items: center;
+}
+.university_box p {
+	font-size: 13px;
+	font-weight: 600;
+	margin-top: -10px;
+}
+#text_exception_ebs {
+	margin-top: -28px;
+}
 
 .partner_text__container {
 	align-self: start;
@@ -735,8 +755,8 @@ span {
 	outline: none;
 	font-size: 14px;
 	transition: 0.4s;
-	border-top: 1px solid var(--unicon-lightblue);
-	border-bottom: 1px solid var(--unicon-lightblue);
+	/* border-top: 1px solid var(--unicon-lightblue);
+	border-bottom: 1px solid var(--unicon-lightblue); */
 }
 
 .border_2px_top {
@@ -749,7 +769,6 @@ span {
 
 .accordion:hover {
 	background-color: var(--unicon-lightblue);
-	color: white;
 }
 
 .accordion:after {
@@ -766,7 +785,7 @@ span {
 }
 
 .panel {
-	padding: 0px 18px;
+	padding: 0px 6%;
 	background-color: white;
 	max-height: 0;
 	overflow: hidden;
@@ -776,7 +795,6 @@ span {
 .panel p {
 	font-size: 10px;
 	font-weight: 600px;
-	font-size: 10px;
 	padding-left: 7%;
 	text-align: left;
 }
@@ -793,12 +811,14 @@ footer {
 	justify-content: space-evenly;
 	margin-left: 0vw;
 	text-align: center;
+	padding-bottom: 35px;
 }
 
 footer div h4 {
 	margin: 15px;
 	text-align: center;
 	font-size: 15px;
+	margin-top: 35px;
 }
 
 footer ul {
@@ -813,6 +833,10 @@ footer div li {
 footer div li a {
 	color: var(--unicon-font-color);
 	text-decoration: none;
+}
+
+footer div li a:hover {
+	color: var(--unicon-pink);
 }
 
 .start_illustration_desktop,
@@ -972,9 +996,7 @@ div.box_wrapper div img {
 	  justify-self: center;
 	}
 
-	.values img {
-		width: 70%;
-	}
+
 	#ebs_exception {
 	height: 90px;
 }
@@ -987,10 +1009,12 @@ div.box_wrapper div img {
 
 .website_title_history {
 	margin-bottom: 75px;
-	font-size: 38px;
+	font-size: 75px;
 	font-weight: 900;
-	color: var(--unicon-pink);
-	text-align: center;
+	color: var(--unicon-font-color);
+	text-align: left;
+	margin-left: 5%;
+	margin-top: 130px;
 }
 .history_subtitle {
 	margin-bottom: 35px;
@@ -1055,6 +1079,12 @@ div.history_speaker_grid .speaker_company {
 	width: 80%;
 	height: 40%;
 	border-radius: 10px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.pinkystinky {
+	color: var(--unicon-pink);
 }
 
 
@@ -1171,7 +1201,7 @@ div.history_speaker_grid .speaker_company {
 		display: grid;
 		align-items: center;
 		width: 100%;
-		grid-template-columns: repeat(3, 30%);
+		grid-template-columns: repeat(3, 33%);
 		grid-row-gap: 50px;
 		grid-template-rows: repeat(2, 160px);
 		margin: 20px 5% 100px 5%;
@@ -1191,6 +1221,9 @@ div.history_speaker_grid .speaker_company {
 	  transform: translate(-50%, -50%);
 	  font-weight: 900;
 	  font-size: 24px;
+	}
+	.values img {
+		width: 80%;
 	}
 }
 
@@ -1377,7 +1410,7 @@ div.history_speaker_grid .speaker_company {
 	}
 	.signUp_text {
 		font-size: 18px;
-		text-align: left;
+		text-align: center;
 		width: 470px;
 	}
 
@@ -1417,6 +1450,7 @@ div.history_speaker_grid .speaker_company {
 	.info_section_text {
 		font-size: 16px;
 		margin: 18px 0px 20px 0px;
+		font-weight: normal;
 	}
 	.info_quote {
 		margin-top: 20px;
@@ -1495,6 +1529,8 @@ div.history_speaker_grid .speaker_company {
 	.university_image_desktop {
 		width: 140px;
 		height: 105px;
+		margin-right: auto;
+		margin-left: auto;
 	}
 	.image_
 	.university_illustration__container {
@@ -1502,6 +1538,14 @@ div.history_speaker_grid .speaker_company {
 	}
 	.university_illustration__container img {
 		width: 70%;
+	}
+	.university_box p {
+		font-size: 16px;
+		font-weight: 600;
+		margin-top: -10px;
+	}
+	#text_exception_ebs {
+		margin-top: -39px;
 	}
 
 	.partner_img__container {
@@ -1535,7 +1579,7 @@ div.history_speaker_grid .speaker_company {
 	.accordion {
 		font-size: 20px;
 		font-weight: 600;
-		padding-left: 50px;
+		padding-left: 7%;
 	}
 	.panel p {
 		font-size: 16px;
@@ -1557,6 +1601,8 @@ div.history_speaker_grid .speaker_company {
 
 	.about_section {
 		text-align: left;
+		margin-left: 5%;
+		margin-right: 5%;
 	}
 	.about_title {
 		color: var(--unicon-pink);
@@ -1564,18 +1610,16 @@ div.history_speaker_grid .speaker_company {
 		font-weight: 900;
 		margin-bottom: 80px;
 		padding-top: 150px;
-		margin-left: 15%;
+		
 	}
 	.about_header {
 		color: var(--unicon-font-color);
 		font-size: 34px;
 		font-weight: 900;
 		margin-bottom: 30px;
-		margin-left: 15%;
 	}
 	.about_text {
 		font-size: 18px;
-		margin-left: 15%;
 		text-align: left;
 	}
 	.gap_one {
@@ -1594,7 +1638,7 @@ div.history_speaker_grid .speaker_company {
 	}
 	.active_image {
 		width: 57%;
-		margin: 16px 5% 90px 15%;
+		margin: 16px 5% 90px 5%;
 		border-radius: 5px;
 		text-align: center;
 	}
@@ -1611,12 +1655,16 @@ div.history_speaker_grid .speaker_company {
 		grid-template-areas: 
 		"speaker1 speaker2 speaker3 speaker4"
 		"speaker5 speaker6 speaker7 speaker8";
+		margin: 100px 5%;
 	}
 	.history_flex img {
 	width: 60%;
 }
 .history_signup_wrapper {
 	margin-bottom: 100px;
+}
+.values img {
+	width: 100%;
 }
 
 }
