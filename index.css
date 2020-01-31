@@ -722,7 +722,7 @@ iframe {
 	grid-template-areas:
 		"partner1 partner2 partner3 partner4 partner5"
 		"partner6 partner7 partner8 partner9 partner10"
-		"partner11 partner12 partner13";
+		"partner11 partner12 partner13 . .";
 	margin-bottom: 30px;
 }
 
@@ -1559,7 +1559,8 @@ div.history_speaker_grid .speaker_company {
 		grid-template-areas:
 			"partner1 partner2 partner3 partner4"
 			"partner5 partner6 partner7 partner8"
-			"partner9 partner10 . .";
+			"partner9 partner10 partner11 partner12"
+			"partner13 . . .";
 		justify-items: stretch;
 		align-self: center;
 		margin: 0;
