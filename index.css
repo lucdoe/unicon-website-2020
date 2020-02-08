@@ -540,14 +540,14 @@ iframe {
 	grid-template-rows:
 		150px 150px;
 	grid-template-areas:
-		"speaker4 speaker1"
-		"speaker3 speaker2";
+		"speaker1 speaker2"
+		"speaker3 speaker4";
 	justify-items: center;
 	align-items: center;
 }
 
 .speaker_image {
-	border: 5px solid var(--unicon-lightblue);
+	/* border: 5px solid var(--unicon-lightblue); */
 	border-radius: 50%;
 	width: 80px;
 	height: 80px;
@@ -1240,7 +1240,6 @@ div.history_speaker_grid .speaker_company {
 	#speaker5,
 	#speaker6,
 	#speaker_illustration,
-	.agenda__container,
 	.university_name,
 	.university_illustration,
 	.university_image_desktop,
@@ -1293,7 +1292,7 @@ div.history_speaker_grid .speaker_company {
 			/*13.1*/ 55px
 			/*14*/ 600px
 			/*14.1*/ 100px
-			/*15*/ /*600px*/
+			/*15*/ 600px
 			/*15.x*/ 41px
 			/*15.1*/ 100px
 			/*16*/ 80px
@@ -1337,7 +1336,7 @@ div.history_speaker_grid .speaker_company {
 			/* 13.1 */ "gap10 gap10 gap10 gap10 gap10 gap10 gap10 gap10 gap10 gap10 gap10 gap10"
 			/* 14 */ ". speakerImg speakerImg speakerImg speakerImg speakerImg speakerImg . speakerIllu speakerIllu speakerIllu speakerIllu"
 			/*14.1*/ "gap11 gap11 gap11 gap11 gap11 gap11 gap11 gap11 gap11 gap11 gap11 gap11"
-			/*/* 15 */ /*"agenda agenda agenda agenda agenda agenda agenda agenda agenda agenda agenda agenda"*/
+			/*/* 15 */ "agenda agenda agenda agenda agenda agenda agenda agenda agenda agenda agenda agenda"
 			/*15.x */ "gapx gapx gapx gapx gapx gapx gapx gapx gapx gapx gapx gapx"
 			/*15.1*/ "gap12 gap12 gap12 gap12 gap12 gap12 gap12 gap12 gap12 gap12 gap12 gap12"
 			/* 16 */ ". universText universText universText universText universText universText universText universText . . ."
@@ -1562,6 +1561,7 @@ div.history_speaker_grid .speaker_company {
 			"partner9 partner10 partner11 partner12"
 			"partner13 . . .";
 		justify-items: stretch;
+		grid-column-gap: 30px;
 		align-self: center;
 		margin: 0;
 		margin-top: 30px;
@@ -1657,10 +1657,10 @@ div.history_speaker_grid .speaker_company {
 
 	.history_speaker_grid {
 		grid-template-rows: repeat(2, 200px);
-		grid-template-columns: repeat(4, 25%);
+		grid-template-columns: repeat(3, 33%);
 		grid-template-areas:
-		"speaker1 speaker2 speaker3 speaker4"
-		"speaker5 speaker6 speaker7 speaker8";
+		"speaker1 speaker2 speaker3"
+		"speaker5 speaker7 speaker8";
 		margin: 100px 5%;
 	}
 	.history_flex img {
