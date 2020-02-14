@@ -1292,7 +1292,7 @@ div.history_speaker_grid .speaker_company {
 			/*13.1*/ 55px
 			/*14*/ 600px
 			/*14.1*/ 100px
-			/*15*/ 600px
+			/*15*/ 700px
 			/*15.x*/ 41px
 			/*15.1*/ 100px
 			/*16*/ 80px
@@ -1472,6 +1472,59 @@ div.history_speaker_grid .speaker_company {
 	.right_text {
 		text-align: right;
 	}
+
+	.schedule_holder {
+        display: flex;
+        justify-content: center;
+        margin: 4%;
+        padding-top: 170px;
+    }
+
+    .schedule_holder .one,
+    .two {
+        margin-right: 7%;
+    }
+
+    th {
+        text-align: left;
+        font-size: 24px;
+        font-weight: 900;
+        letter-spacing: -0.50px;
+        padding-bottom: 25px;
+    }
+
+    td {
+        padding: 0px 20px 7px 0px;
+		font-size: 18px;
+		text-align: left;
+    }
+
+    .schedule_header {
+        font-size: 34px;
+		margin-top: -25px;
+		text-align: left;
+
+    }
+
+    .one table {
+        margin-top: 99px;
+    }
+
+    .two {
+
+        margin-top: 66px;
+    }
+
+    .background_test {
+        background-image: url("./pictures/illustrations/rectangle.svg");
+        width: 100%;
+        /* You must set a specified height */
+        height: 750px;
+        background-position: center;
+        /* Center the image */
+        background-repeat: no-repeat;
+        /* Do not repeat the image */
+    }
 
 	.speaker_text__container {
 		text-align: left;
