@@ -1539,9 +1539,9 @@ div.history_speaker_grid .speaker_company {
 	}
 	.speaker_img__container {
 		display: grid;
-		grid-template-columns: repeat(3, 190px);
+		grid-template-columns: repeat(3, 220px);
 		grid-template-rows:
-		230px 230px;
+		250px 250px;
 		grid-template-areas:
 			"speaker1 speaker2 speaker3"
 			"speaker4 speaker5 speaker6";
