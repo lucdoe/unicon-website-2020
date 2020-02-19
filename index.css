@@ -1293,7 +1293,7 @@ div.history_speaker_grid .speaker_company {
 			/*12.1*/ 100px
 			/*13*/ 120px
 			/*13.1*/ 55px
-			/*14*/ 600px
+			/*14*/ 650px
 			/*14.1*/ 100px
 			/*15*/ 700px
 			/*15.x*/ 41px
@@ -1619,7 +1619,7 @@ div.history_speaker_grid .speaker_company {
 			"partner13 . . .";
 		justify-items: stretch;
 		grid-column-gap: 30px;
-		grid-row-gap: 50px;
+		grid-row-gap: 80px;
 		align-self: center;
 		margin: 0;
 		margin-top: 30px;
