@@ -163,9 +163,9 @@ footer {
 		290px
 		repeat(3, 220px)
 		16px
-		190px
-		360px
-		16px
+		240px
+		650px
+		0px
 		180px
 		240px
 		12px
@@ -176,51 +176,51 @@ footer {
 		175px;
 
 	grid-template-areas:
-		/*2*/
+		/*1*/
 		"startText startText startText startText"
-		/*3*/
+		/*2*/
 		"startImg startImg startImg startImg"
-		/*4*/
+		/*3*/
 		"videoT videoT videoT videoT"
-		/*4.1*/
+		/*4*/
 		"video video video video"
-		/*5.1*/
-		"div1 div1 div1 div1"
 		/*5*/
-		"signupText signupText signupText signupText"
-		/*5.2*/
-		"div2 div2 div2 div2"
+		"div1 div1 div1 div1"
 		/*6*/
-		"speechText speechText speechText speechText"
+		"signupText signupText signupText signupText"
 		/*7*/
-		"studentText studentText studentText studentText"
+		"div2 div2 div2 div2"
 		/*8*/
-		"challengeText challengeText challengeText challengeText"
+		"speechText speechText speechText speechText"
 		/*9*/
-		"workshpText workshpText workshpText workshpText"
-		/*9.1*/
-		"div5 div5 div5 div5"
+		"studentText studentText studentText studentText"
 		/*10*/
-		"speakerText speakerText speakerText speakerText"
+		"challengeText challengeText challengeText challengeText"
 		/*11*/
-		"speakerImg speakerImg speakerImg speakerImg"
-		/*11.1*/
-		"div6 div6 div6 div6"
+		"workshpText workshpText workshpText workshpText"
 		/*12*/
-		"universText universText universText universText"
+		"div5 div5 div5 div5"
 		/*13*/
-		"universImg universImg universImg universImg"
-		/*14.1*/
-		"div3 div3 div3 div3"
+		"speakerText speakerText speakerText speakerText"
 		/*14*/
-		"partnerText partnerText partnerText partnerText"
+		"speakerImg speakerImg speakerImg speakerImg"
 		/*15*/
-		"partnerImg partnerImg partnerImg partnerImg"
-		/*15.1*/
-		"div4 div4 div4 div4"
+		"div6 div6 div6 div6"
 		/*16*/
-		"faq faq faq faq"
+		"universText universText universText universText"
 		/*17*/
+		"universImg universImg universImg universImg"
+		/*18*/
+		"div3 div3 div3 div3"
+		/*19*/
+		"partnerText partnerText partnerText partnerText"
+		/*20*/
+		"partnerImg partnerImg partnerImg partnerImg"
+		/*21*/
+		"div4 div4 div4 div4"
+		/*22*/
+		"faq faq faq faq"
+		/*23*/
 		"footer footer footer footer";
 
 	text-align: center;
@@ -534,14 +534,20 @@ iframe {
 	grid-area: speaker6;
 }
 
+#speaker7 {
+	grid-area: speaker7;
+}
+
 .speaker_img__container {
 	display: grid;
 	grid-template-columns: repeat(2, 160px);
 	grid-template-rows:
-		150px 150px;
+		150px 150px 150px 150px;
 	grid-template-areas:
 		"speaker1 speaker2"
-		"speaker3 speaker4";
+		"speaker3 speaker4"
+		"speaker5 speaker6"
+		"speaker7 .";
 	justify-items: center;
 	align-items: center;
 }
@@ -847,8 +853,6 @@ footer div li a:hover {
 .desktop_divider,
 .signup_illustration,
 #info_section_image,
-#speaker5,
-#speaker6,
 #speaker_illustration,
 .agenda__container,
 .university_name,
@@ -1291,7 +1295,7 @@ div.history_speaker_grid .speaker_company {
 			/*11.1*/ 150px
 			/*12*/ 41px
 			/*12.1*/ 100px
-			/*13*/ 120px
+			/*13*/ 250px
 			/*13.1*/ 55px
 			/*14*/ 650px
 			/*14.1*/ 100px
@@ -1304,7 +1308,7 @@ div.history_speaker_grid .speaker_company {
 			/*17.1*/ 80px
 			/*18*/ 41px
 			/*18.1*/ 74px
-			/*19*/ 159px
+			/*19*/ 200px
 			/*19.1*/ 80px
 			/*20*/ 550px
 			/*20.1*/ 80px
@@ -1541,10 +1545,11 @@ div.history_speaker_grid .speaker_company {
 		display: grid;
 		grid-template-columns: repeat(3, 220px);
 		grid-template-rows:
-		250px 250px;
+		250px 250px 250px;
 		grid-template-areas:
 			"speaker1 speaker2 speaker3"
-			"speaker4 speaker5 speaker6";
+			"speaker4 speaker5 speaker6"
+			". speaker7 .";
 		justify-items: center;
 		align-self: center;
 	}
