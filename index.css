@@ -170,7 +170,7 @@ footer {
 		240px
 		12px
 		240px
-		110px
+		150px
 		25px
 		auto
 		175px;
@@ -538,6 +538,10 @@ iframe {
 	grid-area: speaker7;
 }
 
+#speaker8 {
+	grid-area: speaker8;
+}
+
 .speaker_img__container {
 	display: grid;
 	grid-template-columns: repeat(2, 160px);
@@ -547,7 +551,7 @@ iframe {
 		"speaker1 speaker2"
 		"speaker3 speaker4"
 		"speaker5 speaker6"
-		"speaker7 .";
+		"speaker7 speaker8";
 	justify-items: center;
 	align-items: center;
 }
@@ -718,17 +722,23 @@ iframe {
 #partner13 {
 	grid-area: partner13;
 }
+
+#partner14 {
+	grid-area: partner14;
+}
+
 .partner_img__container {
 	display: grid;
-	grid-template-columns: repeat(5, 56px);
+	grid-template-columns: repeat(4, 70px);
 	grid-template-rows:
-		40px 40px;
+		40px 40px 40px 40px;
 	grid-row-gap: 10px;
 	grid-column-gap: 10px;
 	grid-template-areas:
-		"partner1 partner2 partner3 partner4 partner5"
-		"partner6 partner7 partner8 partner9 partner10"
-		"partner11 partner12 partner13 . .";
+		"partner1 partner2 partner3 partner4"
+		"partner5 partner6 partner7 partner8"
+		"partner9 partner10 partner11 partner12"
+		". partner13 partner14 . ";
 	margin-bottom: 30px;
 }
 
@@ -736,6 +746,8 @@ iframe {
 	width: 60px;
 	height: 40px;
 }
+
+.partner_image #partner14
 
 .divider_four__container {
 	margin-top: 30px;
@@ -858,8 +870,6 @@ footer div li a:hover {
 .university_name,
 .university_illustration,
 .university_image_desktop,
-#partner11,
-#partner12,
 .info_section_quote,
 .partner_illustration__container,
 .university_illustration__container,
@@ -1310,7 +1320,7 @@ div.history_speaker_grid .speaker_company {
 			/*18.1*/ 74px
 			/*19*/ 200px
 			/*19.1*/ 80px
-			/*20*/ 550px
+			/*20*/ 650px
 			/*20.1*/ 80px
 			/*21*/ 41px
 			/*21.1*/ 100px
@@ -1549,7 +1559,7 @@ div.history_speaker_grid .speaker_company {
 		grid-template-areas:
 			"speaker1 speaker2 speaker3"
 			"speaker4 speaker5 speaker6"
-			". speaker7 .";
+			"speaker7 speaker8 .";
 		justify-items: center;
 		align-self: center;
 	}
@@ -1616,12 +1626,12 @@ div.history_speaker_grid .speaker_company {
 	.partner_img__container {
 		display: grid;
 		grid-template-columns: repeat(4, 140px);
-		grid-template-rows: repeat(3, 100px);
+		grid-template-rows: repeat(4, 100px);
 		grid-template-areas:
 			"partner1 partner2 partner3 partner4"
 			"partner5 partner6 partner7 partner8"
 			"partner9 partner10 partner11 partner12"
-			"partner13 . . .";
+			"partner13 partner14 . .";
 		justify-items: stretch;
 		grid-column-gap: 30px;
 		grid-row-gap: 80px;
